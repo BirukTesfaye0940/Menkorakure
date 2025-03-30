@@ -1,7 +1,7 @@
 [gd_scene load_steps=20 format=3 uid="uid://pffp5w3vptip"]
 
 [ext_resource type="PackedScene" uid="uid://bfqomua0w5bsn" path="res://Level1/scenes/player.tscn" id="1_2os0e"]
-[ext_resource type="PackedScene" uid="uid://cp6v64syxrx10" path="res://Level1/assets/craftpix-785611-free-dungeon-platformer-pixel-art-tileset/animatable_body_2d.tscn" id="2_xisfc"]
+[ext_resource type="PackedScene" uid="uid://cp6v64syxrx10" path="res://Level1/scenes/platform.tscn" id="2_xisfc"]
 [ext_resource type="Texture2D" uid="uid://5nresxftkwtu" path="res://Level1/assets/craftpix-785611-free-dungeon-platformer-pixel-art-tileset/PNG/Tiles_rock/tile1.png" id="2_ym5fv"]
 [ext_resource type="Texture2D" uid="uid://8fioikiwrpno" path="res://Level1/assets/craftpix-785611-free-dungeon-platformer-pixel-art-tileset/PNG/Tiles_rock/tile2.png" id="4_f6kjk"]
 [ext_resource type="Texture2D" uid="uid://1evkcgqbjbnx" path="res://Level1/assets/Brick #1.png" id="11_30rvg"]
