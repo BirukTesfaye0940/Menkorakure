@@ -1,0 +1,40 @@
+[gd_scene load_steps=5 format=3 uid="uid://dj3qac1mowsp5"]
+
+[ext_resource type="Texture2D" uid="uid://cbcqkdvmp46wi" path="res://level four assets/Background [Level 4].png" id="1_sy5k4"]
+[ext_resource type="Script" uid="uid://l66t4byevytj" path="res://path_follow_2d.gd" id="2_112p8"]
+[ext_resource type="Texture2D" uid="uid://jpfs3a8mme5l" path="res://level four assets/Satellite [level 4].png" id="2_j2q8x"]
+
+[sub_resource type="Curve2D" id="Curve2D_e2u21"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -301, 879, 0, 0, 0, 0, -641, 679, 0, 0, 0, 0, -612, 479, 0, 0, 0, 0, -592, 365, 0, 0, 0, 0, -434, 663, 0, 0, 0, 0, 2042, 690, 0, 0, 0, 0, 2160, 656, 0, 0, 0, 0, 2303, 575, 0, 0, 0, 0, 2634, 712, 0, 0, 0, 0, 2440, 966, 0, 0, 0, 0, 1812, 894, 0, 0, 0, 0, 1895, 1124, 0, 0, 0, 0, 1899, 1431, 0, 0, 0, 0, 1890, 1758, 0, 0, 0, 0, 1835, 2079, 0, 0, 0, 0, 1561, 2144, 0, 0, 0, 0, 1235, 2274, 0, 0, 0, 0, 796, 2234, 0, 0, 0, 0, 413, 2242, 0, 0, 0, 0, 120, 2307, 0, 0, 0, 0, -360, 2242, 0, 0, 0, 0, -662, 2234, 0, 0, 0, 0, -971, 2193, 0, 0, 0, 0, -1199, 2071, 0, 0, 0, 0, -1402, 1827, 0, 0, 0, 0, -1223, 1729, 0, 0, 0, 0, -938, 1672, 0, 0, 0, 0, -588, 1623, 0, 0, 0, 0, -198, 1566, 0, 0, 0, 0, -100, 1265, 0, 0, 0, 0, -100, 1127, 0, 0, 0, 0, -301, 879)
+}
+point_count = 32
+
+[node name="Node" type="Node"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchors_preset = -1
+anchor_top = -0.152
+anchor_right = 1.112
+anchor_bottom = 1.0
+offset_left = -127.0
+offset_top = 38.496
+offset_right = -0.0241699
+offset_bottom = 60.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_sy5k4")
+
+[node name="satellite node" type="Path2D" parent="."]
+curve = SubResource("Curve2D_e2u21")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="satellite node"]
+position = Vector2(-301, 879)
+rotation = -2.60987
+script = ExtResource("2_112p8")
+
+[node name="Sprite2D" type="Sprite2D" parent="satellite node/PathFollow2D"]
+texture_filter = 1
+position = Vector2(-447.335, -348.291)
+scale = Vector2(0.232893, 0.24607)
+texture = ExtResource("2_j2q8x")
