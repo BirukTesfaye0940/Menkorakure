@@ -155,7 +155,7 @@ position = Vector2(2, -5)
 position = Vector2(-222, -63)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
-position = Vector2(-3, 37)
+position = Vector2(-69, -164)
 zoom = Vector2(0.7, 0.7)
 position_smoothing_enabled = true
 
@@ -193,8 +193,8 @@ autoplay = "move"
 
 [node name="TextureRect" type="TextureRect" parent="."]
 z_index = -1
-offset_left = -1124.0
-offset_top = -2872.0
-offset_right = 6515.0
-offset_bottom = 869.0
+offset_left = -1158.0
+offset_top = -2983.0
+offset_right = 6481.0
+offset_bottom = 758.0
 texture = ExtResource("13_7m55p")
