@@ -5,7 +5,7 @@ var tiles = []
 var solved = []
 var mouse = null
 var tile_h=256
-var tile=preload("res://tile.tscn")
+var tile=preload("res://Level1/scenes/tile.tscn")
 var empty_tile_index = 15  # Index of the empty tile ($tile16 is at the last position by default)
 var t
 var offset= tile_h + 2
@@ -38,7 +38,7 @@ func _input(event):
 #
 #
 func start_game():
-	var image=Image.load_from_file("res://newAssets/Lalibela.png")
+	var image=Image.load_from_file("res://level1/newAssets/Lalibela.png")
 	var texture=ImageTexture.create_from_image(image)
 	var grayimage=Image.load_from_file("res://newAssets/empty.jpg")
 	var graytexture=ImageTexture.create_from_image(grayimage)

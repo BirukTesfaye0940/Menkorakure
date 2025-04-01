@@ -1,13 +1,13 @@
 [gd_scene load_steps=4 format=3 uid="uid://ch2su3mpinfhx"]
 
-[ext_resource type="Script" uid="uid://b2guqc1m3rs4v" path="res://main.gd" id="1_yaehf"]
-[ext_resource type="PackedScene" uid="uid://bpi7h42mk6qte" path="res://control.tscn" id="2_0xm2m"]
+[ext_resource type="Script" uid="uid://b2guqc1m3rs4v" path="res://Level1/scripts/main.gd" id="1_6cw32"]
+[ext_resource type="PackedScene" uid="uid://bpi7h42mk6qte" path="res://Level1/scenes/control.tscn" id="2_kfhxj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_htxhm"]
 size = Vector2(1024, 1024)
 
-[node name="Main" type="Area2D"]
-script = ExtResource("1_yaehf")
+[node name="Puzzle" type="Area2D"]
+script = ExtResource("1_6cw32")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(511, 511)
@@ -20,4 +20,4 @@ position = Vector2(516, 516)
 
 [node name="overLayLayer" type="CanvasLayer" parent="."]
 
-[node name="timerOverLay" parent="overLayLayer" instance=ExtResource("2_0xm2m")]
+[node name="timerOverLay" parent="overLayLayer" instance=ExtResource("2_kfhxj")]
