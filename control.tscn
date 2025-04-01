@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://bpi7h42mk6qte"]
+
+[ext_resource type="Script" uid="uid://c2vky3owo6x3s" path="res://control.gd" id="1_0fbet"]
+
+[sub_resource type="FontVariation" id="FontVariation_0fbet"]
+
+[node name="timerOverLay" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1030.0
+offset_bottom = 1021.0
+script = ExtResource("1_0fbet")
+
+[node name="countDownTimer" type="Timer" parent="."]
+
+[node name="timeLabel" type="Label" parent="."]
+layout_mode = 0
+offset_right = 796.0
+offset_bottom = 362.0
+theme_override_fonts/font = SubResource("FontVariation_0fbet")
+theme_override_font_sizes/font_size = 50
+
+[connection signal="timeout" from="countDownTimer" to="." method="_on_timer_timeout"]
