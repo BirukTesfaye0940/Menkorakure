@@ -1,21 +1,21 @@
 [gd_scene load_steps=3 format=3 uid="uid://cp6v64syxrx10"]
 
-[ext_resource type="Texture2D" uid="uid://8fioikiwrpno" path="res://Level1/assets/craftpix-785611-free-dungeon-platformer-pixel-art-tileset/PNG/Tiles_rock/tile2.png" id="1_gi1h8"]
+[ext_resource type="Texture2D" uid="uid://8lkng1h25rft" path="res://Level1/assets/Lift Rock.png" id="1_mgi4s"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ihfvx"]
-size = Vector2(180, 27)
+size = Vector2(197, 27)
 
 [node name="platform" type="AnimatableBody2D"]
 position = Vector2(-53, -1)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(58.5, -1.25001)
-scale = Vector2(2.82812, 1.08621)
-texture = ExtResource("1_gi1h8")
+position = Vector2(68.0001, -1.25001)
+scale = Vector2(3.125, 1.08621)
+texture = ExtResource("1_mgi4s")
 region_enabled = true
 region_rect = Rect2(0, 13.8445, 64.6747, 29.8565)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(58, -0.5)
+position = Vector2(66.5, -0.5)
 shape = SubResource("RectangleShape2D_ihfvx")
 one_way_collision = true
