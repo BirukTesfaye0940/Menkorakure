@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://dxu8q6wl0acp8"]
+
+[ext_resource type="Texture2D" uid="uid://dsrtlqpwcmkss" path="res://assets/Tiles/Tiles/furrow_end_E.png" id="1_54icn"]
+[ext_resource type="Script" uid="uid://cqhqht6lol8m" path="res://script/floor.gd" id="1_bha7m"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_bha7m"]
+radius = 33.0606
+
+[node name="floor" type="Area2D"]
+script = ExtResource("1_bha7m")
+
+[node name="FurrowEndE" type="Sprite2D" parent="."]
+position = Vector2(161, 14)
+texture = ExtResource("1_54icn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(150, 132)
+shape = SubResource("CircleShape2D_bha7m")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

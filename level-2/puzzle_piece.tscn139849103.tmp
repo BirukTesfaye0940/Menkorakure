@@ -1,0 +1,42 @@
+[gd_scene load_steps=4 format=3 uid="uid://djhxekw6g1med"]
+
+[ext_resource type="Script" uid="uid://e7qga6yftoh3" path="res://puzzle_piece.gd" id="1_bfp8d"]
+[ext_resource type="Texture2D" uid="uid://dpsm5kplpcjav" path="res://assets/piece.webp" id="2_uv0v8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w48qx"]
+size = Vector2(196, 184)
+
+[node name="PuzzlePiece" type="Area2D"]
+script = ExtResource("1_bfp8d")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(166, 32)
+texture = ExtResource("2_uv0v8")
+
+[node name="Piece" type="Sprite2D" parent="Sprite2D"]
+position = Vector2(230, 0)
+texture = ExtResource("2_uv0v8")
+
+[node name="Piece2" type="Sprite2D" parent="Sprite2D"]
+position = Vector2(2, 208)
+texture = ExtResource("2_uv0v8")
+
+[node name="Piece3" type="Sprite2D" parent="Sprite2D"]
+position = Vector2(236, 203)
+texture = ExtResource("2_uv0v8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(170, 26)
+shape = SubResource("RectangleShape2D_w48qx")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(399, 28)
+shape = SubResource("RectangleShape2D_w48qx")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="."]
+position = Vector2(406, 231)
+shape = SubResource("RectangleShape2D_w48qx")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="."]
+position = Vector2(173, 236)
+shape = SubResource("RectangleShape2D_w48qx")
