@@ -1,7 +1,9 @@
-[gd_scene load_steps=26 format=3 uid="uid://dkh7vnuepkf0h"]
+[gd_scene load_steps=28 format=3 uid="uid://dkh7vnuepkf0h"]
 
 [ext_resource type="Script" uid="uid://j174pt7a7l71" path="res://script/new_player.gd" id="1_onrkg"]
 [ext_resource type="Texture2D" uid="uid://5h7gtgbwuga3" path="res://newAssets/brackeys_platformer_assets/brackeys_platformer_assets/sprites/knight.png" id="2_onrkg"]
+[ext_resource type="Texture2D" uid="uid://cho1421uvaah3" path="res://newAssets/Male Character.png" id="3_hqtel"]
+[ext_resource type="Texture2D" uid="uid://wkayo374b04m" path="res://newAssets/Male Character Walking.png" id="4_sweqy"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_i3pqv"]
 atlas = ExtResource("2_onrkg")
@@ -116,6 +118,42 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("3_hqtel")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_sweqy")
+}],
+"loop": true,
+"name": &"new_idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_hqtel")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_sweqy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_sweqy")
+}],
+"loop": true,
+"name": &"new_jump",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_sweqy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_sweqy")
+}],
+"loop": true,
+"name": &"new_run",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_1jxqw")
 }, {
 "duration": 1.0,
@@ -169,22 +207,22 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_onrkg"]
-size = Vector2(116.5, 153)
+size = Vector2(243, 379)
 
 [node name="player" type="CharacterBody2D"]
 collision_layer = 2
 script = ExtResource("1_onrkg")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(-97, -103)
-scale = Vector2(8.71875, 8.34375)
+position = Vector2(-61.5, 109.75)
+scale = Vector2(5.57813, 3.91146)
 sprite_frames = SubResource("SpriteFrames_1jxqw")
-animation = &"jump"
+animation = &"new_jump"
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-100.25, -80)
+position = Vector2(-49.5, 103.5)
 shape = SubResource("RectangleShape2D_onrkg")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(-103, -68)
+position = Vector2(-84, 31)
