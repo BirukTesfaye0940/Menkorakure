@@ -1,9 +1,11 @@
-[gd_scene load_steps=28 format=3 uid="uid://dkh7vnuepkf0h"]
+[gd_scene load_steps=30 format=3 uid="uid://dkh7vnuepkf0h"]
 
 [ext_resource type="Script" uid="uid://j174pt7a7l71" path="res://script/new_player.gd" id="1_onrkg"]
 [ext_resource type="Texture2D" uid="uid://5h7gtgbwuga3" path="res://newAssets/brackeys_platformer_assets/brackeys_platformer_assets/sprites/knight.png" id="2_onrkg"]
 [ext_resource type="Texture2D" uid="uid://cho1421uvaah3" path="res://newAssets/Male Character.png" id="3_hqtel"]
 [ext_resource type="Texture2D" uid="uid://wkayo374b04m" path="res://newAssets/Male Character Walking.png" id="4_sweqy"]
+[ext_resource type="PackedScene" uid="uid://bthk5jkn8u55e" path="res://scene/timer_scene.tscn" id="5_sweqy"]
+[ext_resource type="Texture2D" uid="uid://crwhmw0rh5gma" path="res://newAssets/coin.jpg" id="6_dw050"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_i3pqv"]
 atlas = ExtResource("2_onrkg")
@@ -221,8 +223,22 @@ animation = &"new_jump"
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-49.5, 103.5)
+position = Vector2(-57, 104)
 shape = SubResource("RectangleShape2D_onrkg")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(-84, 31)
+
+[node name="TimerScene" parent="." instance=ExtResource("5_sweqy")]
+position = Vector2(212, -198)
+scale = Vector2(5.57813, 3.91146)
+
+[node name="Coin" type="Sprite2D" parent="."]
+position = Vector2(-342, -231)
+texture = ExtResource("6_dw050")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -247.0
+offset_top = -258.0
+offset_right = -165.0
+offset_bottom = -220.0

@@ -5,7 +5,11 @@ const SPEED = 500.0
 const JUMP_VELOCITY = -200.0
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 @onready var animated_sprite = $AnimatedSprite2D
-
+var score = 0
+@onready var label = $Label
+func add_point():
+	score +=1
+	label.text = "You collected" + " " + str(score) + " " + "coins."
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
