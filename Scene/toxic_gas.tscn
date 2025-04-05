@@ -1,0 +1,75 @@
+[gd_scene load_steps=14 format=3 uid="uid://c4wvrvpnrifiy"]
+
+[ext_resource type="Texture2D" uid="uid://cjt8gs38xnuod" path="res://assets/sprites/toxic-gas/Poison1.png" id="1_qrie5"]
+[ext_resource type="Texture2D" uid="uid://d378e1gxilvt7" path="res://assets/sprites/toxic-gas/Poison2.png" id="2_vcred"]
+[ext_resource type="Script" uid="uid://w8ykwnyx3qqc" path="res://script/decrease_health.gd" id="3_27jyv"]
+[ext_resource type="Texture2D" uid="uid://f14c0d567tag" path="res://assets/sprites/toxic-gas/Poison3.png" id="3_mvks2"]
+[ext_resource type="Texture2D" uid="uid://qgb6u3ugq1xx" path="res://assets/sprites/toxic-gas/Poison4.png" id="4_rxbbf"]
+[ext_resource type="Texture2D" uid="uid://bau7t7kahff2p" path="res://assets/sprites/toxic-gas/Poison5.png" id="5_rugcq"]
+[ext_resource type="Texture2D" uid="uid://bcv2o4dwtde6m" path="res://assets/sprites/toxic-gas/Poison6.png" id="6_4skbd"]
+[ext_resource type="Texture2D" uid="uid://phl30iud82c" path="res://assets/sprites/toxic-gas/Poison7.png" id="7_50f5b"]
+[ext_resource type="Texture2D" uid="uid://ddgum2ubv2o1w" path="res://assets/sprites/toxic-gas/Poison8.png" id="8_sh2vn"]
+[ext_resource type="Texture2D" uid="uid://bqdyp05078u0b" path="res://assets/sprites/toxic-gas/Poison9.png" id="9_ygk61"]
+[ext_resource type="Texture2D" uid="uid://c3yxn2457yiug" path="res://assets/sprites/toxic-gas/Poison10.png" id="10_gkhb6"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_g442i"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_qrie5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_vcred")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_mvks2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_rxbbf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_rugcq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_4skbd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_50f5b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_sh2vn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_ygk61")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_gkhb6")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_3v26x"]
+radius = 30.0666
+
+[node name="ToxicGas" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0.75, 1.25)
+scale = Vector2(0.207182, 0.205426)
+sprite_frames = SubResource("SpriteFrames_g442i")
+autoplay = "default"
+frame_progress = 0.619389
+
+[node name="DecreaseHealth" type="Area2D" parent="."]
+collision_mask = 2
+script = ExtResource("3_27jyv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DecreaseHealth"]
+position = Vector2(0, 6)
+shape = SubResource("CircleShape2D_3v26x")
+
+[connection signal="body_entered" from="DecreaseHealth" to="." method="_on_decrease_health_body_entered"]
+[connection signal="body_entered" from="DecreaseHealth" to="DecreaseHealth" method="_on_body_entered"]
+[connection signal="body_exited" from="DecreaseHealth" to="DecreaseHealth" method="_on_body_exited"]

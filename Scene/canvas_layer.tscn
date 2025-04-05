@@ -1,0 +1,85 @@
+[gd_scene load_steps=5 format=3 uid="uid://duggra16evduy"]
+
+[ext_resource type="Script" uid="uid://bdka5mrpyf8ek" path="res://script/canvas_layer.gd" id="1_vcvjm"]
+[ext_resource type="FontFile" uid="uid://sj1w1eiqbt8o" path="res://assets/fonts/PixelOperator8.ttf" id="2_di31r"]
+[ext_resource type="VideoStream" uid="uid://c25banhmd1a8p" path="res://assets/ezgif-2884bac262d1fe.ogv" id="2_p2t86"]
+[ext_resource type="FontFile" uid="uid://dftinj13shrn0" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="3_p2t86"]
+
+[node name="CanvasLayer" type="CanvasLayer" groups=["CanvasLayer"]]
+script = ExtResource("1_vcvjm")
+
+[node name="CutscenePlayer" type="VideoStreamPlayer" parent="."]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -250.0
+offset_top = -250.0
+offset_right = 250.0
+offset_bottom = 250.0
+grow_horizontal = 2
+grow_vertical = 2
+stream = ExtResource("2_p2t86")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -50.0
+offset_right = 50.0
+grow_vertical = 0
+tooltip_text = "Health"
+theme_override_constants/margin_left = 40
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 7
+
+[node name="MarginContainer2" type="MarginContainer" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 40.0
+grow_horizontal = 2
+theme_override_constants/margin_top = 20
+
+[node name="MessageLabel" type="Label" parent="MarginContainer2"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0, 0.133333, 0.788235, 1)
+theme_override_fonts/font = ExtResource("2_di31r")
+theme_override_font_sizes/font_size = 16
+
+[node name="MarginContainer3" type="MarginContainer" parent="."]
+custom_minimum_size = Vector2(1, 0)
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -171.0
+offset_bottom = 40.0
+grow_horizontal = 0
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 25
+
+[node name="OresCollectedLabel" type="Label" parent="MarginContainer3"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0.666667, 0.419608, 0.223529, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_p2t86")
+theme_override_font_sizes/font_size = 24
+text = "Mined: 0"
+
+[node name="MarginContainer4" type="MarginContainer" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 10
+
+[node name="TimerLabel" type="Label" parent="MarginContainer4"]
+layout_mode = 2

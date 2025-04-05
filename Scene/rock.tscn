@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://bkf77o1c2bq40"]
+
+[ext_resource type="Script" uid="uid://cpf41vufcyo4" path="res://script/rock.gd" id="1_whpmr"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_op4js"]
+radius = 16.0
+
+[node name="Rock" type="Area2D"]
+collision_mask = 2
+script = ExtResource("1_whpmr")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = 4
+scale = Vector2(0.4, 0.4)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_op4js")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
