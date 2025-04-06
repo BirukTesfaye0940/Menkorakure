@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=3 uid="uid://cjm3m38tmulni"]
+
+[ext_resource type="Script" uid="uid://cfckxjljbbyru" path="res://Level1/scripts/stage_intro.gd" id="1_526hj"]
+
+[node name="StageIntro" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_526hj")
+
+[node name="StageLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 400.0
+offset_top = 300.0
+offset_right = 567.0
+offset_bottom = 367.0
+theme_override_font_sizes/font_size = 48
+text = "Stage 1"
+
+[node name="SceneTitle" type="Label" parent="."]
+layout_mode = 0
+offset_left = 300.0
+offset_top = 400.0
+offset_right = 734.0
+offset_bottom = 450.0
+theme_override_font_sizes/font_size = 36
+text = "Finding The hidden room"
