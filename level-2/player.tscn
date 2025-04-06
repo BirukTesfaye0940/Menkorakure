@@ -209,36 +209,36 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_onrkg"]
-size = Vector2(243, 379)
+size = Vector2(118, 193.5)
 
 [node name="player" type="CharacterBody2D"]
 collision_layer = 2
 script = ExtResource("1_onrkg")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(-61.5, 109.75)
-scale = Vector2(5.57813, 3.91146)
+position = Vector2(-39, 200.75)
+scale = Vector2(2.84375, 2.01563)
 sprite_frames = SubResource("SpriteFrames_1jxqw")
 animation = &"new_jump"
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-57, 104)
+position = Vector2(-44, 196.75)
 shape = SubResource("RectangleShape2D_onrkg")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(-84, 31)
 
 [node name="TimerScene" parent="." instance=ExtResource("5_sweqy")]
-position = Vector2(212, -198)
+position = Vector2(280, -296)
 scale = Vector2(5.57813, 3.91146)
 
 [node name="Coin" type="Sprite2D" parent="."]
-position = Vector2(-342, -231)
+position = Vector2(-41, -274)
+scale = Vector2(0.469274, 0.482353)
 texture = ExtResource("6_dw050")
 
 [node name="Label" type="Label" parent="."]
-offset_left = -247.0
-offset_top = -258.0
-offset_right = -165.0
-offset_bottom = -220.0
+offset_top = -292.0
+offset_right = 82.0
+offset_bottom = -254.0

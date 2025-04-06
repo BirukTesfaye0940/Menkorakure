@@ -8,4 +8,4 @@ var score = 0
 	#score_label.text = "You collected" + " " + str(score) + " " + "coins."
 	
 func show_dialog():
-	dialog.text = "You successfully reach the final \n challenge let's go the puzzle"
+	dialog.text = "I get the chest Now I have to solve the Puzzle"
