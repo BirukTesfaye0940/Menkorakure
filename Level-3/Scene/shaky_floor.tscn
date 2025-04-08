@@ -1,0 +1,188 @@
+[gd_scene load_steps=30 format=3 uid="uid://71aj4r8uia0c"]
+
+[ext_resource type="Script" uid="uid://d1f0448ri2m64" path="res://Level-3/script/shaky_floor.gd" id="1_t1ct5"]
+[ext_resource type="Texture2D" uid="uid://lrfkfxpcmlms" path="res://assets/sprites/ores/ShakyWalls/Shaky Walls_00000.png" id="2_3ajx2"]
+[ext_resource type="Texture2D" uid="uid://civxb04wo0b6i" path="res://assets/sprites/ores/ShakyWalls/Shaky Walls_00001.png" id="3_8vw3j"]
+[ext_resource type="Texture2D" uid="uid://jipp7koyqycl" path="res://assets/sprites/ores/ShakyWalls/Shaky Walls_00002.png" id="4_p4ink"]
+[ext_resource type="Texture2D" uid="uid://ftgftb4eq1lf" path="res://assets/sprites/ores/ShakyWalls/Shaky Walls_00003.png" id="5_nwic5"]
+[ext_resource type="Texture2D" uid="uid://co7vl2l2ygfi" path="res://assets/sprites/ores/ShakyWalls/Shaky Walls_00004.png" id="6_hfmlt"]
+[ext_resource type="Texture2D" uid="uid://cmh3o3csvvu7r" path="res://assets/sprites/ores/ShakyWalls/Shaky Walls_00005.png" id="7_q42m0"]
+[ext_resource type="Texture2D" uid="uid://b6134jbrb5kni" path="res://assets/sprites/ores/ShakyWalls/Shaky Walls_00006.png" id="8_v6tuy"]
+[ext_resource type="Texture2D" uid="uid://cpoqq3c1cggyy" path="res://assets/sprites/ores/ShakyWalls/Shaky Walls_00007.png" id="9_6wvvh"]
+[ext_resource type="Texture2D" uid="uid://3o3eklsb7cca" path="res://assets/sprites/ores/ShakyWalls/Shaky Walls_00008.png" id="10_06u33"]
+[ext_resource type="Texture2D" uid="uid://ccxxvtoe30ffy" path="res://assets/sprites/ores/ShakyWalls/Shaky Walls_00009.png" id="11_jb0dv"]
+[ext_resource type="Texture2D" uid="uid://bfsyw3afl8ffx" path="res://assets/sprites/ores/Explosion.png" id="12_e4hlc"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rgkh7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_3ajx2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_8vw3j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_p4ink")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_nwic5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_hfmlt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_q42m0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_v6tuy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_6wvvh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_06u33")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_jb0dv")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_k2kif"]
+size = Vector2(139, 145)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hfwxh"]
+size = Vector2(135, 140)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ohujf"]
+atlas = ExtResource("12_e4hlc")
+region = Rect2(0, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wwuua"]
+atlas = ExtResource("12_e4hlc")
+region = Rect2(96, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f72mo"]
+atlas = ExtResource("12_e4hlc")
+region = Rect2(192, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aiqs2"]
+atlas = ExtResource("12_e4hlc")
+region = Rect2(288, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j3s0m"]
+atlas = ExtResource("12_e4hlc")
+region = Rect2(384, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cmoqt"]
+atlas = ExtResource("12_e4hlc")
+region = Rect2(480, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1ybqf"]
+atlas = ExtResource("12_e4hlc")
+region = Rect2(576, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rxpt5"]
+atlas = ExtResource("12_e4hlc")
+region = Rect2(672, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5n8sp"]
+atlas = ExtResource("12_e4hlc")
+region = Rect2(768, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nsbm4"]
+atlas = ExtResource("12_e4hlc")
+region = Rect2(864, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xxqq8"]
+atlas = ExtResource("12_e4hlc")
+region = Rect2(960, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_phg3v"]
+atlas = ExtResource("12_e4hlc")
+region = Rect2(1056, 0, 96, 96)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2vtwd"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ohujf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wwuua")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f72mo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aiqs2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j3s0m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cmoqt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1ybqf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rxpt5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5n8sp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nsbm4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xxqq8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_phg3v")
+}],
+"loop": false,
+"name": &"explode",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_xo38r"]
+radius = 27.0
+
+[node name="ShakyFloor" type="AnimatableBody2D"]
+collision_mask = 2
+script = ExtResource("1_t1ct5")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.1, 0.1)
+sprite_frames = SubResource("SpriteFrames_rgkh7")
+autoplay = "default"
+frame_progress = 0.620307
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, 0.5)
+shape = SubResource("RectangleShape2D_k2kif")
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0.5, -10)
+shape = SubResource("RectangleShape2D_hfwxh")
+
+[node name="Explosion" type="AnimatedSprite2D" parent="."]
+position = Vector2(-1, -87)
+sprite_frames = SubResource("SpriteFrames_2vtwd")
+animation = &"explode"
+frame = 11
+frame_progress = 1.0
+
+[node name="ExplosionArea" type="Area2D" parent="Explosion"]
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Explosion/ExplosionArea"]
+position = Vector2(0, -3)
+shape = SubResource("CircleShape2D_xo38r")
