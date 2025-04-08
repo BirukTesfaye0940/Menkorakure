@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c2vurhewjx836"
+path="res://.godot/imported/Future - Cyberpunk.mp3-cbd390556695af89dbdbc04275579511.mp3str"
+
+[deps]
+
+source_file="res://assets/music/Future - Cyberpunk.mp3"
+dest_files=["res://.godot/imported/Future - Cyberpunk.mp3-cbd390556695af89dbdbc04275579511.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

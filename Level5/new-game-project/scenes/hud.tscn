@@ -1,0 +1,174 @@
+[gd_scene load_steps=14 format=3 uid="uid://fofchvofupc6"]
+
+[ext_resource type="Texture2D" uid="uid://sgew6k3q4y3o" path="res://assets/sprites/Parallax Cave/1.png" id="1_0i1j5"]
+[ext_resource type="Texture2D" uid="uid://dymwi11lkl7xx" path="res://assets/sprites/Parallax Cave/2.png" id="2_mphia"]
+[ext_resource type="Texture2D" uid="uid://bdfnknhw2bjr0" path="res://assets/sprites/Parallax Cave/3fx.png" id="3_0m4u7"]
+[ext_resource type="Texture2D" uid="uid://dajdx27lyqmgp" path="res://assets/sprites/Parallax Cave/4.png" id="4_apjy4"]
+[ext_resource type="Texture2D" uid="uid://bqxjtwv0m8kj8" path="res://assets/sprites/Parallax Cave/5.png" id="5_5n1hp"]
+[ext_resource type="Texture2D" uid="uid://s7mr35vo3fch" path="res://assets/sprites/Parallax Cave/6fx.png" id="6_eld54"]
+[ext_resource type="Texture2D" uid="uid://hw8yn1rc2mpg" path="res://assets/sprites/Parallax Cave/7.png" id="7_3swnk"]
+[ext_resource type="Texture2D" uid="uid://dm1ogk1ix2mib" path="res://assets/sprites/Parallax Cave/8fx.png" id="8_qkknv"]
+[ext_resource type="Texture2D" uid="uid://d270l1f4gwcdw" path="res://assets/sprites/Parallax Cave/9.png" id="9_uxdf7"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_toqtt"]
+bg_color = Color(0.0768358, 0.0768358, 0.0768358, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ahhtf"]
+bg_color = Color(0.735093, 0.0338211, 1.92523e-07, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oo0fn"]
+bg_color = Color(0.91664, 0.91664, 0.91664, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5ysmq"]
+bg_color = Color(0.210933, 0.387219, 0.65054, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[node name="HUD" type="CanvasLayer"]
+
+[node name="HealthLabel" type="Label" parent="."]
+offset_left = 9.0
+offset_top = 28.0
+offset_right = 72.0
+offset_bottom = 55.0
+text = "Health"
+
+[node name="HealthBar" type="ProgressBar" parent="."]
+offset_left = 80.0
+offset_top = 31.0
+offset_right = 118.0
+offset_bottom = 44.0
+theme_override_styles/background = SubResource("StyleBoxFlat_toqtt")
+theme_override_styles/fill = SubResource("StyleBoxFlat_ahhtf")
+value = 80.0
+show_percentage = false
+
+[node name="OxygenLable" type="Label" parent="."]
+offset_left = 7.0
+offset_top = 56.0
+offset_right = 66.0
+offset_bottom = 79.0
+text = "Oxygen"
+
+[node name="OxygenBar" type="ProgressBar" parent="."]
+offset_left = 83.0
+offset_top = 65.0
+offset_right = 117.0
+offset_bottom = 77.0
+theme_override_styles/background = SubResource("StyleBoxFlat_oo0fn")
+theme_override_styles/fill = SubResource("StyleBoxFlat_5ysmq")
+step = 1.0
+value = 90.0
+show_percentage = false
+
+[node name="AnoriteLabel" type="Label" parent="."]
+offset_left = 383.0
+offset_top = 56.0
+offset_right = 449.0
+offset_bottom = 79.0
+text = "Anorite: "
+
+[node name="SeferonLabel" type="Label" parent="."]
+offset_left = 381.0
+offset_top = 30.0
+offset_right = 450.0
+offset_bottom = 53.0
+text = "Seferon: "
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+scroll_offset = Vector2(19, 0)
+scroll_base_offset = Vector2(45, 0)
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(510, -115)
+motion_scale = Vector2(0, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+texture_filter = 1
+scale = Vector2(0.607407, 0.607407)
+texture = ExtResource("1_0i1j5")
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(510, -115)
+motion_scale = Vector2(0.1, 0.1)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+texture_filter = 1
+scale = Vector2(0.607407, 0.607407)
+texture = ExtResource("2_mphia")
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(510, -115)
+motion_scale = Vector2(0.3, 0.3)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer3"]
+texture_filter = 1
+scale = Vector2(0.613889, 0.613889)
+texture = ExtResource("3_0m4u7")
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(510, -115)
+motion_scale = Vector2(0.3, 0.3)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer4"]
+texture_filter = 1
+scale = Vector2(0.605556, 0.605556)
+texture = ExtResource("4_apjy4")
+
+[node name="ParallaxLayer5" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(510, -115)
+motion_scale = Vector2(0.4, 0.4)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer5"]
+texture_filter = 1
+scale = Vector2(0.608333, 0.608333)
+texture = ExtResource("5_5n1hp")
+
+[node name="ParallaxLayer6" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(510, -115)
+motion_scale = Vector2(0.5, 0.5)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer6"]
+texture_filter = 1
+scale = Vector2(0.607407, 0.607407)
+texture = ExtResource("6_eld54")
+
+[node name="ParallaxLayer7" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(510, -115)
+motion_scale = Vector2(0.6, 0.6)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer7"]
+texture_filter = 1
+scale = Vector2(0.599074, 0.599074)
+texture = ExtResource("7_3swnk")
+
+[node name="ParallaxLayer8" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(510, -115)
+motion_scale = Vector2(0.8, 0.8)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer8"]
+texture_filter = 1
+scale = Vector2(0.610185, 0.610185)
+texture = ExtResource("8_qkknv")
+
+[node name="ParallaxLayer9" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(513, -115)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer9"]
+texture_filter = 1
+scale = Vector2(0.607407, 0.607407)
+texture = ExtResource("9_uxdf7")

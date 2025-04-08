@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://c0s66t5c0xe0y"]
+
+[ext_resource type="Script" uid="uid://cev20lchgqyes" path="res://scripts/spaceship.gd" id="1_ae4p7"]
+[ext_resource type="Texture2D" uid="uid://btyu384upn4nr" path="res://assets/sprites/Lunar module.png" id="3_xs8u7"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v0rat"]
+atlas = ExtResource("3_xs8u7")
+region = Rect2(0, 0, 372, 331)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_me4wu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v0rat")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Spaceship" type="Area2D"]
+collision_mask = 3
+script = ExtResource("1_ae4p7")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-87, 74, -12, 81, 77, 72, 94, 63, 57, 2, 52, -46, 48, -67, 22, -84, -34, -81, -61, 8, -95, 68)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_me4wu")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

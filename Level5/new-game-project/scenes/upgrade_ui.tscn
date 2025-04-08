@@ -1,0 +1,66 @@
+[gd_scene load_steps=2 format=3 uid="uid://bthwt5bsv1lo2"]
+
+[ext_resource type="Script" uid="uid://3plb53k4qk8b" path="res://scripts/upgrade_ui.gd" id="1_k1o73"]
+
+[node name="UpgradeUI" type="CanvasLayer"]
+visible = false
+script = ExtResource("1_k1o73")
+
+[node name="TabContainer" type="TabContainer" parent="."]
+offset_left = 244.0
+offset_right = 284.0
+offset_bottom = 51.0
+current_tab = 1
+
+[node name="Tab1" type="VBoxContainer" parent="TabContainer"]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 0
+
+[node name="HabitatModule" type="Button" parent="TabContainer/Tab1"]
+layout_mode = 2
+text = "HabitatModule
+Level 0
+"
+
+[node name="RadiationShield" type="Button" parent="TabContainer/Tab1"]
+layout_mode = 2
+text = "RadiationShield
+level 0"
+
+[node name="CommunicationTower" type="Button" parent="TabContainer/Tab1"]
+layout_mode = 2
+text = "CommunicationTower
+level 0"
+
+[node name="SolarArray" type="Button" parent="TabContainer/Tab1"]
+layout_mode = 2
+text = "SolarArray
+level 0"
+
+[node name="OreProcessor" type="Button" parent="TabContainer/Tab1"]
+layout_mode = 2
+text = "OreProcessor
+level 0"
+
+[node name="Tab2" type="VBoxContainer" parent="TabContainer"]
+layout_mode = 2
+metadata/_tab_index = 1
+
+[node name="OxygenTank" type="Button" parent="TabContainer/Tab2"]
+layout_mode = 2
+text = "OxygenTank
+level 1"
+
+[node name="SuitLevel" type="Button" parent="TabContainer/Tab2"]
+layout_mode = 2
+text = "SuitLevel
+Level 1"
+
+[node name="InventoryLabel" type="Label" parent="."]
+offset_left = 980.0
+offset_top = 524.0
+offset_right = 1010.0
+offset_bottom = 547.0
+text = "Anorite: 0
+Seferon: 0"

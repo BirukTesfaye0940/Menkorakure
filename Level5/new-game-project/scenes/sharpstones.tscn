@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=3 uid="uid://b0awydl740j48"]
+
+[ext_resource type="Texture2D" uid="uid://dmpvlregtqfwp" path="res://assets/sprites/Sharp_rocks.png" id="1_f457t"]
+[ext_resource type="Script" uid="uid://8s62nbdexu1m" path="res://scripts/sharpstones.gd" id="1_s30uv"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s30uv"]
+atlas = ExtResource("1_f457t")
+region = Rect2(0, 260, 71, 65)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_g0r3f"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s30uv")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[node name="Sharpstones" type="Area2D"]
+collision_mask = 3
+script = ExtResource("1_s30uv")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(1, 1)
+scale = Vector2(0.319231, 0.319231)
+sprite_frames = SubResource("SpriteFrames_g0r3f")
+animation = &"idle"
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.6
+one_shot = true
+
+[node name="CollisionShape2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(1, 3)
+polygon = PackedVector2Array(-10, 4, -9, -2, -9, -2, -6, -8, -6, -8, 0, -11, 7, -7, 10, 4, -1, 8)

@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://b21tkeqgq5qfa"]
+
+[ext_resource type="Script" uid="uid://13a4kgbpelf2" path="res://scripts/cutscene.gd" id="1_a320b"]
+[ext_resource type="VideoStream" path="res://assets/Level 5_Cut2.ogv" id="2_a320b"]
+
+[node name="Cutscene" type="CanvasLayer"]
+script = ExtResource("1_a320b")
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
+offset_right = 1150.0
+offset_bottom = 647.0
+stream = ExtResource("2_a320b")
+autoplay = true
+expand = true
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 100.0
+one_shot = true
