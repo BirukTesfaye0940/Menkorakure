@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://chyv6n0jfrpya"
-path="res://.godot/imported/castle_towerBrownBase_E.png-0550c5b4c166cfa9addc601af0b03f0a.ctex"
+path="res://.godot/imported/castle_towerBrownBase_E.png-739f8b8178b9cad7ae884e8e037e18a0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://newAssets/Tiles/Tiles/castle_towerBrownBase_E.png"
-dest_files=["res://.godot/imported/castle_towerBrownBase_E.png-0550c5b4c166cfa9addc601af0b03f0a.ctex"]
+source_file="res://level-2/newAssets/Tiles/Tiles/castle_towerBrownBase_E.png"
+dest_files=["res://.godot/imported/castle_towerBrownBase_E.png-739f8b8178b9cad7ae884e8e037e18a0.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://il1wli84rgab"
-path="res://.godot/imported/well_E.png-940e207f89a36818b85c4c8606980cd8.ctex"
+path="res://.godot/imported/well_E.png-b3e5e9d6464792398087f3d56b018b3d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://newAssets/Tiles/Tiles/well_E.png"
-dest_files=["res://.godot/imported/well_E.png-940e207f89a36818b85c4c8606980cd8.ctex"]
+source_file="res://level-2/newAssets/Tiles/Tiles/well_E.png"
+dest_files=["res://.godot/imported/well_E.png-b3e5e9d6464792398087f3d56b018b3d.ctex"]
 
 [params]
 

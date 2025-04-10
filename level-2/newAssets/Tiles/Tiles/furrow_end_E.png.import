@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dsrtlqpwcmkss"
-path="res://.godot/imported/furrow_end_E.png-e6b28c2de1df8ce420332de878bf0f2e.ctex"
+path="res://.godot/imported/furrow_end_E.png-c3dc83cef12566f37a121f075b0cea2b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://newAssets/Tiles/Tiles/furrow_end_E.png"
-dest_files=["res://.godot/imported/furrow_end_E.png-e6b28c2de1df8ce420332de878bf0f2e.ctex"]
+source_file="res://level-2/newAssets/Tiles/Tiles/furrow_end_E.png"
+dest_files=["res://.godot/imported/furrow_end_E.png-c3dc83cef12566f37a121f075b0cea2b.ctex"]
 
 [params]
 

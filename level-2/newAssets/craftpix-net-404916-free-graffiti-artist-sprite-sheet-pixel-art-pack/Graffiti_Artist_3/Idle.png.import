@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bn0ddb4svan4u"
-path="res://.godot/imported/Idle.png-dcc6fb90a11f2e8f7b7697c54160952d.ctex"
+path="res://.godot/imported/Idle.png-8f3e5be4f3ef690ffe4effe5ea923fb6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://newAssets/craftpix-net-404916-free-graffiti-artist-sprite-sheet-pixel-art-pack/Graffiti_Artist_3/Idle.png"
-dest_files=["res://.godot/imported/Idle.png-dcc6fb90a11f2e8f7b7697c54160952d.ctex"]
+source_file="res://level-2/newAssets/craftpix-net-404916-free-graffiti-artist-sprite-sheet-pixel-art-pack/Graffiti_Artist_3/Idle.png"
+dest_files=["res://.godot/imported/Idle.png-8f3e5be4f3ef690ffe4effe5ea923fb6.ctex"]
 
 [params]
 

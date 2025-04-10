@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bgpglbr0twr2e"
-path="res://.godot/imported/Special_Blow_1.png-c5031c3677b78f4729b78282d5dc5902.ctex"
+path="res://.godot/imported/Special_Blow_1.png-0a57e25191d8a0f3dd665d621474f6d1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://newAssets/craftpix-net-404916-free-graffiti-artist-sprite-sheet-pixel-art-pack/Graffiti_Artist_3/Special_Blow_1.png"
-dest_files=["res://.godot/imported/Special_Blow_1.png-c5031c3677b78f4729b78282d5dc5902.ctex"]
+source_file="res://level-2/newAssets/craftpix-net-404916-free-graffiti-artist-sprite-sheet-pixel-art-pack/Graffiti_Artist_3/Special_Blow_1.png"
+dest_files=["res://.godot/imported/Special_Blow_1.png-0a57e25191d8a0f3dd665d621474f6d1.ctex"]
 
 [params]
 

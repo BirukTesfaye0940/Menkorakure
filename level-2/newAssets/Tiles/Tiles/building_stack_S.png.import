@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cmusmur0d4ve3"
-path="res://.godot/imported/building_stack_S.png-671ec8472d442e4f42c4b042c0663a5e.ctex"
+path="res://.godot/imported/building_stack_S.png-eeb1f66e29a1e9324729dcfc8807cb61.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://newAssets/Tiles/Tiles/building_stack_S.png"
-dest_files=["res://.godot/imported/building_stack_S.png-671ec8472d442e4f42c4b042c0663a5e.ctex"]
+source_file="res://level-2/newAssets/Tiles/Tiles/building_stack_S.png"
+dest_files=["res://.godot/imported/building_stack_S.png-eeb1f66e29a1e9324729dcfc8807cb61.ctex"]
 
 [params]
 

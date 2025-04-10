@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://np0t78q8734a"
-path="res://.godot/imported/furrow_crop_N.png-69fe8232230981a14956ca23dc3dc5a3.ctex"
+path="res://.godot/imported/furrow_crop_N.png-b7a600107e0c9ed46d37e63d3017518a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://newAssets/Tiles/Tiles/furrow_crop_N.png"
-dest_files=["res://.godot/imported/furrow_crop_N.png-69fe8232230981a14956ca23dc3dc5a3.ctex"]
+source_file="res://level-2/newAssets/Tiles/Tiles/furrow_crop_N.png"
+dest_files=["res://.godot/imported/furrow_crop_N.png-b7a600107e0c9ed46d37e63d3017518a.ctex"]
 
 [params]
 

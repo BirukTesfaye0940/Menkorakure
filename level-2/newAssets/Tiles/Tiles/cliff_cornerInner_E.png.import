@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b4o0spv40r0tg"
-path="res://.godot/imported/cliff_cornerInner_E.png-4687d19bccc8a7b8c0f73dfe27ced9a2.ctex"
+path="res://.godot/imported/cliff_cornerInner_E.png-e3b89835a65eaf9193098b7f52fcdc2d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://newAssets/Tiles/Tiles/cliff_cornerInner_E.png"
-dest_files=["res://.godot/imported/cliff_cornerInner_E.png-4687d19bccc8a7b8c0f73dfe27ced9a2.ctex"]
+source_file="res://level-2/newAssets/Tiles/Tiles/cliff_cornerInner_E.png"
+dest_files=["res://.godot/imported/cliff_cornerInner_E.png-e3b89835a65eaf9193098b7f52fcdc2d.ctex"]
 
 [params]
 

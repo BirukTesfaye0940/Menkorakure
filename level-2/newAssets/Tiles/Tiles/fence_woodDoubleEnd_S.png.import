@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://jbw5mkq1bck5"
-path="res://.godot/imported/fence_woodDoubleEnd_S.png-25652665147b7bb414697faac2e53bde.ctex"
+path="res://.godot/imported/fence_woodDoubleEnd_S.png-4604ac71b644a0353e95555dff44348b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://newAssets/Tiles/Tiles/fence_woodDoubleEnd_S.png"
-dest_files=["res://.godot/imported/fence_woodDoubleEnd_S.png-25652665147b7bb414697faac2e53bde.ctex"]
+source_file="res://level-2/newAssets/Tiles/Tiles/fence_woodDoubleEnd_S.png"
+dest_files=["res://.godot/imported/fence_woodDoubleEnd_S.png-4604ac71b644a0353e95555dff44348b.ctex"]
 
 [params]
 

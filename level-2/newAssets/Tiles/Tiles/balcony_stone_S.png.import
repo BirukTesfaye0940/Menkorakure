@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c3aywwkvc2uhk"
-path="res://.godot/imported/balcony_stone_S.png-515a0e024bc8ff3ff432bf356e3e988d.ctex"
+path="res://.godot/imported/balcony_stone_S.png-8fbfc5576cb2f3e1eb8708d850e99bc6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://newAssets/Tiles/Tiles/balcony_stone_S.png"
-dest_files=["res://.godot/imported/balcony_stone_S.png-515a0e024bc8ff3ff432bf356e3e988d.ctex"]
+source_file="res://level-2/newAssets/Tiles/Tiles/balcony_stone_S.png"
+dest_files=["res://.godot/imported/balcony_stone_S.png-8fbfc5576cb2f3e1eb8708d850e99bc6.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://7cqe2rj4q3rc"
-path="res://.godot/imported/Hurt_1.png-4ea11f9ea7c9d07874c479e5ae538519.ctex"
+path="res://.godot/imported/Hurt_1.png-2db32efe69dc3389c80bd4a3ae35d37b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://newAssets/craftpix-net-404916-free-graffiti-artist-sprite-sheet-pixel-art-pack/Graffiti_Artist_3/Hurt_1.png"
-dest_files=["res://.godot/imported/Hurt_1.png-4ea11f9ea7c9d07874c479e5ae538519.ctex"]
+source_file="res://level-2/newAssets/craftpix-net-404916-free-graffiti-artist-sprite-sheet-pixel-art-pack/Graffiti_Artist_3/Hurt_1.png"
+dest_files=["res://.godot/imported/Hurt_1.png-2db32efe69dc3389c80bd4a3ae35d37b.ctex"]
 
 [params]
 
