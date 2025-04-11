@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dkmjlhtjad118"
-path="res://.godot/imported/tree_pineLarge_N.png-cb23e5102b9bbdc42562a46b7dd6829b.ctex"
+path="res://.godot/imported/tree_pineLarge_N.png-e538fbd3bccf9fad80943541c0369978.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://newAssets/Tiles/Tiles/tree_pineLarge_N.png"
-dest_files=["res://.godot/imported/tree_pineLarge_N.png-cb23e5102b9bbdc42562a46b7dd6829b.ctex"]
+source_file="res://level-2/newAssets/Tiles/Tiles/tree_pineLarge_N.png"
+dest_files=["res://.godot/imported/tree_pineLarge_N.png-e538fbd3bccf9fad80943541c0369978.ctex"]
 
 [params]
 

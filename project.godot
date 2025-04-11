@@ -15,6 +15,10 @@ run/main_scene="uid://pffp5w3vptip"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Questions="*res://Level1/scripts/Question.gd"
+
 [display]
 
 window/size/viewport_width=1024

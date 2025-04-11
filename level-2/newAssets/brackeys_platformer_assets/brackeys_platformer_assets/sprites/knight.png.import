@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://5h7gtgbwuga3"
-path="res://.godot/imported/knight.png-716e70787e33e0ed04843520f7a21586.ctex"
+path="res://.godot/imported/knight.png-bb8e7372c9b4fec0b77a44b0d4be03ac.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://newAssets/brackeys_platformer_assets/brackeys_platformer_assets/sprites/knight.png"
-dest_files=["res://.godot/imported/knight.png-716e70787e33e0ed04843520f7a21586.ctex"]
+source_file="res://level-2/newAssets/brackeys_platformer_assets/brackeys_platformer_assets/sprites/knight.png"
+dest_files=["res://.godot/imported/knight.png-bb8e7372c9b4fec0b77a44b0d4be03ac.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b3pip41uhd3dd"
-path="res://.godot/imported/fence_woodDouble_W.png-21a9d9b944cdfd4a167381e34a6eacd0.ctex"
+path="res://.godot/imported/fence_woodDouble_W.png-add2b1e189dd77c894d514241913a274.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://newAssets/Tiles/Tiles/fence_woodDouble_W.png"
-dest_files=["res://.godot/imported/fence_woodDouble_W.png-21a9d9b944cdfd4a167381e34a6eacd0.ctex"]
+source_file="res://level-2/newAssets/Tiles/Tiles/fence_woodDouble_W.png"
+dest_files=["res://.godot/imported/fence_woodDouble_W.png-add2b1e189dd77c894d514241913a274.ctex"]
 
 [params]
 

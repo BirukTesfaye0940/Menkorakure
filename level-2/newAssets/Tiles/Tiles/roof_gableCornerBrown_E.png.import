@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://beemyx3ookb31"
-path="res://.godot/imported/roof_gableCornerBrown_E.png-d1760a013efa54784fc392d1f38d0e51.ctex"
+path="res://.godot/imported/roof_gableCornerBrown_E.png-88b757d328c425bb46678a6aabf8869e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://newAssets/Tiles/Tiles/roof_gableCornerBrown_E.png"
-dest_files=["res://.godot/imported/roof_gableCornerBrown_E.png-d1760a013efa54784fc392d1f38d0e51.ctex"]
+source_file="res://level-2/newAssets/Tiles/Tiles/roof_gableCornerBrown_E.png"
+dest_files=["res://.godot/imported/roof_gableCornerBrown_E.png-88b757d328c425bb46678a6aabf8869e.ctex"]
 
 [params]
 

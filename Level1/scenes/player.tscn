@@ -1,9 +1,12 @@
-[gd_scene load_steps=27 format=3 uid="uid://bfqomua0w5bsn"]
+[gd_scene load_steps=30 format=3 uid="uid://bfqomua0w5bsn"]
 
-[ext_resource type="Texture2D" uid="uid://bwu8en8q2ymdu" path="res://Level1/assets/craftpix-net-404916-free-graffiti-artist-sprite-sheet-pixel-art-pack/Graffiti_Artist_3/Walk.png" id="1_lue78"]
+[ext_resource type="Texture2D" uid="uid://bwu8en8q2ymdu" path="res://level-2/newAssets/craftpix-net-404916-free-graffiti-artist-sprite-sheet-pixel-art-pack/Graffiti_Artist_3/Walk.png" id="1_lue78"]
 [ext_resource type="Script" uid="uid://bi2l3boqkvb6v" path="res://Level1/scripts/player.gd" id="1_mfvmd"]
-[ext_resource type="Texture2D" uid="uid://bn0ddb4svan4u" path="res://Level1/assets/craftpix-net-404916-free-graffiti-artist-sprite-sheet-pixel-art-pack/Graffiti_Artist_3/Idle.png" id="2_xyc4c"]
-[ext_resource type="Texture2D" uid="uid://43mhojjsan3f" path="res://Level1/assets/craftpix-net-404916-free-graffiti-artist-sprite-sheet-pixel-art-pack/Graffiti_Artist_3/Jump.png" id="3_k0gl7"]
+[ext_resource type="Texture2D" uid="uid://bn0ddb4svan4u" path="res://level-2/newAssets/craftpix-net-404916-free-graffiti-artist-sprite-sheet-pixel-art-pack/Graffiti_Artist_3/Idle.png" id="2_xyc4c"]
+[ext_resource type="Texture2D" uid="uid://43mhojjsan3f" path="res://level-2/newAssets/craftpix-net-404916-free-graffiti-artist-sprite-sheet-pixel-art-pack/Graffiti_Artist_3/Jump.png" id="3_k0gl7"]
+[ext_resource type="Texture2D" uid="uid://bow23tsajm8pp" path="res://Level1/assets/Male Character Walking#1.png" id="5_bmdm8"]
+[ext_resource type="Texture2D" uid="uid://dbbrk72kp7yov" path="res://Level1/assets/Male Character.png" id="6_y137l"]
+[ext_resource type="Texture2D" uid="uid://b6wii0duy5cpl" path="res://Level1/assets/Male Character Walking#2.png" id="7_wredw"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_k0gl7"]
 atlas = ExtResource("2_xyc4c")
@@ -161,10 +164,24 @@ animations = [{
 "loop": true,
 "name": &"Run",
 "speed": 9.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_bmdm8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_y137l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_wredw")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_suigk"]
-size = Vector2(25, 177)
+size = Vector2(27, 86)
 
 [node name="Player" type="CharacterBody2D"]
 z_index = 5
@@ -172,12 +189,12 @@ collision_layer = 2
 script = ExtResource("1_mfvmd")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(-63.5, -118.25)
-scale = Vector2(1.03516, 1.85547)
+position = Vector2(-5.5312, -52.7345)
+scale = Vector2(0.8291, 1.06803)
 sprite_frames = SubResource("SpriteFrames_gwc7a")
-animation = &"Run"
-frame_progress = 0.56006
+animation = &"walk"
+frame_progress = 0.355412
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-67.5, -91.5)
+position = Vector2(-6.5, -54)
 shape = SubResource("RectangleShape2D_suigk")

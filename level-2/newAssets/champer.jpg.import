@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bt6dfsoxx60ha"
-path="res://.godot/imported/champer.jpg-ffa5b9b2c15ea0fdd2afb595e16c7aab.ctex"
+path="res://.godot/imported/champer.jpg-1fa5550b1ae1a74ecb4f223807d3cc57.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://newAssets/champer.jpg"
-dest_files=["res://.godot/imported/champer.jpg-ffa5b9b2c15ea0fdd2afb595e16c7aab.ctex"]
+source_file="res://level-2/newAssets/champer.jpg"
+dest_files=["res://.godot/imported/champer.jpg-1fa5550b1ae1a74ecb4f223807d3cc57.ctex"]
 
 [params]
 

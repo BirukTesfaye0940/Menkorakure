@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://5nresxftkwtu"
-path="res://.godot/imported/tile1.png-4887a2e8cd8d18af414744015d816f84.ctex"
+path="res://.godot/imported/tile1.png-fb77fe5f0e4d944aa7061569a87151d6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://newAssets/craftpix-785611-free-dungeon-platformer-pixel-art-tileset/PNG/Tiles_rock/tile1.png"
-dest_files=["res://.godot/imported/tile1.png-4887a2e8cd8d18af414744015d816f84.ctex"]
+source_file="res://level-2/newAssets/craftpix-785611-free-dungeon-platformer-pixel-art-tileset/PNG/Tiles_rock/tile1.png"
+dest_files=["res://.godot/imported/tile1.png-fb77fe5f0e4d944aa7061569a87151d6.ctex"]
 
 [params]
 

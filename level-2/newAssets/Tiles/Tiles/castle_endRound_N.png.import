@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dpmaapsjlhtwb"
-path="res://.godot/imported/castle_endRound_N.png-76bb1ffd1feeae280481e378e01999f3.ctex"
+path="res://.godot/imported/castle_endRound_N.png-adf8cc52c01fcd9a9f2bbad89d5abc94.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://newAssets/Tiles/Tiles/castle_endRound_N.png"
-dest_files=["res://.godot/imported/castle_endRound_N.png-76bb1ffd1feeae280481e378e01999f3.ctex"]
+source_file="res://level-2/newAssets/Tiles/Tiles/castle_endRound_N.png"
+dest_files=["res://.godot/imported/castle_endRound_N.png-adf8cc52c01fcd9a9f2bbad89d5abc94.ctex"]
 
 [params]
 

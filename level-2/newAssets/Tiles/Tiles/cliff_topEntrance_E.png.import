@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bfoww0rgtyqym"
-path="res://.godot/imported/cliff_topEntrance_E.png-715550470365dd07d9d160f25ba83730.ctex"
+path="res://.godot/imported/cliff_topEntrance_E.png-2da0701e374dcecf9432c46afdcf98e4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://newAssets/Tiles/Tiles/cliff_topEntrance_E.png"
-dest_files=["res://.godot/imported/cliff_topEntrance_E.png-715550470365dd07d9d160f25ba83730.ctex"]
+source_file="res://level-2/newAssets/Tiles/Tiles/cliff_topEntrance_E.png"
+dest_files=["res://.godot/imported/cliff_topEntrance_E.png-2da0701e374dcecf9432c46afdcf98e4.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://5usdseqxvnkw"
-path="res://.godot/imported/lalibela.jpg-6ed75a1b5ce16f5d0465dbad8b9aa448.ctex"
+path="res://.godot/imported/lalibela.jpg-d8358dd662a5685eb4ca3685d81bea88.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://newAssets/lalibela.jpg"
-dest_files=["res://.godot/imported/lalibela.jpg-6ed75a1b5ce16f5d0465dbad8b9aa448.ctex"]
+source_file="res://level-2/newAssets/lalibela.jpg"
+dest_files=["res://.godot/imported/lalibela.jpg-d8358dd662a5685eb4ca3685d81bea88.ctex"]
 
 [params]
 

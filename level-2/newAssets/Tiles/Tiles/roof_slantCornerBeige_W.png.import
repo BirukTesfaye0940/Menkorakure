@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bflhe8qedyag7"
-path="res://.godot/imported/roof_slantCornerBeige_W.png-7a6f3df0b5609866573e35a7083055cd.ctex"
+path="res://.godot/imported/roof_slantCornerBeige_W.png-2644612811c37addf6aa141e4fb8bfac.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://newAssets/Tiles/Tiles/roof_slantCornerBeige_W.png"
-dest_files=["res://.godot/imported/roof_slantCornerBeige_W.png-7a6f3df0b5609866573e35a7083055cd.ctex"]
+source_file="res://level-2/newAssets/Tiles/Tiles/roof_slantCornerBeige_W.png"
+dest_files=["res://.godot/imported/roof_slantCornerBeige_W.png-2644612811c37addf6aa141e4fb8bfac.ctex"]
 
 [params]
 

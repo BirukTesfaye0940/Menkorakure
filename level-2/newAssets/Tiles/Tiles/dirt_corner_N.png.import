@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://blut16emcwvv4"
-path="res://.godot/imported/dirt_corner_N.png-d291737b2a994d2a757549b0cc2942b0.ctex"
+path="res://.godot/imported/dirt_corner_N.png-a7f7fdee7c746a37f1c1c8853e1574a8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://newAssets/Tiles/Tiles/dirt_corner_N.png"
-dest_files=["res://.godot/imported/dirt_corner_N.png-d291737b2a994d2a757549b0cc2942b0.ctex"]
+source_file="res://level-2/newAssets/Tiles/Tiles/dirt_corner_N.png"
+dest_files=["res://.godot/imported/dirt_corner_N.png-a7f7fdee7c746a37f1c1c8853e1574a8.ctex"]
 
 [params]
 

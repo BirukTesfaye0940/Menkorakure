@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cvbx8hsqpkubn"
-path="res://.godot/imported/furrow_cropWheat_E.png-ed60e905b942d2014651277393077d40.ctex"
+path="res://.godot/imported/furrow_cropWheat_E.png-1a2b77e66b93b090c7fc10ed83366de3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://newAssets/Tiles/Tiles/furrow_cropWheat_E.png"
-dest_files=["res://.godot/imported/furrow_cropWheat_E.png-ed60e905b942d2014651277393077d40.ctex"]
+source_file="res://level-2/newAssets/Tiles/Tiles/furrow_cropWheat_E.png"
+dest_files=["res://.godot/imported/furrow_cropWheat_E.png-1a2b77e66b93b090c7fc10ed83366de3.ctex"]
 
 [params]
 
