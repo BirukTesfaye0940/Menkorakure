@@ -1,0 +1,56 @@
+[gd_scene load_steps=4 format=3 uid="uid://cu5uf5nyhsajr"]
+
+[ext_resource type="Script" uid="uid://g4ylh0tsqktj" path="res://script/tile.gd" id="1_fa2uf"]
+[ext_resource type="Texture2D" uid="uid://b7b0fcuadxafo" path="res://newAssets/pixel-art-rocket-8bit-game-item-white-background_360488-63.jpg" id="2_v00te"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_72f5l"]
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.117647, 0.117647, 0.117647, 0.756863)
+border_blend = true
+
+[node name="Tile" type="TextureButton"]
+offset_left = -1.0
+offset_right = -1.0
+script = ExtResource("1_fa2uf")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(22, 30)
+scale = Vector2(0.344, 0.344)
+texture = ExtResource("2_v00te")
+hframes = 4
+vframes = 4
+
+[node name="Number" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="ColorRect" type="ColorRect" parent="Number"]
+layout_mode = 0
+offset_right = 43.0
+offset_bottom = 58.0
+color = Color(0.0431373, 0.0431373, 0.0431373, 0.309804)
+
+[node name="Label" type="Label" parent="Number"]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 42.0
+offset_bottom = 58.0
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Panel" type="Panel" parent="."]
+modulate = Color(1, 1, 0.172549, 1)
+self_modulate = Color(1, 1, 0.278431, 1)
+layout_mode = 0
+offset_left = 2.0
+offset_top = 3.0
+offset_right = 43.0
+offset_bottom = 59.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_72f5l")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

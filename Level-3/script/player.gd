@@ -1,10 +1,12 @@
 extends CharacterBody2D
 
-const SPEED = 100.0
-const RUN_SPEED = 160.0  # Running speed (double the normal speed)
+const BASE_SPEED = 100.0
+const BASE_RUN_SPEED = 160.0
 const JUMP_VELOCITY = -350.0
 
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
+
+var speed_multiplier := 1.0  # Used for modifying speed externally
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -15,27 +17,16 @@ func _physics_process(delta: float) -> void:
 	if Input.is_action_just_pressed("jump") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
 
-	# Get input direction: -1, 0, 1
 	var direction := Input.get_axis("move_left", "move_right")
-	
-	# Check if Shift is pressed for running
 	var is_running = Input.is_action_pressed("run")
 
-	# Adjust speed based on whether Shift is held down
-	var current_speed :int
-	if is_running: 
-		current_speed = RUN_SPEED
-	else:
-		current_speed = SPEED
-	#var current_speed = is_running ? RUN_SPEED : SPEED
-	
-	# Flip the sprite based on direction
+	var current_speed: int = (BASE_RUN_SPEED if is_running else BASE_SPEED) * speed_multiplier
+
 	if direction > 0:
 		animated_sprite.flip_h = false
 	elif direction < 0:
 		animated_sprite.flip_h = true
-	
-	# Apply movement speed
+
 	if direction:
 		velocity.x = direction * current_speed
 	else:

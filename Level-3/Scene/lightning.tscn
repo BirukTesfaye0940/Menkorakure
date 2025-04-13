@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://dowgpip7irt1c"]
+[gd_scene load_steps=4 format=3 uid="uid://dowgpip7irt1c"]
 
 [ext_resource type="Script" uid="uid://c21iv126ki3at" path="res://script/lightning.gd" id="1_8u0he"]
 [ext_resource type="Texture2D" uid="uid://d0sihpeoi33v2" path="res://assets/sprites/flash.png" id="1_h8w5b"]
+[ext_resource type="AudioStream" uid="uid://c4vxcmprl465r" path="res://assets/sound-effects/075681_electric-shock-33018.wav" id="3_6nin5"]
 
 [node name="Lightning" type="Area2D"]
 scale = Vector2(0.4, 0.4)
@@ -14,5 +15,10 @@ texture = ExtResource("1_h8w5b")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 polygon = PackedVector2Array(0, -136, 56, -136, 16, -48, 64, -40, -56, 104, -24, 8, -72, 8)
+
+[node name="LightningSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_6nin5")
+volume_db = -34.666
+area_mask = 3
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

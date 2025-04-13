@@ -37,4 +37,6 @@ func _process(delta: float) -> void:
 
 func _on_body_entered(_body: Node2D) -> void:
 	print("Hit by Rock")
+	$"../RockCollison".play()
 	collision.emit(self)
+	call_deferred("queue_free")  # Safely remove the rock after collision

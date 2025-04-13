@@ -1,11 +1,57 @@
-[gd_scene format=3 uid="uid://dsak6rg4h2uv6"]
+[gd_scene load_steps=9 format=3 uid="uid://dsak6rg4h2uv6"]
+
+[ext_resource type="Script" uid="uid://cho0454r5aja0" path="res://script/mud_tile.gd" id="1_igu6g"]
+[ext_resource type="Texture2D" uid="uid://ca787u4hc326c" path="res://assets/sprites/world_tileset.png" id="2_4c03r"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_85xml"]
+atlas = ExtResource("2_4c03r")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ma8bn"]
+atlas = ExtResource("2_4c03r")
+region = Rect2(16, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8q24o"]
+atlas = ExtResource("2_4c03r")
+region = Rect2(16, 32, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yoilv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_85xml")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ma8bn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8q24o")
+}],
+"loop": true,
+"name": &"default",
+"speed": 0.1
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3hx06"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cor5r"]
+size = Vector2(14.5, 16)
 
 [node name="MudTile" type="AnimatableBody2D"]
+collision_mask = 2
+script = ExtResource("1_igu6g")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_yoilv")
+frame_progress = 0.0193046
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_3hx06")
 
 [node name="Area2D" type="Area2D" parent="."]
+collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, -8)
+shape = SubResource("RectangleShape2D_cor5r")

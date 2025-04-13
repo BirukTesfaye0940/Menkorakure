@@ -1,6 +1,7 @@
 extends Area2D
 
 func _on_body_entered(_body: Node2D) -> void:
+	$LightningSound.play()
 	Global.healthT -= 1
 	get_tree().call_group('CanvasLayer', 'set_health', Global.healthT)
 	

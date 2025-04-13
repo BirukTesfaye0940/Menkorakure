@@ -4,7 +4,7 @@ extends Area2D
 @onready var game_manager: Node = %GameManager
 @onready var label: Label = canvas_layer.get_node("MarginContainer2/MessageLabel")
 @onready var ores_collected_label: Label = canvas_layer.get_node("MarginContainer3/OresCollectedLabel")
-@onready var cutscene: VideoStreamPlayer = canvas_layer.get_node("CutscenePlayer")  # Reference to the Video Player
+@onready var cutscene: VideoStreamPlayer = canvas_layer.get_node("MarginContainer6/CutscenePlayer")  # Reference to the Video Player
 #@onready var ores_collected_label: Label = canvas_layer.get_node("OresCollectedLabel")  # Get the label inside it
 
 var player_in_area: bool = false

@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://dgvq1axo8sqqf"]
+[gd_scene load_steps=19 format=3 uid="uid://dgvq1axo8sqqf"]
 
 [ext_resource type="Script" uid="uid://c4k751ybl8mhx" path="res://script/level_three_two.gd" id="1_htv6e"]
 [ext_resource type="Texture2D" uid="uid://ca787u4hc326c" path="res://assets/sprites/world_tileset.png" id="1_hxvxq"]
@@ -13,6 +13,8 @@
 [ext_resource type="PackedScene" uid="uid://bt50l3k63ktv4" path="res://Scene/kill_zone.tscn" id="10_gy7bs"]
 [ext_resource type="PackedScene" uid="uid://dtrjm6m7syj4i" path="res://Scene/coin.tscn" id="12_eiuc8"]
 [ext_resource type="Script" uid="uid://dswmkrq5on52y" path="res://script/game_manager.gd" id="13_op6on"]
+[ext_resource type="AudioStream" uid="uid://ci5wj4dctl3yk" path="res://assets/sounds/explosion.wav" id="14_5k1g1"]
+[ext_resource type="AudioStream" uid="uid://bjccbcs2iiu48" path="res://assets/sound-effects/adventures-loop-music-226836.wav" id="15_n1gsr"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fcadn"]
 texture = ExtResource("1_hxvxq")
@@ -301,5 +303,12 @@ script = ExtResource("13_op6on")
 
 [node name="LevelTimer" type="Timer" parent="."]
 autostart = true
+
+[node name="RockCollison" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("14_5k1g1")
+
+[node name="BackgroundMusic" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("15_n1gsr")
+autoplay = true
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

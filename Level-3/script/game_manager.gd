@@ -2,6 +2,7 @@ extends Node
 
 @export var ores_collected := 0
 
+
 func add_point():
 	ores_collected += 1
 
@@ -21,3 +22,4 @@ func add_point():
 			get_tree().change_scene_to_file(level_complete_scene)
 		else:
 			get_tree().change_scene_to_file(next_scene)
+			

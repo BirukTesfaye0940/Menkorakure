@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bm7050smorc83"]
 
-[ext_resource type="VideoStream" path="res://assets/sprites/LevelComplete.ogv" id="1_xhg3f"]
+[ext_resource type="VideoStream" uid="uid://de70n0dktb5jc" path="res://assets/sprites/LevelComplete.ogv" id="1_xhg3f"]
 
 [node name="LevelComplete" type="Control"]
 layout_mode = 3
@@ -21,6 +21,10 @@ offset_right = 320.0
 offset_bottom = 180.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_constants/margin_left = 100
+theme_override_constants/margin_top = 100
+theme_override_constants/margin_right = 100
+theme_override_constants/margin_bottom = 100
 
 [node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="MarginContainer"]
 layout_mode = 2
