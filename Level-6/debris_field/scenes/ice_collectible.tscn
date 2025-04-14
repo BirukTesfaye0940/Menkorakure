@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://ccgrab4ofh4ms"]
+
+[ext_resource type="Script" uid="uid://do1q1y808p02b" path="res://debris_field/scripts/ice_collectible.gd" id="1_emyc0"]
+[ext_resource type="Texture2D" uid="uid://b41yjdueybuo3" path="res://debris_field/assets/ice1.png" id="2_nnqeo"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_oiseg"]
+radius = 1015.44
+
+[node name="IceCollectable" type="Area2D" groups=["ice"]]
+collision_layer = 2
+script = ExtResource("1_emyc0")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(3, 2)
+scale = Vector2(0.015, 0.015)
+texture = ExtResource("2_nnqeo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(7.00002, 10)
+scale = Vector2(0.015, 0.015)
+shape = SubResource("CircleShape2D_oiseg")

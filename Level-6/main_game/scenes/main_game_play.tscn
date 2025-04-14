@@ -1,0 +1,91 @@
+[gd_scene load_steps=10 format=3 uid="uid://qed3wypkcc2s"]
+
+[ext_resource type="PackedScene" uid="uid://bwsisa4mficrt" path="res://player/scenes/player.tscn" id="1_eg5v1"]
+[ext_resource type="PackedScene" uid="uid://bg7vfsttmmh3" path="res://health/scenes/health_bar.tscn" id="1_ktdyi"]
+[ext_resource type="PackedScene" uid="uid://48kbno3dl2w1" path="res://debris_field/scenes/debris_field.tscn" id="2_bgmuf"]
+[ext_resource type="Texture2D" uid="uid://cddnfbo3ol4q" path="res://background/assets/Nebula Blue.png" id="3_38vdp"]
+[ext_resource type="Script" uid="uid://dt5y1rndq2sws" path="res://background/scripts/background.gd" id="4_ktdyi"]
+[ext_resource type="PackedScene" uid="uid://c2a7dpwhxlt7y" path="res://main_game/scenes/game_start.tscn" id="7_vq4ug"]
+[ext_resource type="PackedScene" uid="uid://b2nlkp5mjwvax" path="res://main_game/scenes/game_over.tscn" id="8_sc1lp"]
+[ext_resource type="AudioStream" uid="uid://dlji3lxy2oof5" path="res://background/assets/let-the-games-begin-21858.mp3" id="8_vq4ug"]
+
+[sub_resource type="GDScript" id="GDScript_6s2pt"]
+script/source = "extends Node2D
+
+@onready var player: CharacterBody2D = $GameElements/Player
+@onready var health_bar: Control = $GameElements/HealthBar
+@onready var game_over: Control = $StartMenu/GameOver
+@onready var game_start: Control = $StartMenu/GameStart
+
+func _ready() -> void:
+	# Set initial visibility for UI elements
+	#get_tree().paused = true decouple the main script into game elements and ui elements to make sure not everything is pasue on game start menu
+	game_start.visible = true
+	health_bar.visible = false
+	if game_over:
+		game_over.visible = false
+	
+	# Connect the start_game signal (ensure the GameStart node defines this signal)
+	game_start.start_game.connect(_on_start_game)
+	
+	# Connect HealthManager signals if the node exists under Player.
+	var health_manager: HealthManager = player.get_node(\"HealthManager\")
+	if health_manager:
+		health_manager.health_changed.connect(health_bar.update_health)
+		health_manager.died.connect(_on_player_died)
+		health_bar.update_health(health_manager.current_health, health_manager.max_health)
+	else:
+		print(\"Error: HealthManager not found in Player\")
+
+func _on_start_game() -> void:
+	game_start.visible = false
+	health_bar.visible = true
+	# Unpause the game elements by unpausing the entire scene tree.
+	get_tree().paused = false
+
+func _on_player_died() -> void:
+	if game_over:
+		game_over.show_game_over()
+"
+
+[node name="MainGamePlay" type="Node2D"]
+script = SubResource("GDScript_6s2pt")
+
+[node name="GameElements" type="Node2D" parent="."]
+
+[node name="Player" parent="GameElements" instance=ExtResource("1_eg5v1")]
+position = Vector2(154, 67)
+
+[node name="Background" type="Sprite2D" parent="GameElements"]
+z_index = -1
+position = Vector2(4, 5)
+texture = ExtResource("3_38vdp")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 1152, 648)
+script = ExtResource("4_ktdyi")
+
+[node name="DebrisField" parent="GameElements" instance=ExtResource("2_bgmuf")]
+
+[node name="HealthBar" parent="GameElements" instance=ExtResource("1_ktdyi")]
+z_index = 1
+
+[node name="StartMenu" type="Node2D" parent="."]
+
+[node name="GameStart" parent="StartMenu" instance=ExtResource("7_vq4ug")]
+z_index = 10
+offset_left = 324.0
+offset_top = 211.0
+offset_right = 324.0
+offset_bottom = 211.0
+
+[node name="GameOver" parent="StartMenu" instance=ExtResource("8_sc1lp")]
+z_index = 10
+offset_left = -25.0
+offset_top = -9.0
+offset_right = -25.0
+offset_bottom = -9.0
+
+[node name="BackgroundMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_vq4ug")
+autoplay = true
