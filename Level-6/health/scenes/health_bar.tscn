@@ -10,10 +10,12 @@ script = ExtResource("1_4r5ob")
 
 [node name="HealthLabel" type="Label" parent="."]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
+offset_left = -11.0
+offset_top = -3.0
+offset_right = 29.0
+offset_bottom = 20.0
 
 [node name="HealthFrame" type="Sprite2D" parent="."]
 position = Vector2(84.25, 32.375)
-scale = Vector2(0.759375, 3.90625)
+scale = Vector2(0.757, 3.9)
 texture = ExtResource("2_ygsi5")
