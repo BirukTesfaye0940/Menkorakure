@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=3 uid="uid://xnl3mjonyyta"]
+
+[ext_resource type="Script" uid="uid://ce3od21wt6wd6" path="res://scripts/failure_screen.gd" id="1_oyg8w"]
+
+[node name="FailureScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_oyg8w")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 531.0
+offset_top = 252.0
+offset_right = 623.0
+offset_bottom = 275.0
+text = "Game Over!"
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 551.0
+offset_top = 294.0
+offset_right = 601.0
+offset_bottom = 325.0
+text = "Retry"

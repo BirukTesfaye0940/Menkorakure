@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://bpromvdi1st1n"]
+
+[ext_resource type="Texture2D" uid="uid://duy33i5080c5c" path="res://background/assets/space_background.png" id="1_r61m2"]
+[ext_resource type="Script" uid="uid://cfvr8uq6gbthd" path="res://misc/scripts/sprite_2d.gd" id="2_5ttag"]
+
+[node name="Background" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_r61m2")
+region_enabled = true
+script = ExtResource("2_5ttag")

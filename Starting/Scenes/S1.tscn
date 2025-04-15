@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://dvy7h2ln0b5jt"]
 
 [ext_resource type="Script" uid="uid://c66cnmo583pxc" path="res://Starting/Scripts/S1.gd" id="1_ifiuv"]
-[ext_resource type="VideoStream" path="res://Starting/Assets/Intro.ogv" id="2_xquh6"]
+[ext_resource type="VideoStream" uid="uid://c183b8ycnrsjh" path="res://Starting/Assets/Intro.ogv" id="2_xquh6"]
 [ext_resource type="AudioStream" uid="uid://dxcvkvw8jp5ir" path="res://Starting/Assets/Music/epic-suspense-tension-background-music-302980.mp3" id="4_ifiuv"]
 
 [node name="S1" type="Node2D"]

@@ -1,9 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://v47y138q10q8"]
+[gd_scene load_steps=7 format=3 uid="uid://v47y138q10q8"]
 
 [ext_resource type="Script" uid="uid://bflvva2ryxv1q" path="res://Starting/Scripts/S3L.gd" id="1_13vrc"]
 [ext_resource type="Texture2D" uid="uid://b8d6cei0a7f6" path="res://Starting/Assets/Pictures/Screenshot 2025-04-07 084010.png" id="1_ybkqy"]
 [ext_resource type="Texture2D" uid="uid://c3e7yrbf5g5go" path="res://Starting/Assets/Pictures/Screenshot 2025-04-07 084027.png" id="2_13vrc"]
-[ext_resource type="FontFile" uid="uid://cuxqmaciptuwb" path="res://Starting/Assets/Fonts/Super Lobster.ttf" id="3_8anr8"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ltjee"]
 bg_color = Color(0.87451, 0.847059, 0.745098, 1)
@@ -48,7 +47,6 @@ offset_left = -3.0
 offset_top = 285.0
 offset_right = 225.0
 offset_bottom = 347.0
-theme_override_fonts/font = ExtResource("3_8anr8")
 theme_override_font_sizes/font_size = 40
 text = "BACK"
 
@@ -77,14 +75,12 @@ theme_override_constants/separation = 8
 [node name="Button" type="Button" parent="Panel3/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_fonts/font = ExtResource("3_8anr8")
 theme_override_font_sizes/font_size = 34
 text = "LEVEL ONE"
 
 [node name="Button4" type="Button" parent="Panel3/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_fonts/font = ExtResource("3_8anr8")
 theme_override_font_sizes/font_size = 34
 text = "LEVEL TWO
 "
@@ -92,7 +88,6 @@ text = "LEVEL TWO
 [node name="Button5" type="Button" parent="Panel3/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_fonts/font = ExtResource("3_8anr8")
 theme_override_font_sizes/font_size = 34
 text = "LEVEL THREE
 "
@@ -100,14 +95,12 @@ text = "LEVEL THREE
 [node name="Button6" type="Button" parent="Panel3/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_fonts/font = ExtResource("3_8anr8")
 theme_override_font_sizes/font_size = 34
 text = "LEVEL FOUR"
 
 [node name="Button2" type="Button" parent="Panel3/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_fonts/font = ExtResource("3_8anr8")
 theme_override_font_sizes/font_size = 34
 text = "LEVEL FIVE
 "
@@ -115,7 +108,6 @@ text = "LEVEL FIVE
 [node name="Button3" type="Button" parent="Panel3/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_fonts/font = ExtResource("3_8anr8")
 theme_override_font_sizes/font_size = 34
 text = "LEVEL SIX"
 
@@ -125,7 +117,6 @@ offset_top = 66.0
 offset_right = 718.0
 offset_bottom = 133.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("3_8anr8")
 theme_override_font_sizes/font_size = 58
 text = "LEVELS"
 horizontal_alignment = 1
@@ -134,3 +125,4 @@ vertical_alignment = 1
 [connection signal="pressed" from="TextureRect2/Button" to="." method="_on_back_button_pressed"]
 [connection signal="pressed" from="Panel3/VBoxContainer/Button" to="." method="_on_level1_pressed"]
 [connection signal="pressed" from="Panel3/VBoxContainer/Button2" to="." method="_on_level_5_pressed"]
+[connection signal="pressed" from="Panel3/VBoxContainer/Button3" to="." method="_on_level_6_pressed"]

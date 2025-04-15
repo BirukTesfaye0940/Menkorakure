@@ -1,0 +1,36 @@
+[gd_scene load_steps=6 format=3 uid="uid://bwsisa4mficrt"]
+
+[ext_resource type="Script" uid="uid://ckgn40pk6dnq5" path="res://player/scripts/player.gd" id="1_g2els"]
+[ext_resource type="Texture2D" uid="uid://dk0etjiics3rp" path="res://debris_field/assets/FSN1.png" id="2_qhqgy"]
+[ext_resource type="Script" uid="uid://gk35q8tkafv4" path="res://health/scripts/health.gd" id="4_dqkch"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3vyb7"]
+size = Vector2(224.25, 69)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qhqgy"]
+size = Vector2(318, 160)
+
+[node name="Player" type="CharacterBody2D" groups=["player"]]
+scale = Vector2(0.5, 0.5)
+collision_mask = 3
+script = ExtResource("1_g2els")
+
+[node name="ShipSprite" type="Sprite2D" parent="."]
+rotation = 1.5708
+texture = ExtResource("2_qhqgy")
+
+[node name="Hitbox" type="CollisionShape2D" parent="."]
+position = Vector2(-7.125, -1.5)
+shape = SubResource("RectangleShape2D_3vyb7")
+
+[node name="IceDetector" type="Area2D" parent="."]
+collision_layer = 16
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="IceDetector"]
+position = Vector2(-5, 2)
+shape = SubResource("RectangleShape2D_qhqgy")
+
+[node name="HealthManager" type="Node" parent="."]
+script = ExtResource("4_dqkch")
+max_health = 30.0

@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://48kbno3dl2w1"]
+
+[ext_resource type="Script" uid="uid://bo1xm046qw5ve" path="res://debris_field/scripts/debris_field.gd" id="1_f7quy"]
+
+[node name="DebrisField" type="Node2D"]
+script = ExtResource("1_f7quy")
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

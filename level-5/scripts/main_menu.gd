@@ -5,7 +5,7 @@ func _ready():
 	$ExitButton.pressed.connect(_on_exit_button_pressed)
 
 func _on_play_button_pressed():
-	get_tree().change_scene_to_file("res://Level-5/scenes/game.tscn")
+	get_tree().change_scene_to_file("res://Level-6/main_game/scenes/opining_cutscene.tscn")
 
 func _on_exit_button_pressed():
 	get_tree().change_scene_to_file("res://Starting/Scenes/S3L.tscn")
