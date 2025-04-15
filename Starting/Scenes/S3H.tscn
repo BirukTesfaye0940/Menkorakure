@@ -1,0 +1,80 @@
+[gd_scene load_steps=6 format=3 uid="uid://cbqj4lj7m6ixn"]
+
+[ext_resource type="Script" uid="uid://gv4xsq1it7b" path="res://Starting/Scripts/S3H.gd" id="1_slaja"]
+[ext_resource type="FontFile" uid="uid://cuxqmaciptuwb" path="res://Starting/Assets/Fonts/Super Lobster.ttf" id="2_q64c3"]
+[ext_resource type="Texture2D" uid="uid://b8d6cei0a7f6" path="res://Starting/Assets/Pictures/Screenshot 2025-04-07 084010.png" id="3_843l6"]
+[ext_resource type="Texture2D" uid="uid://c3e7yrbf5g5go" path="res://Starting/Assets/Pictures/Screenshot 2025-04-07 084027.png" id="4_hwo6u"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vq4l7"]
+bg_color = Color(0.87451, 0.847059, 0.745098, 1)
+
+[node name="S3H" type="Node2D"]
+script = ExtResource("1_slaja")
+
+[node name="Panel" type="Panel" parent="."]
+offset_right = 1156.0
+offset_bottom = 648.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_vq4l7")
+
+[node name="HELP" type="Label" parent="Panel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -177.0
+offset_top = 81.0
+offset_right = 156.0
+offset_bottom = 153.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0.909804, 1)
+theme_override_fonts/font = ExtResource("2_q64c3")
+theme_override_font_sizes/font_size = 61
+text = "HELP"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 114.0
+offset_top = 137.0
+offset_right = 1046.0
+offset_bottom = 637.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_q64c3")
+theme_override_font_sizes/font_size = 45
+text = "* LEVEL ONE RULES
+* LEVEL ONE RULES
+* LEVEL ONE RULES
+* LEVEL ONE RULES
+* LEVEL ONE RULES
+* LEVEL ONE RULES"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="Panel"]
+layout_mode = 0
+offset_left = 34.0
+offset_top = 179.0
+offset_right = 307.0
+offset_bottom = 646.0
+texture = ExtResource("3_843l6")
+
+[node name="TextureRect2" type="TextureRect" parent="Panel"]
+layout_mode = 0
+offset_left = 871.0
+offset_top = 220.0
+offset_right = 1154.0
+offset_bottom = 646.0
+texture = ExtResource("4_hwo6u")
+
+[node name="Button" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 875.0
+offset_top = 566.0
+offset_right = 1156.0
+offset_bottom = 645.0
+theme_override_fonts/font = ExtResource("2_q64c3")
+theme_override_font_sizes/font_size = 45
+text = "BACK"
+
+[connection signal="pressed" from="Panel/Button" to="." method="_on_back_button_pressed"]

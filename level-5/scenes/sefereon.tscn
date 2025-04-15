@@ -1,0 +1,53 @@
+[gd_scene load_steps=8 format=3 uid="uid://b8cywvww5qoqg"]
+
+[ext_resource type="Script" uid="uid://cn7h434r5vwoo" path="res://scripts/sefereon.gd" id="1_jo6m3"]
+[ext_resource type="Texture2D" uid="uid://dvhjbmjlo1x6i" path="res://assets/sprites/Ores.png" id="1_o0ygw"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jo6m3"]
+atlas = ExtResource("1_o0ygw")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_smvip"]
+atlas = ExtResource("1_o0ygw")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nybdl"]
+atlas = ExtResource("1_o0ygw")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qbdk8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jo6m3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_smvip")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nybdl")
+}],
+"loop": true,
+"name": &"default",
+"speed": 8.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_54jrr"]
+radius = 5.0
+
+[node name="Sefereon" type="Area2D"]
+collision_mask = 2
+script = ExtResource("1_jo6m3")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0.500001, -0.5)
+scale = Vector2(0.6875, 0.6875)
+sprite_frames = SubResource("SpriteFrames_qbdk8")
+autoplay = "default"
+frame_progress = 0.0457935
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 0)
+shape = SubResource("CircleShape2D_54jrr")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -1,0 +1,52 @@
+[gd_scene load_steps=3 format=3 uid="uid://ceydmsfrp0sbj"]
+
+[ext_resource type="Script" uid="uid://1xfto2vbrjuc" path="res://level-5/scripts/main_menu.gd" id="1_2e6uq"]
+[ext_resource type="Texture2D" uid="uid://b7mjfx2i2layh" path="res://Level1/assets/level1 menu background.jpg" id="1_q10ce"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_2e6uq")
+
+[node name="Background" type="TextureRect" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -27.0
+offset_top = -73.0
+offset_right = 1002.0
+offset_bottom = 764.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_q10ce")
+
+[node name="TitleLable" type="Label" parent="."]
+layout_mode = 0
+offset_left = 400.0
+offset_top = 300.0
+offset_right = 560.0
+offset_bottom = 367.0
+theme_override_colors/font_color = Color(0.835294, 0.0313726, 0.0784314, 1)
+theme_override_font_sizes/font_size = 48
+text = "Level 5"
+
+[node name="PlayButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 400.0
+offset_top = 400.0
+offset_right = 600.0
+offset_bottom = 450.0
+text = "Play"
+
+[node name="ExitButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 400.0
+offset_top = 500.0
+offset_right = 600.0
+offset_bottom = 550.0
+text = "Exit
+"

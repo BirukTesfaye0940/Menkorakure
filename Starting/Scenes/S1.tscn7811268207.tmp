@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://dvy7h2ln0b5jt"]
+
+[ext_resource type="Script" uid="uid://c66cnmo583pxc" path="res://Starting/Scripts/S1.gd" id="1_ifiuv"]
+[ext_resource type="VideoStream" uid="uid://62qrn417c43d" path="res://Starting/Assets/Intro.ogv" id="2_xquh6"]
+[ext_resource type="AudioStream" uid="uid://dxcvkvw8jp5ir" path="res://Starting/Assets/Music/epic-suspense-tension-background-music-302980.mp3" id="4_ifiuv"]
+
+[node name="S1" type="Node2D"]
+script = ExtResource("1_ifiuv")
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
+offset_left = -956.0
+offset_top = -534.0
+offset_right = 964.0
+offset_bottom = 546.0
+stream = ExtResource("2_xquh6")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(0.6, 0.6)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_ifiuv")
+autoplay = true
+
+[connection signal="finished" from="VideoStreamPlayer" to="." method="_on_video_stream_player_finished"]

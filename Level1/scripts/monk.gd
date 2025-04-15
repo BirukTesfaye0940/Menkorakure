@@ -12,7 +12,7 @@ func _ready():
 
 func interact():
 	# Show the Monk's dialogue
-	dialogue_label.text = "You can find the manuscripts and the hidden chamber in the first room."
+	dialogue_label.text = "You can find  the hidden chamber in the maze room."
 	dialogue_label.visible = true
 	# Hide the prompt while the dialogue is shown
 	prompt_label.visible = false

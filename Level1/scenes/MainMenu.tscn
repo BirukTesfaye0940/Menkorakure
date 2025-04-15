@@ -1,11 +1,26 @@
-[gd_scene load_steps=2 format=3 uid="uid://cgugtpsg6qd5r"]
+[gd_scene load_steps=3 format=3 uid="uid://cgugtpsg6qd5r"]
 
 [ext_resource type="Script" uid="uid://ba3ie5kkyid26" path="res://Level1/scripts/main_menu.gd" id="1_vgkdi"]
+[ext_resource type="Texture2D" uid="uid://b7mjfx2i2layh" path="res://Level1/assets/level1 menu background.jpg" id="2_v4t3j"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_vgkdi")
+
+[node name="Background" type="TextureRect" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -27.0
+offset_top = -73.0
+offset_right = 1002.0
+offset_bottom = 764.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_v4t3j")
 
 [node name="TitleLable" type="Label" parent="."]
 layout_mode = 0

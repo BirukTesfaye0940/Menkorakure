@@ -1,0 +1,84 @@
+[gd_scene load_steps=7 format=3 uid="uid://dxvbtlikyp2oe"]
+
+[ext_resource type="Texture2D" uid="uid://qrouv2y2ekts" path="res://Starting/Assets/Pictures/Screenshot 2025-04-15 071935.png" id="1_bqyw6"]
+[ext_resource type="Script" path="res://Starting/MainMenu.gd" id="1_fkv2w"]
+[ext_resource type="AudioStream" uid="uid://bbo0d2goqlvko" path="res://Starting/Assets/Music/nomadic-chaos-orchestral-beat-253185.mp3" id="3_fkv2w"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_eh2g4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_o1xwd"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_q3n52"]
+
+[node name="MainMenu" type="Node2D"]
+script = ExtResource("1_fkv2w")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = -671.0
+offset_top = -375.0
+offset_right = 688.0
+offset_bottom = 391.0
+texture = ExtResource("1_bqyw6")
+
+[node name="Button" type="Button" parent="TextureRect"]
+layout_mode = 0
+offset_left = 575.0
+offset_top = 264.0
+offset_right = 776.0
+offset_bottom = 334.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_eh2g4")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_o1xwd")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_q3n52")
+
+[node name="Button2" type="Button" parent="TextureRect"]
+layout_mode = 0
+offset_left = 569.0
+offset_top = 351.0
+offset_right = 768.0
+offset_bottom = 415.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_eh2g4")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_o1xwd")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_q3n52")
+
+[node name="Button3" type="Button" parent="TextureRect"]
+layout_mode = 0
+offset_left = 580.0
+offset_top = 434.0
+offset_right = 771.0
+offset_bottom = 500.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_eh2g4")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_o1xwd")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_q3n52")
+
+[node name="Button4" type="Button" parent="TextureRect"]
+layout_mode = 0
+offset_left = 581.0
+offset_top = 519.0
+offset_right = 765.0
+offset_bottom = 575.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_eh2g4")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_o1xwd")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_q3n52")
+
+[node name="Button5" type="Button" parent="TextureRect"]
+layout_mode = 0
+offset_left = 592.0
+offset_top = 604.0
+offset_right = 755.0
+offset_bottom = 668.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_eh2g4")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_o1xwd")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_q3n52")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(0.85, 0.85)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_fkv2w")
+autoplay = true
+
+[connection signal="pressed" from="TextureRect/Button" to="." method="_on_newGame_pressed"]
+[connection signal="pressed" from="TextureRect/Button2" to="." method="_on_Levels_pressed"]
+[connection signal="pressed" from="TextureRect/Button3" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="TextureRect/Button4" to="." method="_on_help_pressed"]
+[connection signal="pressed" from="TextureRect/Button5" to="." method="_on_quit_pressed"]

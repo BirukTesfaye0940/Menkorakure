@@ -1,0 +1,162 @@
+[gd_scene load_steps=12 format=3 uid="uid://dvccykxb2qm0v"]
+
+[ext_resource type="Texture2D" uid="uid://dvhjbmjlo1x6i" path="res://assets/sprites/Ores.png" id="1_fpoof"]
+[ext_resource type="Script" uid="uid://bbq6g0uqi8nw8" path="res://scripts/anorite.gd" id="1_luu4g"]
+[ext_resource type="AudioStream" uid="uid://qqvjti0atg1d" path="res://assets/sounds/coin.wav" id="3_uxonx"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_luu4g"]
+atlas = ExtResource("1_fpoof")
+region = Rect2(192, 64, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uxonx"]
+atlas = ExtResource("1_fpoof")
+region = Rect2(208, 64, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_crnrc"]
+atlas = ExtResource("1_fpoof")
+region = Rect2(224, 64, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_prtt8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_luu4g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uxonx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_crnrc")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_lj8cg"]
+radius = 4.0
+
+[sub_resource type="Animation" id="Animation_prtt8"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Pickupsound:playing")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_crnrc"]
+resource_name = "pickup animation"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.0333334),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.0666667),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Pickupsound:playing")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.2),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/3/type = "method"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath(".")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.966667),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"queue_free"
+}]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_lj8cg"]
+_data = {
+&"RESET": SubResource("Animation_prtt8"),
+&"pickup animation": SubResource("Animation_crnrc")
+}
+
+[node name="Anorite" type="Area2D"]
+collision_mask = 2
+script = ExtResource("1_luu4g")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(3.5, 3.5)
+scale = Vector2(0.5625, 0.5625)
+sprite_frames = SubResource("SpriteFrames_prtt8")
+autoplay = "default"
+frame = 2
+frame_progress = 0.72435
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(3, 4)
+shape = SubResource("CircleShape2D_lj8cg")
+
+[node name="Pickupsound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_uxonx")
+volume_db = -4.182
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_lj8cg")
+}
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://k04w8jj3ydma"]
 
 [ext_resource type="Script" uid="uid://bc35eop5odel2" path="res://Level1/scripts/monk.gd" id="1_3wewt"]
-[ext_resource type="Texture2D" uid="uid://dimjl5b6rabr" path="res://Level1/assets/Jump (32x32).png" id="1_d5iiv"]
+[ext_resource type="Texture2D" uid="uid://c0vtpnn87ugu3" path="res://Level1/assets/Monk Character watching forward.png" id="2_3wewt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u7p20"]
 size = Vector2(39, 49)
@@ -13,9 +13,9 @@ radius = 31.55
 script = ExtResource("1_3wewt")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(13, 10)
-scale = Vector2(1.625, 1.625)
-texture = ExtResource("1_d5iiv")
+position = Vector2(13.5, 4)
+scale = Vector2(0.546875, 0.604167)
+texture = ExtResource("2_3wewt")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(14.5, 8.5)
