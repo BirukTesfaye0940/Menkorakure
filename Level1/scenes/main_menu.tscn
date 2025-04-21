@@ -1,0 +1,140 @@
+[gd_scene load_steps=19 format=3 uid="uid://dqsg0gkl7u8tt"]
+
+[ext_resource type="Texture2D" uid="uid://d36a5l5eyg0fa" path="res://Level1/newAssets/Lalibela.png" id="1_06t4h"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7vrkn"]
+texture = ExtResource("1_06t4h")
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_fu7sn"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nlkkf"]
+texture = SubResource("CompressedTexture2D_fu7sn")
+region_rect = Rect2(835, 244, 222, 86)
+modulate_color = Color(0.627635, 0.627635, 0.627635, 1)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_qe12f"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8qtwp"]
+texture = SubResource("CompressedTexture2D_qe12f")
+region_rect = Rect2(835, 244, 222, 86)
+modulate_color = Color(0.472025, 0.472025, 0.472025, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fu7sn"]
+region_rect = Rect2(835, 244, 222, 86)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_dy7ct"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0o4t1"]
+texture = SubResource("CompressedTexture2D_dy7ct")
+region_rect = Rect2(835, 336, 222, 86)
+modulate_color = Color(0.627635, 0.627635, 0.627635, 1)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_0k4wn"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_j5v2v"]
+texture = SubResource("CompressedTexture2D_0k4wn")
+region_rect = Rect2(835, 336, 222, 86)
+modulate_color = Color(0.472025, 0.472025, 0.472025, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jix8l"]
+region_rect = Rect2(835, 336, 222, 86)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_iotk1"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_w44g7"]
+texture = SubResource("CompressedTexture2D_iotk1")
+region_rect = Rect2(20, 49, 197, 87)
+modulate_color = Color(0.627635, 0.627635, 0.627635, 1)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_cm266"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_g8g3n"]
+texture = SubResource("CompressedTexture2D_cm266")
+region_rect = Rect2(20, 49, 197, 87)
+modulate_color = Color(0.470588, 0.470588, 0.470588, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_glbon"]
+region_rect = Rect2(20, 49, 197, 87)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jix8l"]
+
+[node name="mainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -508.0
+offset_top = -509.0
+offset_right = 516.0
+offset_bottom = 512.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_7vrkn")
+
+[node name="Button1" type="Button" parent="."]
+layout_mode = 2
+offset_left = -253.0
+offset_top = -95.0
+offset_right = 287.0
+offset_bottom = -26.0
+scale = Vector2(0.988069, 1.77496)
+size_flags_horizontal = 5
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+theme_override_styles/hover = SubResource("StyleBoxTexture_nlkkf")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_8qtwp")
+theme_override_styles/normal = SubResource("StyleBoxTexture_fu7sn")
+
+[node name="Button2" type="Button" parent="."]
+layout_mode = 2
+offset_left = -249.0
+offset_top = 37.0
+offset_right = 291.0
+offset_bottom = 106.0
+scale = Vector2(0.961698, 1.48953)
+size_flags_horizontal = 5
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+theme_override_styles/hover = SubResource("StyleBoxTexture_0o4t1")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_j5v2v")
+theme_override_styles/normal = SubResource("StyleBoxTexture_jix8l")
+
+[node name="Button3" type="Button" parent="."]
+layout_mode = 2
+offset_left = -255.0
+offset_top = 164.0
+offset_right = 285.0
+offset_bottom = 233.0
+scale = Vector2(1, 1.4)
+size_flags_horizontal = 5
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+theme_override_styles/hover = SubResource("StyleBoxTexture_w44g7")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_g8g3n")
+theme_override_styles/normal = SubResource("StyleBoxTexture_glbon")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = -304.0
+offset_top = -222.0
+offset_right = 1366.0
+offset_bottom = -111.0
+rotation = -0.310571
+scale = Vector2(0.360207, 0.659924)
+pivot_offset = Vector2(20.5714, -3.28119)
+theme_override_font_sizes/font_size = 90
+theme_override_styles/normal = SubResource("StyleBoxEmpty_jix8l")
+text = "             Time run out try again"

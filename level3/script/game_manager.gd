@@ -12,6 +12,8 @@ func add_point():
 		var next_scene := "res://level3/Scene/level_three_two.tscn"
 		var level_complete_scene := "res://level3/Scene/level_complete.tscn"
 
+
+
 		# If this is the first time, store the current gameplay scene
 		if Global.current_gameplay_scene == "":
 			Global.current_gameplay_scene = get_tree().current_scene.scene_file_path

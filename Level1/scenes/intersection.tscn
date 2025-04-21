@@ -1,0 +1,56 @@
+[gd_scene load_steps=7 format=3 uid="uid://b3of7hkbm1tsv"]
+
+[ext_resource type="Script" uid="uid://dxbyjadvgj4dk" path="res://Level1/scenes/intersection.gd" id="1_omokr"]
+[ext_resource type="Texture2D" uid="uid://cr10sjyvr3hib" path="res://Level1/assets/maze parts/Dungeon_brick_wall_purple.png.png" id="1_yecr2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yd7ld"]
+size = Vector2(145.5, 485)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yecr2"]
+size = Vector2(54, 304)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_omokr"]
+size = Vector2(60.125, 243.75)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hh46v"]
+size = Vector2(145, 482)
+
+[node name="Intersection" type="Area2D"]
+script = ExtResource("1_omokr")
+
+[node name="IntersectionArea" type="Area2D" parent="."]
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="IntersectionArea"]
+position = Vector2(-453, 8)
+shape = SubResource("RectangleShape2D_yd7ld")
+
+[node name="stair1Barrier" type="StaticBody2D" parent="."]
+position = Vector2(-1, -350)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="stair1Barrier"]
+position = Vector2(13, 207)
+shape = SubResource("RectangleShape2D_yecr2")
+
+[node name="Sprite2D" type="Sprite2D" parent="stair1Barrier"]
+position = Vector2(16, 209.875)
+scale = Vector2(0.0322917, 0.290509)
+texture = ExtResource("1_yecr2")
+
+[node name="stair2Barrier" type="StaticBody2D" parent="."]
+position = Vector2(103, 425)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="stair2Barrier"]
+position = Vector2(-84.0625, -217.875)
+shape = SubResource("RectangleShape2D_omokr")
+
+[node name="Sprite2D" type="Sprite2D" parent="stair2Barrier"]
+position = Vector2(-84.125, -218.875)
+scale = Vector2(0.0324219, 0.225694)
+texture = ExtResource("1_yecr2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-309, 6)
+shape = SubResource("RectangleShape2D_hh46v")
+
+[connection signal="body_entered" from="IntersectionArea" to="." method="_on_body_entered"]

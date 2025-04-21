@@ -1,0 +1,53 @@
+[gd_scene load_steps=3 format=3 uid="uid://btyykxo4gtd54"]
+
+[ext_resource type="Script" uid="uid://b0nsxfybee7wp" path="res://level2/script/ring_puzzle.gd" id="1_ohpek"]
+[ext_resource type="Texture2D" uid="uid://bt6dfsoxx60ha" path="res://level2/newAssets/champer.jpg" id="2_a8qj2"]
+
+[node name="RingPuzzle" type="Node2D"]
+script = ExtResource("1_ohpek")
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(500, 300)
+texture = ExtResource("2_a8qj2")
+
+[node name="OuterRing" type="Node2D" parent="."]
+position = Vector2(512, 300)
+
+[node name="MiddleRing" type="Node2D" parent="."]
+position = Vector2(512, 300)
+
+[node name="InnerRing" type="Node2D" parent="."]
+position = Vector2(512, 300)
+
+[node name="RingBorders" type="Node2D" parent="."]
+position = Vector2(512, 300)
+
+[node name="OuterBorder" type="Line2D" parent="RingBorders"]
+
+[node name="MiddleBorder" type="Line2D" parent="RingBorders"]
+points = PackedVector2Array(-19, -85)
+
+[node name="InnerBorder" type="Line2D" parent="RingBorders"]
+
+[node name="ConfirmButton" type="Button" parent="."]
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="InstructionLabel" type="Label" parent="."]
+custom_minimum_size = Vector2(5, 0)
+offset_right = 40.0
+offset_bottom = 23.0
+text = "
+	How to Play:
+	1. Rotate the rings using:
+	   - Mouse: Click and drag rings
+	   - Keyboard: 
+		 Q/W - Outer Ring
+		 A/S - Middle Ring
+		 Z/X - Inner Ring
+	2. Align symbols in diagona
+l patterns
+	3. Click Confirm 
+to check your answer
+	4. Find all four combinations
+ to solve the puzzle!"

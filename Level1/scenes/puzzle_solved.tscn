@@ -1,0 +1,144 @@
+[gd_scene load_steps=20 format=3 uid="uid://dwblhgnm6xgj"]
+
+[ext_resource type="Texture2D" uid="uid://d36a5l5eyg0fa" path="res://Level1/newAssets/Lalibela.png" id="1_1o26p"]
+[ext_resource type="Texture2D" uid="uid://kgc8g2jwubej" path="res://Level1/newAssets/UI collection + HINT.png" id="2_gn44a"]
+[ext_resource type="FontFile" uid="uid://da7w7pbgdfbep" path="res://Level1/Fonts/Montreal-Bold.ttf" id="3_68bn1"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7vrkn"]
+texture = ExtResource("1_1o26p")
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_gn44a"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_68bn1"]
+texture = SubResource("CompressedTexture2D_gn44a")
+region_rect = Rect2(277, 342, 222, 86)
+modulate_color = Color(0.627451, 0.627451, 0.627451, 1)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_qqhc1"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_s8j72"]
+texture = SubResource("CompressedTexture2D_qqhc1")
+region_rect = Rect2(277, 342, 222, 86)
+modulate_color = Color(0.470076, 0.470076, 0.470076, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qqhc1"]
+texture = ExtResource("2_gn44a")
+region_rect = Rect2(277, 342, 222, 86)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_68bn1"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_yn3a3"]
+texture = SubResource("CompressedTexture2D_68bn1")
+region_rect = Rect2(835, 336, 222, 86)
+modulate_color = Color(0.625597, 0.625597, 0.625597, 1)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_0e1o8"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gjt4k"]
+texture = SubResource("CompressedTexture2D_0e1o8")
+region_rect = Rect2(835, 336, 222, 86)
+modulate_color = Color(0.470076, 0.470076, 0.470076, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0seaw"]
+texture = ExtResource("2_gn44a")
+region_rect = Rect2(835, 336, 222, 86)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_s8j72"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0e1o8"]
+texture = SubResource("CompressedTexture2D_s8j72")
+region_rect = Rect2(20, 49, 197, 87)
+modulate_color = Color(0.627451, 0.627451, 0.627451, 1)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_gjt4k"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_c44li"]
+texture = SubResource("CompressedTexture2D_gjt4k")
+region_rect = Rect2(20, 49, 197, 87)
+modulate_color = Color(0.470588, 0.470588, 0.470588, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ccaw0"]
+texture = ExtResource("2_gn44a")
+region_rect = Rect2(20, 49, 197, 87)
+
+[node name="puzzleSolved" type="Control"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -508.0
+offset_top = -507.0
+offset_right = -508.0
+offset_bottom = -507.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -5.0
+offset_top = -1.0
+offset_right = 1019.0
+offset_bottom = 1020.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_7vrkn")
+
+[node name="newLevel" type="Button" parent="."]
+layout_mode = 2
+offset_left = 232.0
+offset_top = 403.0
+offset_right = 783.0
+offset_bottom = 523.0
+size_flags_horizontal = 5
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+theme_override_styles/hover = SubResource("StyleBoxTexture_68bn1")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_s8j72")
+theme_override_styles/normal = SubResource("StyleBoxTexture_qqhc1")
+
+[node name="startLevel" type="Button" parent="."]
+layout_mode = 2
+offset_left = 239.0
+offset_top = 534.0
+offset_right = 779.0
+offset_bottom = 639.0
+size_flags_horizontal = 5
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+theme_override_styles/hover = SubResource("StyleBoxTexture_yn3a3")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_gjt4k")
+theme_override_styles/normal = SubResource("StyleBoxTexture_0seaw")
+
+[node name="exitGame" type="Button" parent="."]
+layout_mode = 2
+offset_left = 238.0
+offset_top = 646.0
+offset_right = 778.0
+offset_bottom = 758.0
+scale = Vector2(1, 0.840001)
+size_flags_horizontal = 5
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+theme_override_styles/hover = SubResource("StyleBoxTexture_0e1o8")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_c44li")
+theme_override_styles/normal = SubResource("StyleBoxTexture_ccaw0")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 53.0
+offset_top = 351.0
+offset_right = 1723.0
+offset_bottom = 437.0
+rotation = -0.328215
+scale = Vector2(0.526381, 0.896287)
+theme_override_fonts/font = ExtResource("3_68bn1")
+theme_override_font_sizes/font_size = 70
+text = " Congradulations you have completed the level"

@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://s3oml38tnkdo"]
+
+[ext_resource type="Script" uid="uid://dby262yvhpl4k" path="res://Level1/scripts/engineer.gd" id="1_7wvsm"]
+[ext_resource type="Texture2D" uid="uid://dumu06th73bb2" path="res://Level1/assets/Male Character Walking#2.png" id="3_4vxvs"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7wvsm"]
+size = Vector2(44, 57)
+
+[node name="Engineer" type="CharacterBody2D"]
+script = ExtResource("1_7wvsm")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(17.5, 15)
+scale = Vector2(0.546875, 0.604167)
+texture = ExtResource("3_4vxvs")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(15, 12.5)
+shape = SubResource("RectangleShape2D_7wvsm")
