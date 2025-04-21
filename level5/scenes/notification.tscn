@@ -1,0 +1,40 @@
+[gd_scene load_steps=5 format=3 uid="uid://p3rbttit118s"]
+
+[ext_resource type="Script" uid="uid://x0spxbw2bk1g" path="res://level5/scripts/notification.gd" id="1_a8rcd"]
+[ext_resource type="Texture2D" uid="uid://tagqh538wcm5" path="res://level5/assets/sprites/panel-removebg-preview.png" id="2_j6hwb"]
+
+[sub_resource type="Theme" id="Theme_a8rcd"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_mfwk2"]
+texture = ExtResource("2_j6hwb")
+
+[node name="Notification" type="CanvasLayer"]
+layer = 5
+script = ExtResource("1_a8rcd")
+
+[node name="Panel" type="Panel" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -211.0
+offset_bottom = 60.0
+grow_horizontal = 0
+theme = SubResource("Theme_a8rcd")
+theme_override_styles/panel = SubResource("StyleBoxTexture_mfwk2")
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 28.0
+offset_top = 9.0
+offset_right = 186.0
+offset_bottom = 50.0
+theme_override_colors/font_color = Color(0.767602, 0.668467, 0.93387, 1)
+theme_override_colors/font_shadow_color = Color(0.0976496, 0.403511, 0.339265, 1)
+text = "PLACEHOLDER"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Timer" type="Timer" parent="Panel"]
+wait_time = 3.0
+one_shot = true

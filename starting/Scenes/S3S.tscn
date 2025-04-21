@@ -1,0 +1,204 @@
+[gd_scene load_steps=6 format=3 uid="uid://d0l2k3t65oujw"]
+
+[ext_resource type="Script" uid="uid://co3tixvsb705j" path="res://starting/Scripts/S3S.gd" id="1_r5b2b"]
+[ext_resource type="FontFile" uid="uid://cuxqmaciptuwb" path="res://starting/Assets/Fonts/Super Lobster.ttf" id="1_u716u"]
+[ext_resource type="Texture2D" uid="uid://b8d6cei0a7f6" path="res://starting/Assets/Pictures/Screenshot 2025-04-07 084010.png" id="2_r5b2b"]
+[ext_resource type="Texture2D" uid="uid://c3e7yrbf5g5go" path="res://starting/Assets/Pictures/Screenshot 2025-04-07 084027.png" id="3_acpr1"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qovw6"]
+bg_color = Color(0.87451, 0.847059, 0.745098, 1)
+
+[node name="S3S" type="Node2D"]
+script = ExtResource("1_r5b2b")
+
+[node name="Panel" type="Panel" parent="."]
+offset_right = 1154.0
+offset_bottom = 653.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_qovw6")
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -191.0
+offset_top = 118.0
+offset_right = 120.0
+offset_bottom = 195.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_u716u")
+theme_override_font_sizes/font_size = 37
+text = "SETTINGS"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label5" type="Label" parent="Panel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -130.0
+offset_top = 222.0
+offset_right = 14.0
+offset_bottom = 265.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_u716u")
+theme_override_font_sizes/font_size = 37
+text = "ON"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label7" type="Label" parent="Panel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -130.0
+offset_top = 305.0
+offset_right = 14.0
+offset_bottom = 348.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_u716u")
+theme_override_font_sizes/font_size = 37
+text = "AMHARIC"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label8" type="Label" parent="Panel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 92.0
+offset_top = 305.0
+offset_right = 236.0
+offset_bottom = 348.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_u716u")
+theme_override_font_sizes/font_size = 37
+text = "ENGLISH"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label6" type="Label" parent="Panel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 2.0
+offset_top = 222.0
+offset_right = 146.0
+offset_bottom = 265.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_u716u")
+theme_override_font_sizes/font_size = 37
+text = "OFF"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="Panel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -405.0
+offset_top = 215.0
+offset_right = -94.0
+offset_bottom = 292.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_u716u")
+theme_override_font_sizes/font_size = 37
+text = "SOUND"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="Panel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -403.0
+offset_top = 283.0
+offset_right = -92.0
+offset_bottom = 360.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_u716u")
+theme_override_font_sizes/font_size = 37
+text = "LANGUAGE"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label4" type="Label" parent="Panel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -405.0
+offset_top = 352.0
+offset_right = -94.0
+offset_bottom = 429.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_u716u")
+theme_override_font_sizes/font_size = 37
+text = "UPDATE PROFILE"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CheckButton" type="CheckButton" parent="Panel"]
+layout_mode = 0
+offset_left = 528.0
+offset_top = 198.0
+offset_right = 603.0
+offset_bottom = 288.0
+
+[node name="CheckButton2" type="CheckButton" parent="Panel"]
+layout_mode = 0
+offset_left = 564.0
+offset_top = 283.0
+offset_right = 639.0
+offset_bottom = 373.0
+
+[node name="Button" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 497.0
+offset_top = 370.0
+offset_right = 625.0
+offset_bottom = 419.0
+theme_override_fonts/font = ExtResource("1_u716u")
+theme_override_font_sizes/font_size = 35
+text = "UPDATE"
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_top = 228.0
+offset_right = 212.0
+offset_bottom = 650.0
+texture = ExtResource("2_r5b2b")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+offset_left = 827.0
+offset_top = 209.0
+offset_right = 1148.0
+offset_bottom = 650.0
+texture = ExtResource("3_acpr1")
+
+[node name="Button" type="Button" parent="TextureRect2"]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 382.0
+offset_right = 316.0
+offset_bottom = 440.0
+theme_override_fonts/font = ExtResource("1_u716u")
+theme_override_font_sizes/font_size = 40
+text = "BACK"
+
+[connection signal="toggled" from="Panel/CheckButton" to="." method="_on_check_button_toggled"]
+[connection signal="toggled" from="Panel/CheckButton2" to="." method="_on_check_button_2_toggled"]
+[connection signal="pressed" from="TextureRect2/Button" to="." method="_on_back_button_pressed"]

@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://bg7vfsttmmh3"]
+
+[ext_resource type="Script" uid="uid://dxfm851ho8bat" path="res://level6/health/scripts/health_bar.gd" id="1_4r5ob"]
+[ext_resource type="Texture2D" uid="uid://dfj0husf4x7bv" path="res://level6/health/assets/frame/health_20.png" id="2_ygsi5"]
+
+[node name="HealthBar" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_4r5ob")
+
+[node name="HealthLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = -11.0
+offset_top = -3.0
+offset_right = 29.0
+offset_bottom = 20.0
+
+[node name="HealthFrame" type="Sprite2D" parent="."]
+position = Vector2(84.25, 32.375)
+scale = Vector2(0.757, 3.9)
+texture = ExtResource("2_ygsi5")

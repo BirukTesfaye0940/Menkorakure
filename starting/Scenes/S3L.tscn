@@ -1,0 +1,128 @@
+[gd_scene load_steps=7 format=3 uid="uid://v47y138q10q8"]
+
+[ext_resource type="Script" uid="uid://bflvva2ryxv1q" path="res://starting/Scripts/S3L.gd" id="1_13vrc"]
+[ext_resource type="Texture2D" uid="uid://b8d6cei0a7f6" path="res://starting/Assets/Pictures/Screenshot 2025-04-07 084010.png" id="1_ybkqy"]
+[ext_resource type="Texture2D" uid="uid://c3e7yrbf5g5go" path="res://starting/Assets/Pictures/Screenshot 2025-04-07 084027.png" id="2_13vrc"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ltjee"]
+bg_color = Color(0.87451, 0.847059, 0.745098, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tault"]
+bg_color = Color(0.20033, 0.20033, 0.20033, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_akxt2"]
+bg_color = Color(0.0627451, 0.0705882, 0.0431373, 0.423529)
+
+[node name="S3Level" type="Node2D"]
+script = ExtResource("1_13vrc")
+
+[node name="Panel" type="Panel" parent="."]
+offset_right = 1154.0
+offset_bottom = 646.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_ltjee")
+
+[node name="Panel2" type="Panel" parent="."]
+offset_top = 578.0
+offset_right = 1157.0
+offset_bottom = 646.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_tault")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 25.0
+offset_top = 232.0
+offset_right = 225.0
+offset_bottom = 573.0
+texture = ExtResource("1_ybkqy")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+offset_left = 925.0
+offset_top = 232.0
+offset_right = 1156.0
+offset_bottom = 573.0
+texture = ExtResource("2_13vrc")
+
+[node name="Button" type="Button" parent="TextureRect2"]
+layout_mode = 0
+offset_left = -3.0
+offset_top = 285.0
+offset_right = 225.0
+offset_bottom = 347.0
+theme_override_font_sizes/font_size = 40
+text = "BACK"
+
+[node name="Panel3" type="Panel" parent="."]
+offset_left = 326.0
+offset_top = 147.0
+offset_right = 850.0
+offset_bottom = 573.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_akxt2")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel3"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -180.5
+offset_top = -193.5
+offset_right = 180.5
+offset_bottom = 193.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 8
+
+[node name="Button" type="Button" parent="Panel3/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 34
+text = "LEVEL ONE"
+
+[node name="Button4" type="Button" parent="Panel3/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 34
+text = "LEVEL TWO
+"
+
+[node name="Button5" type="Button" parent="Panel3/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 34
+text = "LEVEL THREE
+"
+
+[node name="Button6" type="Button" parent="Panel3/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 34
+text = "LEVEL FOUR"
+
+[node name="Button2" type="Button" parent="Panel3/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 34
+text = "LEVEL FIVE
+"
+
+[node name="Button3" type="Button" parent="Panel3/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 34
+text = "LEVEL SIX"
+
+[node name="Label" type="Label" parent="."]
+offset_left = 427.0
+offset_top = 66.0
+offset_right = 718.0
+offset_bottom = 133.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 58
+text = "LEVELS"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="TextureRect2/Button" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="Panel3/VBoxContainer/Button" to="." method="_on_level1_pressed"]
+[connection signal="pressed" from="Panel3/VBoxContainer/Button2" to="." method="_on_level_5_pressed"]
+[connection signal="pressed" from="Panel3/VBoxContainer/Button3" to="." method="_on_level_6_pressed"]
