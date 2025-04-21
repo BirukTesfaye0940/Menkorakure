@@ -1,11 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://cxsn5mlpjig6l"]
+[gd_scene load_steps=3 format=3 uid="uid://b8gcjgng3jvpo"]
 
-[ext_resource type="Script" uid="uid://bcx1utpfrbfkx" path="res://level6/main_game/scenes/opining_cutscene.gd" id="1_c0tn2"]
+[ext_resource type="Script" uid="uid://dp705dxvi0mxw" path="res://level6/main_game/scripts/game.gd" id="1_c0tn2"]
 
 [sub_resource type="VideoStreamTheora" id="VideoStreamTheora_elb56"]
 file = "res://level6/main_game/assets/Level 6_Cut1.ogv"
 
-[node name="opining cutscene" type="Control"]
+[node name="opining cutscene2" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0

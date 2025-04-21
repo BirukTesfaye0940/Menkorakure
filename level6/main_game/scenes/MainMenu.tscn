@@ -1,14 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://bjfeonk5r4d4y"]
+[gd_scene load_steps=2 format=3 uid="uid://bjfeonk5r4d4y"]
 
-[ext_resource type="Script" uid="uid://1xfto2vbrjuc" path="res://level-5/scripts/main_menu.gd" id="1_2e6uq"]
-[ext_resource type="Texture2D" uid="uid://b7mjfx2i2layh" path="res://Level1/assets/level1 menu background.jpg" id="1_q10ce"]
+[ext_resource type="Script" uid="uid://8h874vq1tf21" path="res://level6/main_game/scripts/main_menu.gd" id="1_6m01j"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
-script = ExtResource("1_2e6uq")
+script = ExtResource("1_6m01j")
 
 [node name="Background" type="TextureRect" parent="."]
 texture_filter = 1
@@ -22,7 +21,6 @@ offset_right = 1002.0
 offset_bottom = 764.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_q10ce")
 
 [node name="TitleLable" type="Label" parent="."]
 layout_mode = 0
@@ -50,3 +48,6 @@ offset_right = 600.0
 offset_bottom = 550.0
 text = "Exit
 "
+
+[connection signal="pressed" from="PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="ExitButton" to="." method="_on_exit_button_pressed"]

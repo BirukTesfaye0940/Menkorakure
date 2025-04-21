@@ -22,10 +22,10 @@ func _on_level1_pressed() -> void:
 
 
 func _on_level_5_pressed() -> void:
-	get_tree().change_scene_to_file("res://Level-5/scenes/MainMenu.tscn")
+	get_tree().change_scene_to_file("res://level5/scenes/MainMenu.tscn")
 	pass # Replace with function body.
 
 
 func _on_level_6_pressed() -> void: 
-	get_tree().change_scene_to_file("res://Level-6/main_game/scenes/MainMenu.tscn")
+	get_tree().change_scene_to_file("res://level6/main_game/scenes/MainMenu.tscn")
 	pass # Replace with function body.
