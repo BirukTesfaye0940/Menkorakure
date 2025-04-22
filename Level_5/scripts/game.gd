@@ -3,7 +3,7 @@ extends Node2D
 @onready var player = $Player
 @onready var CUTSCENE_1 = preload("res://Level_5/scenes/cutscene_1.tscn")
 @onready var objective_panel_scene = preload("res://Level_5/scenes/objective_panel.tscn")
-@onready var hud_scene = preload("res://level_5/scenes/hud.tscn")
+@onready var hud_scene = preload("res://Level_5/scenes/hud.tscn")
 
 var hud_instance: Node
 func _ready() -> void:
@@ -16,7 +16,7 @@ func _ready() -> void:
 	# Pause the game
 	get_tree().paused = true
 	# Start intro cutscene
-	
+	 
 	
 	
 	var intro_cutscene = CUTSCENE_1.instantiate()
