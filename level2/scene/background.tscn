@@ -439,20 +439,6 @@ layer_1/tile_data = PackedInt32Array(917456, 65536, 1, 982992, 65536, 1, 1048528
 z_index = 5
 position = Vector2(-1808, -23)
 
-[node name="chest" parent="."]
-_import_path = NodePath("")
-unique_name_in_owner = false
-process_mode = 0
-process_priority = 0
-process_physics_priority = 0
-process_thread_group = 0
-physics_interpolation_mode = 0
-auto_translate_mode = 0
-editor_description = ""
-position = Vector2(4386, 385)
-collision_mask = 2
-script = null
-
 [node name="KillZone" parent="." instance=ExtResource("17_061jw")]
 position = Vector2(308, 436)
 
