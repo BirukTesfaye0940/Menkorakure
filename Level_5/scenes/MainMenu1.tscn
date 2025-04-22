@@ -1,25 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://bjfeonk5r4d4y"]
+[gd_scene load_steps=2 format=3 uid="uid://db03lr4vctfr5"]
 
-[sub_resource type="GDScript" id="GDScript_bvg73"]
-script/source = "extends Control
-
-func _ready():
-	$PlayButton.pressed.connect(_on_play_button_pressed)
-	$ExitButton.pressed.connect(_on_exit_button_pressed)
-
-func _on_play_button_pressed():
-	get_tree().change_scene_to_file(\"res://level6/main_game/scenes/game.tscn\")
-
-func _on_exit_button_pressed():
-	get_tree().change_scene_to_file(\"res://starting/Scenes/S3L.tscn\")
-"
+[ext_resource type="Script" uid="uid://b36w3uk2hu7mh" path="res://Level_5/scripts/main_menu.gd" id="1_1fdb6"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
-script = SubResource("GDScript_bvg73")
+script = ExtResource("1_1fdb6")
 
 [node name="Background" type="TextureRect" parent="."]
 texture_filter = 1
@@ -42,7 +30,8 @@ offset_right = 560.0
 offset_bottom = 367.0
 theme_override_colors/font_color = Color(0.835294, 0.0313726, 0.0784314, 1)
 theme_override_font_sizes/font_size = 48
-text = "Level 6"
+text = "Level 5
+"
 
 [node name="PlayButton" type="Button" parent="."]
 layout_mode = 0
