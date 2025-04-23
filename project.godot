@@ -18,6 +18,10 @@ config/icon="res://icon.svg"
 
 Global="*res://level3/Global.gd"
 
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/gut/plugin.cfg")
+
 [input]
 
 jump={
