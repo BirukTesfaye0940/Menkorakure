@@ -126,5 +126,6 @@ vertical_alignment = 1
 [connection signal="pressed" from="Panel3/VBoxContainer/Button" to="." method="_on_level1_pressed"]
 [connection signal="pressed" from="Panel3/VBoxContainer/Button4" to="." method="_on_level2_pressed"]
 [connection signal="pressed" from="Panel3/VBoxContainer/Button5" to="." method="_on_level_3_pressed"]
+[connection signal="pressed" from="Panel3/VBoxContainer/Button6" to="." method="_on_level_4_pressed"]
 [connection signal="pressed" from="Panel3/VBoxContainer/Button2" to="." method="_on_level_5_pressed"]
 [connection signal="pressed" from="Panel3/VBoxContainer/Button3" to="." method="_on_level_6_pressed"]

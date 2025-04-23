@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://dle76qpjnw2wx"]
+
+[ext_resource type="Script" uid="uid://bpeg37s7sji5m" path="res://level4/level-4-gameplay-2/rings.gd" id="1_ltcl4"]
+[ext_resource type="Texture2D" uid="uid://dkbu6dk6lpd2w" path="res://level4/level four assets/Ring_Upper{level 4].png" id="2_ltcl4"]
+
+[node name="Rings" type="Area2D"]
+collision_mask = 2
+script = ExtResource("1_ltcl4")
+
+[node name="LowerRing" type="Sprite2D" parent="."]
+z_index = 8
+position = Vector2(8, 52)
+rotation = 1.57589
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("2_ltcl4")
+
+[node name="UpperRing" type="Sprite2D" parent="."]
+position = Vector2(6, -50)
+rotation = 1.57589
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("2_ltcl4")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+scale = Vector2(1.3, 1.3)
+polygon = PackedVector2Array(-70, -56, 45, -58, 50, -48, 99, -44, 99, -37, 125, -37, 129, -28, 149, -26, 154, -16, 176, -15, 184, 7, 184, 14, 156, 20, 145, 31, 127, 35, 109, 43, 97, 49, 69, 52, 55, 54, -58, 58, -67, 55, -111, 46, -145, 35, -170, 19, -188, 12, -198, 2, -197, -14, -171, -15, -166, -23, -142, -31)

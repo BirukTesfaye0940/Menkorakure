@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://cmmh2mssxyjgh"]
 
-[ext_resource type="AudioStream" uid="uid://c2vurhewjx836" path="res://assets/music/Future - Cyberpunk.mp3" id="1_05ggv"]
+[ext_resource type="AudioStream" uid="uid://c2vurhewjx836" path="res://Level_5/assets/music/Future - Cyberpunk.mp3" id="1_05ggv"]
 
 [node name="music" type="AudioStreamPlayer2D"]
 stream = ExtResource("1_05ggv")

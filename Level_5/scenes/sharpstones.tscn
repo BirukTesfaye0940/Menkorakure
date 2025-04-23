@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://b0awydl740j48"]
 
-[ext_resource type="Texture2D" uid="uid://dmpvlregtqfwp" path="res://assets/sprites/Sharp_rocks.png" id="1_f457t"]
+[ext_resource type="Texture2D" uid="uid://dmpvlregtqfwp" path="res://Level_5/assets/sprites/Sharp_rocks.png" id="1_f457t"]
 [ext_resource type="Script" uid="uid://8s62nbdexu1m" path="res://scripts/sharpstones.gd" id="1_s30uv"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_s30uv"]

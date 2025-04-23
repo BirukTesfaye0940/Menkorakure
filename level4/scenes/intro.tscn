@@ -1,0 +1,48 @@
+[gd_scene load_steps=4 format=3 uid="uid://kbqp2xhnpk63"]
+
+[ext_resource type="Script" uid="uid://dgtnbyni8vsey" path="res://level4/intro.gd" id="1_yjqpq"]
+[ext_resource type="Texture2D" uid="uid://bwkqiyjjys7jx" path="res://level4/level four assets/Background [Level 4].png" id="2_4bx60"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_7a8ye"]
+
+[node name="Intro" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_yjqpq")
+
+[node name="intro image" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -252.0
+offset_top = 5.0
+offset_right = 1156.0
+offset_bottom = 773.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_4bx60")
+
+[node name="StartButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 307.0
+offset_top = 254.0
+offset_right = 495.0
+offset_bottom = 297.0
+scale = Vector2(2.03474, 3.05947)
+text = "START THE GAME
+"
+icon = SubResource("CanvasTexture_7a8ye")
+
+[node name="instruction" type="Label" parent="."]
+layout_mode = 0
+offset_left = 41.0
+offset_top = 51.0
+offset_right = 601.0
+offset_bottom = 178.0
+scale = Vector2(2.00394, 3.51971)
+text = "Intsruction given:
+Press the displayed keyboard letter quickly to move to the next position.
+are you ready?"
+
+[connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
