@@ -200,7 +200,11 @@ func _on_ReplayButton_pressed():
 
 func load_next_scene():
 	game_active = false
+	call_deferred("_change_scene_deferred")
+
+func _change_scene_deferred():
 	get_tree().change_scene_to_file("res://level4/level-4-gameplay-2/scene/game_play_2_level_4.tscn")
+
 
 func _on_menu_pressed():
 	get_tree().change_scene_to_file("res://level4/scenes/menu.tscn")

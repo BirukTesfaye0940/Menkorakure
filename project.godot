@@ -18,6 +18,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 Global="*res://global/Global.gd"
+GlobalLevel4="*res://level4/level-4-gameplay-2/script/Global.gd"
 
 [input]
 

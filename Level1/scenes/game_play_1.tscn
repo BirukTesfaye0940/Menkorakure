@@ -1,8 +1,8 @@
 [gd_scene load_steps=8 format=3 uid="uid://c0w736k0xxpdd"]
 
-[ext_resource type="Texture2D" uid="uid://rr7pkit623xi" path="res://Level1/assets/image (2).jpg" id="1_u7p20"]
-[ext_resource type="Texture2D" uid="uid://cir7msuphhoj0" path="res://Level1/assets/Axum_Monument.png" id="2_in8g4"]
-[ext_resource type="Texture2D" uid="uid://bjiu4at8oytd" path="res://Level1/assets/Terrain (16x16).png" id="3_in8g4"]
+[ext_resource type="Texture2D" uid="uid://d3chpddkanxrt" path="res://Level1/assets/image (2).jpg" id="1_u7p20"]
+[ext_resource type="Texture2D" uid="uid://cth0nueeg1nl2" path="res://Level1/assets/Axum_Monument.png" id="2_in8g4"]
+[ext_resource type="Texture2D" uid="uid://b62yd1ggfocr4" path="res://Level1/assets/Terrain (16x16).png" id="3_in8g4"]
 [ext_resource type="PackedScene" uid="uid://s3oml38tnkdo" path="res://Level1/scenes/engineer.tscn" id="4_u7p20"]
 [ext_resource type="PackedScene" uid="uid://k04w8jj3ydma" path="res://Level1/scenes/monk.tscn" id="5_u7p20"]
 
