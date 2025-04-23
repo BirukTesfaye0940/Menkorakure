@@ -5,7 +5,7 @@ func _ready():
 
 func _on_body_entered(body):
 	if body.is_in_group("rocket"):
-		if Global.rings_passed < 11:
+		if GlobalLevel4.rings_passed < 11:
 			call_deferred("change_scene", "res://level4/level-4-gameplay-2/scene/control.tscn")
 		else:
 			call_deferred("change_scene", "res://level4/level-4-gameplay-2/scene/level_complete.tscn")
