@@ -1,0 +1,91 @@
+[gd_scene load_steps=16 format=3 uid="uid://clgi43unxqye8"]
+
+[ext_resource type="Script" uid="uid://cnfj2m3pno3sw" path="res://Level_5/scripts/player.gd" id="1_3irik"]
+[ext_resource type="Texture2D" uid="uid://digp60x2dlmdn" path="res://Level_5/assets/sprites/pause/UI panel.png" id="1_s8ton"]
+[ext_resource type="Texture2D" uid="uid://0dfqqnoa4quj" path="res://Level_5/assets/sprites/pause/__0013_RESUME.png" id="2_7srhs"]
+[ext_resource type="Texture2D" uid="uid://stasluitoy0a" path="res://Level_5/assets/sprites/pause/__0003_RESTART.png" id="3_7srhs"]
+[ext_resource type="Texture2D" uid="uid://b7d10kxthan4t" path="res://Level_5/assets/sprites/pause/__0010_Main-Menu.png" id="4_l2n8a"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_l2n8a"]
+texture = ExtResource("1_s8ton")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_s8ton"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7srhs"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3irik"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_stb25"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6vkag"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dln7o"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_prgsi"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ktycl"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kijtu"]
+
+[node name="Pause" type="CanvasLayer"]
+process_mode = 3
+layer = 19
+visible = false
+script = ExtResource("1_3irik")
+
+[node name="Panel" type="Panel" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -279.0
+offset_top = -227.0
+offset_right = 280.0
+offset_bottom = 194.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_l2n8a")
+
+[node name="TextureRect" type="TextureRect" parent="Panel"]
+visible = false
+layout_mode = 0
+offset_left = 12.0
+offset_top = 50.0
+offset_right = 349.0
+offset_bottom = 251.0
+
+[node name="Button" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 160.5
+offset_top = 36.5
+offset_right = 393.5
+offset_bottom = 134.5
+theme_override_styles/focus = SubResource("StyleBoxTexture_s8ton")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxTexture_7srhs")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_3irik")
+icon = ExtResource("2_7srhs")
+flat = true
+
+[node name="Button2" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 159.0
+offset_top = 140.0
+offset_right = 394.0
+offset_bottom = 233.0
+theme_override_icons/icon = ExtResource("3_7srhs")
+theme_override_styles/focus = SubResource("StyleBoxTexture_stb25")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxTexture_6vkag")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_dln7o")
+flat = true
+
+[node name="Button3" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 159.0
+offset_top = 242.0
+offset_right = 391.0
+offset_bottom = 337.0
+theme_override_styles/focus = SubResource("StyleBoxTexture_prgsi")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_ktycl")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_kijtu")
+icon = ExtResource("4_l2n8a")

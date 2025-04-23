@@ -3,14 +3,14 @@ extends CanvasLayer
 @onready var next_level_button = $Panel/Button
 @onready var retry_button = $Panel/Button3
 @onready var exit_button = $Panel/Button2
+
 func _ready() -> void:
+	add_to_group("completion")
+	print("LevelComplete scene instantiated")
 	# Connect button signals
 	next_level_button.pressed.connect(_on_next_level_pressed)
 	retry_button.pressed.connect(_on_retry_pressed)
 	exit_button.pressed.connect(_on_exit_pressed)
-	# Pause game to focus on UI
-	#get_tree().paused = true
-
 
 func _on_next_level_pressed() -> void:
 	get_tree().paused = false
@@ -37,3 +37,7 @@ func _on_exit_pressed() -> void:
 	queue_free()
 	get_tree().quit()
 	print("Exit button pressed")
+
+func _notification(what: int) -> void:
+	if what == NOTIFICATION_PREDELETE:
+		print("LevelComplete scene freed")

@@ -1,6 +1,8 @@
 [gd_scene load_steps=3 format=3 uid="uid://b21tkeqgq5qfa"]
 
-[ext_resource type="Script" uid="uid://13a4kgbpelf2" path="res://scripts/cutscene.gd" id="1_a320b"]
+
+[ext_resource type="Script" uid="uid://13a4kgbpelf2" path="res://Level_5/scripts/cutscene.gd" id="1_a320b"]
+
 [ext_resource type="VideoStream" uid="uid://ctl0cu5lnd0em" path="res://Level_5/assets/Level 5_Cut2.ogv" id="2_a320b"]
 
 [node name="Cutscene" type="CanvasLayer"]
