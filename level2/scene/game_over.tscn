@@ -1,7 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://bqyvgbg5u5xkh"]
+[gd_scene load_steps=6 format=3 uid="uid://l5qvxgmytxmy"]
 
+[ext_resource type="Script" uid="uid://d2xoxum8ws7mp" path="res://level2/script/game_over.gd" id="1_7tcn2"]
 [ext_resource type="Texture2D" uid="uid://c7colgtpg1nay" path="res://Level_5/ui/Level Failed.png" id="1_y26ei"]
-[ext_resource type="Script" uid="uid://1u7hmffb15ia" path="res://Level_5/ui/game_over.gd" id="1_yxx3c"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yxx3c"]
 
@@ -11,7 +11,7 @@
 
 [node name="GameOver" type="CanvasLayer"]
 layer = 15
-script = ExtResource("1_yxx3c")
+script = ExtResource("1_7tcn2")
 
 [node name="Panel" type="Panel" parent="."]
 offset_right = 1156.0
