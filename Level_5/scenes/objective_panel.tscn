@@ -1,0 +1,43 @@
+[gd_scene load_steps=5 format=3 uid="uid://sf17kvpd6f82"]
+
+[ext_resource type="Script" uid="uid://ceufliixvlrcu" path="res://Level_5/scripts/canvas_layer.gd" id="1_lymbs"]
+[ext_resource type="Texture2D" uid="uid://bnwtmb7yfwluv" path="res://Level_5/assets/sprites/Objective_panel_final.png" id="2_bngcu"]
+[ext_resource type="FontFile" uid="uid://dfadnpfxndxcq" path="res://Level_5/assets/fonts/PixelOperator8.ttf" id="3_gx7pm"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gx7pm"]
+texture = ExtResource("2_bngcu")
+
+[node name="ObjectivePanel" type="CanvasLayer"]
+layer = 12
+script = ExtResource("1_lymbs")
+
+[node name="Panel" type="Panel" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -187.0
+offset_top = -203.0
+offset_right = 233.0
+offset_bottom = -27.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxTexture_gx7pm")
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 27.0
+offset_top = 18.0
+offset_right = 393.0
+offset_bottom = 156.0
+theme_override_fonts/font = ExtResource("3_gx7pm")
+theme_override_font_sizes/font_size = 16
+text = "PlaceHolder"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Timer" type="Timer" parent="Panel"]
+wait_time = 10.0
+one_shot = true
