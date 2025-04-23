@@ -17,17 +17,17 @@ func _on_back_button_pressed() -> void:
 
 
 func _on_level1_pressed() -> void:
-	get_tree().change_scene_to_file("res://Level1/scenes/MainMenu.tscn")
+	get_tree().change_scene_to_file("res://Level1/scenes/cutscene.tscn")
 	pass # Replace with function body.
 
 
 func _on_level_5_pressed() -> void:
-	get_tree().change_scene_to_file("res://Level_5/scenes/MainMenu1.tscn")
+	get_tree().change_scene_to_file("res://Level_5/scenes/game.tscn")
 	pass
 
 
 func _on_level_6_pressed() -> void: 
-	get_tree().change_scene_to_file("res://level6/main_game/scenes/MainMenu.tscn")
+	get_tree().change_scene_to_file("res://level6/main_game/scenes/game.tscn")
 	pass # Replace with function body.
 
 
