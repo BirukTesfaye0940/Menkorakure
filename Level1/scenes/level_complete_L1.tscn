@@ -1,0 +1,69 @@
+[gd_scene load_steps=12 format=3 uid="uid://be5rorykjt72c"]
+
+[ext_resource type="Script" uid="uid://bf5276h2k18yq" path="res://Level1/scenes/level_complete_l_1.gd" id="1_quc30"]
+[ext_resource type="Texture2D" uid="uid://d0roil6pfxh5e" path="res://Level_5/ui/Level Complete1.png" id="2_g1swp"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0e48y"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_epypp"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0hol4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_q6r6c"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kdubu"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_d21ai"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rj586"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4d7sh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ir8iy"]
+
+[node name="Level_completed" type="CanvasLayer"]
+layer = 15
+script = ExtResource("1_quc30")
+
+[node name="Panel" type="Panel" parent="."]
+offset_right = 1157.0
+offset_bottom = 645.0
+
+[node name="TextureRect" type="TextureRect" parent="Panel"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 3.0
+offset_top = 6.0
+offset_right = 1155.0
+offset_bottom = 646.0
+texture = ExtResource("2_g1swp")
+
+[node name="Button" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 93.0
+offset_top = 493.0
+offset_right = 371.0
+offset_bottom = 592.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_0e48y")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_epypp")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_0hol4")
+
+[node name="Button2" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 773.0
+offset_top = 493.0
+offset_right = 1051.0
+offset_bottom = 592.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_q6r6c")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_kdubu")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_d21ai")
+
+[node name="Button3" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 433.0
+offset_top = 493.0
+offset_right = 711.0
+offset_bottom = 592.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_rj586")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_4d7sh")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_ir8iy")

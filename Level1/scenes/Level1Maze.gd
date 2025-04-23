@@ -13,33 +13,33 @@ func _process(delta: float) -> void:
 
 
 func _on_id1_body_entered(body: Node2D) -> void:
-	get_tree().change_scene_to_file("res://Level1/scenes/main.tscn")
+	get_tree().change_scene_to_file("res://Level1/scenes/level_complete_L1.tscn")
 
 func _on_id_3_body_entered(body: Node2D) -> void:
-	get_tree().change_scene_to_file("res://Level1/scenes/LevelFailed.tscn")
+	get_tree().change_scene_to_file("res://Level1/scenes/game_over_L1.tscn")
 	pass
 
 
 func _on_id_4_body_entered(body: Node2D) -> void:
-	get_tree().change_scene_to_file("res://Level1/scenes/LevelFailed.tscn")
+	get_tree().change_scene_to_file("res://Level1/scenes/game_over_L1.tscn")
 	pass
 
 
 func _on_id_6_body_entered(body: Node2D) -> void:
-	get_tree().change_scene_to_file("res://Level1/scenes/LevelFailed.tscn")
+	get_tree().change_scene_to_file("res://Level1/scenes/game_over_L1.tscn")
 	pass # Replace with function body..
 
 
 func _on_id_7_body_entered(body: Node2D) -> void:
-	get_tree().change_scene_to_file("res://Level1/scenes/LevelFailed.tscn")
+	get_tree().change_scene_to_file("res://Level1/scenes/game_over_L1.tscn")
 	pass # Replace with function body.
 
 
 func _on_id_8_body_entered(body: Node2D) -> void:
-	get_tree().change_scene_to_file("res://Level1/scenes/LevelFailed.tscn")
+	get_tree().change_scene_to_file("res://Level1/scenes/game_over_L1.tscn")
 	pass # Replace with function body.
 
 
 func _on_id_2_body_entered(body: Node2D) -> void:
-	get_tree().change_scene_to_file("res://Level1/scenes/LevelFailed.tscn")
+	get_tree().change_scene_to_file("res://Level1/scenes/game_over_L1.tscn")
 	pass # Replace with function body.
