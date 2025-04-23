@@ -2,8 +2,8 @@ extends Node
 
 class_name HealthManager
 
-@export var max_health: float = 1000.0
-var current_health: float = 1000.0
+@export var max_health: float = 100.0
+var current_health: float = 100.0
 var is_invulnerable: bool = false
 
 signal health_changed(current: float, maximum: float)

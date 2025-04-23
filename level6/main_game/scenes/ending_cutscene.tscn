@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://cy3sp12ygtucx"]
+
+[ext_resource type="Script" uid="uid://dnfkep3hipdqv" path="res://level6/main_game/scripts/ending_cutscene.gd" id="1_ditls"]
+[ext_resource type="VideoStream" uid="uid://bab8o6tl2qwb3" path="res://level6/main_game/assets/Level 6_Cut2.ogv" id="2_yufjm"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_ditls")
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
+offset_right = 1149.0
+offset_bottom = 642.0
+stream = ExtResource("2_yufjm")
+autoplay = true
+expand = true

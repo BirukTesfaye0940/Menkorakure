@@ -1,6 +1,6 @@
 [gd_scene load_steps=19 format=3 uid="uid://dqsg0gkl7u8tt"]
 
-[ext_resource type="Texture2D" uid="uid://d36a5l5eyg0fa" path="res://Level1/newAssets/Lalibela.png" id="1_06t4h"]
+[ext_resource type="Texture2D" uid="uid://wr6qxuetufhs" path="res://Level1/newAssets/Lalibela.png" id="1_06t4h"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7vrkn"]
 texture = ExtResource("1_06t4h")

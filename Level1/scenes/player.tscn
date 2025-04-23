@@ -1,9 +1,9 @@
 [gd_scene load_steps=27 format=3 uid="uid://bfqomua0w5bsn"]
 
-[ext_resource type="Texture2D" uid="uid://bwu8en8q2ymdu" path="res://Level1/assets/craftpix-net-404916-free-graffiti-artist-sprite-sheet-pixel-art-pack/Graffiti_Artist_3/Walk.png" id="1_lue78"]
+[ext_resource type="Texture2D" uid="uid://ciox5idn6xker" path="res://Level1/assets/craftpix-net-404916-free-graffiti-artist-sprite-sheet-pixel-art-pack/Graffiti_Artist_3/Walk.png" id="1_lue78"]
 [ext_resource type="Script" uid="uid://bi2l3boqkvb6v" path="res://Level1/scripts/player.gd" id="1_mfvmd"]
-[ext_resource type="Texture2D" uid="uid://bn0ddb4svan4u" path="res://Level1/assets/craftpix-net-404916-free-graffiti-artist-sprite-sheet-pixel-art-pack/Graffiti_Artist_3/Idle.png" id="2_xyc4c"]
-[ext_resource type="Texture2D" uid="uid://43mhojjsan3f" path="res://Level1/assets/craftpix-net-404916-free-graffiti-artist-sprite-sheet-pixel-art-pack/Graffiti_Artist_3/Jump.png" id="3_k0gl7"]
+[ext_resource type="Texture2D" uid="uid://2pghavgl11lg" path="res://Level1/assets/craftpix-net-404916-free-graffiti-artist-sprite-sheet-pixel-art-pack/Graffiti_Artist_3/Idle.png" id="2_xyc4c"]
+[ext_resource type="Texture2D" uid="uid://bg82eycigrpst" path="res://Level1/assets/craftpix-net-404916-free-graffiti-artist-sprite-sheet-pixel-art-pack/Graffiti_Artist_3/Jump.png" id="3_k0gl7"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_k0gl7"]
 atlas = ExtResource("2_xyc4c")
