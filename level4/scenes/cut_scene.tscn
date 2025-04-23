@@ -1,0 +1,33 @@
+[gd_scene load_steps=3 format=3 uid="uid://ci0dedeu3gltc"]
+
+[ext_resource type="Script" uid="uid://dqisu5e81ppqs" path="res://level4/cut_scene.gd" id="1_ascsr"]
+[ext_resource type="VideoStream" uid="uid://dgthf8p6jswau" path="res://level4/compressed (1)/r3.ogv" id="2_ascsr"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1239.0
+offset_bottom = 727.0
+script = ExtResource("1_ascsr")
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_left = 4.0
+offset_top = 2.0
+offset_right = 1162.0
+offset_bottom = 657.0
+stream = ExtResource("2_ascsr")
+autoplay = true
+expand = true
+
+[node name="SkipButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 488.0
+offset_top = 288.0
+offset_right = 675.0
+offset_bottom = 362.0
+text = "SKIP
+"
+
+[connection signal="pressed" from="SkipButton" to="." method="_on_skip_button_pressed"]

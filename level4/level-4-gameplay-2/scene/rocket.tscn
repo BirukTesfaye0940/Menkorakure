@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://bdlei37chal2q"]
+
+[ext_resource type="Texture2D" uid="uid://d7lvdlfkj0y1" path="res://level4/level-4-gameplay-2/assets/Lunar module [Level 4 Gameplay 2].png" id="1_j20b5"]
+[ext_resource type="Script" uid="uid://d2y6gsx07gpa4" path="res://level4/level-4-gameplay-2/script/rocket.gd" id="1_ncccc"]
+
+[node name="rocket" type="CharacterBody2D" groups=["rocket"]]
+z_index = 5
+collision_layer = 2
+script = ExtResource("1_ncccc")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_j20b5")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-72, -126, 70, -129, 88, -109, 91, -73, 99, -35, 166, 128, 180, 132, 180, 142, 147, 147, 137, 134, 151, 129, 136, 94, 129, 105, 104, 89, 74, 109, 47, 110, 40, 126, 20, 134, -16, 134, -17, 145, -4, 150, -4, 156, -40, 162, -48, 151, -27, 149, -29, 132, -47, 128, -54, 111, -107, 88, -140, 98, -150, 128, -140, 135, -141, 140, -163, 144, -183, 136, -165, 129, -95, -42, -91, -90)

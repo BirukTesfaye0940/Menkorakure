@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://cv0wypvr4qvd7"]
+
+[ext_resource type="Script" uid="uid://dymcvf0chfuxt" path="res://level4/scenes/rings.gd" id="1_574mp"]
+[ext_resource type="Texture2D" uid="uid://bcoa14oqlcg3d" path="res://level4/level four assets/Ring_Upper{level 4].png" id="1_gv0ru"]
+[ext_resource type="Texture2D" uid="uid://c3x1gwdllscro" path="res://level4/level four assets/Ring_Lower{level 4].png" id="2_574mp"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_gv0ru"]
+radius = 206.0
+height = 864.0
+
+[node name="Rings" type="Area2D"]
+script = ExtResource("1_574mp")
+
+[node name="RingUpper" type="Sprite2D" parent="."]
+z_index = 2
+position = Vector2(-184.5, 403.25)
+scale = Vector2(0.738189, 0.427819)
+texture = ExtResource("1_gv0ru")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+z_index = 2
+position = Vector2(0, 429)
+shape = SubResource("CapsuleShape2D_gv0ru")
+
+[node name="RingLower" type="Sprite2D" parent="."]
+z_index = 3
+position = Vector2(177.5, 411.5)
+scale = Vector2(0.814583, 0.434001)
+texture = ExtResource("2_574mp")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

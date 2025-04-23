@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://ddvedwhkhdgd4"]
 
-[ext_resource type="Script" uid="uid://c8njta0iduh54" path="res://scripts/fade_overlay.gd" id="1_suuf0"]
+[ext_resource type="Script" uid="uid://c8njta0iduh54" path="res://Level_5/scripts/fade_overlay.gd" id="1_suuf0"]
 
 [node name="FadeOverlay" type="CanvasLayer"]
 layer = 20

@@ -1,6 +1,6 @@
 [gd_scene load_steps=17 format=3 uid="uid://csu7re7kajcn7"]
 
-[ext_resource type="Texture2D" uid="uid://dtncjg0320k4r" path="res://assets/sprites/coin.png" id="1_rwqht"]
+[ext_resource type="Texture2D" uid="uid://dtncjg0320k4r" path="res://level4/assets/sprites/coin.png" id="1_rwqht"]
 
 [sub_resource type="GDScript" id="GDScript_rwqht"]
 script/source = "extends Area2D

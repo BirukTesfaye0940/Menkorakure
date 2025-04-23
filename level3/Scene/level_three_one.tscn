@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" uid="uid://djg7hdow0yrde" path="res://level3/script/level_three_one.gd" id="1_67y3c"]
 [ext_resource type="Script" uid="uid://dswmkrq5on52y" path="res://level3/script/game_manager.gd" id="1_brjmg"]
-[ext_resource type="Texture2D" uid="uid://ca787u4hc326c" path="res://level3/assets/sprites/world_tileset.png" id="2_1rro4"]
-[ext_resource type="Texture2D" uid="uid://cvm64sgprxyxx" path="res://level3/assets/sprites/ores/GameBackground.jpg" id="2_m7212"]
+[ext_resource type="Texture2D" uid="uid://cp7r2xf7er5la" path="res://level3/assets/sprites/world_tileset.png" id="2_1rro4"]
+[ext_resource type="Texture2D" uid="uid://c7ay71vyt185h" path="res://level3/assets/sprites/ores/GameBackground.jpg" id="2_m7212"]
 [ext_resource type="PackedScene" uid="uid://d4h61ady5cptf" path="res://level3/Scene/player.tscn" id="3_67y3c"]
 [ext_resource type="PackedScene" uid="uid://bt50l3k63ktv4" path="res://level3/Scene/kill_zone.tscn" id="4_6gww6"]
 [ext_resource type="PackedScene" uid="uid://dtrjm6m7syj4i" path="res://level3/Scene/coin.tscn" id="5_gj3lt"]
@@ -12,11 +12,10 @@
 [ext_resource type="PackedScene" uid="uid://duggra16evduy" path="res://level3/Scene/canvas_layer.tscn" id="8_1rro4"]
 [ext_resource type="PackedScene" uid="uid://bisbrxolrd1p8" path="res://level3/Scene/cave_in.tscn" id="10_6gww6"]
 [ext_resource type="PackedScene" uid="uid://71aj4r8uia0c" path="res://level3/Scene/shaky_floor.tscn" id="10_gj3lt"]
-[ext_resource type="VideoStream" uid="uid://27w0wvh5pch1" path="res://level3/assets/sprites/Level-3_CutScene_1.ogv" id="12_73jur"]
-[ext_resource type="AudioStream" uid="uid://bjccbcs2iiu48" path="res://level3/assets/sound-effects/adventures-loop-music-226836.wav" id="14_b8rba"]
+[ext_resource type="VideoStream" uid="uid://b2w1lbfs6mwt" path="res://level3/assets/sprites/Level-3_CutScene_1.ogv" id="12_73jur"]
+[ext_resource type="AudioStream" uid="uid://d1q2ndrsb5ngd" path="res://level3/assets/sound-effects/adventures-loop-music-226836.wav" id="14_b8rba"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_gj3lt"]
-load_path = "res://.godot/imported/Walls-02 (Black).png-1f30f6d86842589b2eced7a97dca1e87.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jnrmd"]
 texture = ExtResource("2_1rro4")

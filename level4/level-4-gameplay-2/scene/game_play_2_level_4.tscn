@@ -1,0 +1,101 @@
+[gd_scene load_steps=8 format=3 uid="uid://bkmltwin0ufs"]
+
+[ext_resource type="Script" uid="uid://br2tn8kp0wl6k" path="res://level4/level-4-gameplay-2/script/game_play_2_level_4.gd" id="1_8uvp2"]
+[ext_resource type="Texture2D" uid="uid://dmnuu2lmyc4v" path="res://level4/level-4-gameplay-2/assets/black.jpg" id="1_hq4qe"]
+[ext_resource type="PackedScene" uid="uid://bdlei37chal2q" path="res://level4/level-4-gameplay-2/scene/rocket.tscn" id="2_de41w"]
+[ext_resource type="PackedScene" uid="uid://bfmj1tou8kh6h" path="res://level4/level-4-gameplay-2/scene/moon.tscn" id="3_8uvp2"]
+[ext_resource type="PackedScene" uid="uid://dle76qpjnw2wx" path="res://level4/level-4-gameplay-2/scene/rings.tscn" id="4_klgun"]
+[ext_resource type="PackedScene" uid="uid://btuumyd11ghb6" path="res://level4/level-4-gameplay-2/scene/canvas_layer.tscn" id="6_klgun"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_viomi"]
+
+[node name="Gameplay-2-level-4" type="Node2D"]
+script = ExtResource("1_8uvp2")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(-654, -2664)
+scale = Vector2(18.7297, 24)
+texture = ExtResource("1_hq4qe")
+
+[node name="CanvasLayer" parent="." instance=ExtResource("6_klgun")]
+
+[node name="GamePlay" type="Node2D" parent="."]
+
+[node name="rocket" parent="GamePlay" instance=ExtResource("2_de41w")]
+position = Vector2(-307, -8945)
+scale = Vector2(0.65, 0.65)
+script = null
+
+[node name="Camera2D" type="Camera2D" parent="GamePlay/rocket"]
+zoom = Vector2(0.15, 0.15)
+limit_bottom = 5300
+limit_smoothed = true
+position_smoothing_enabled = true
+
+[node name="Moon" parent="GamePlay" instance=ExtResource("3_8uvp2")]
+position = Vector2(-2088, 2779)
+scale = Vector2(4, 4)
+
+[node name="RingsNode" type="Node" parent="GamePlay"]
+
+[node name="Rings" parent="GamePlay/RingsNode" instance=ExtResource("4_klgun")]
+position = Vector2(-1754, -7475)
+scale = Vector2(0.9, 0.9)
+script = null
+
+[node name="Rings7" parent="GamePlay/RingsNode" instance=ExtResource("4_klgun")]
+position = Vector2(-769, -6911)
+scale = Vector2(0.9, 0.9)
+script = null
+
+[node name="Rings2" parent="GamePlay/RingsNode" instance=ExtResource("4_klgun")]
+position = Vector2(194, -6168)
+scale = Vector2(0.9, 0.9)
+script = null
+
+[node name="Rings3" parent="GamePlay/RingsNode" instance=ExtResource("4_klgun")]
+position = Vector2(-75.0001, -5352)
+scale = Vector2(0.9, 0.9)
+script = null
+
+[node name="Rings4" parent="GamePlay/RingsNode" instance=ExtResource("4_klgun")]
+position = Vector2(-721, -4666)
+scale = Vector2(0.9, 0.9)
+script = null
+
+[node name="Rings5" parent="GamePlay/RingsNode" instance=ExtResource("4_klgun")]
+position = Vector2(-1533, -3905)
+scale = Vector2(0.9, 0.9)
+script = null
+
+[node name="Rings8" parent="GamePlay/RingsNode" instance=ExtResource("4_klgun")]
+position = Vector2(-1376, -3092)
+scale = Vector2(0.9, 0.9)
+script = null
+
+[node name="Rings9" parent="GamePlay/RingsNode" instance=ExtResource("4_klgun")]
+position = Vector2(-537, -2502)
+scale = Vector2(0.9, 0.9)
+script = null
+
+[node name="Rings10" parent="GamePlay/RingsNode" instance=ExtResource("4_klgun")]
+position = Vector2(-18, -1884)
+scale = Vector2(0.9, 0.9)
+script = null
+
+[node name="Rings6" parent="GamePlay/RingsNode" instance=ExtResource("4_klgun")]
+position = Vector2(910, -1319)
+scale = Vector2(0.9, 0.9)
+script = null
+
+[node name="Rings11" parent="GamePlay/RingsNode" instance=ExtResource("4_klgun")]
+position = Vector2(1121, -918)
+scale = Vector2(0.9, 0.9)
+script = null
+
+[node name="Kill zone" type="Area2D" parent="GamePlay"]
+position = Vector2(15, 2317)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GamePlay/Kill zone"]
+position = Vector2(-130, 0)
+shape = SubResource("WorldBoundaryShape2D_viomi")
