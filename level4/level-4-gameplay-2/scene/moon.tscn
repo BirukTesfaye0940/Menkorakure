@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://bfmj1tou8kh6h"]
 
-[ext_resource type="Texture2D" uid="uid://bsc01kqfo6t4e" path="res://level4/level-4-gameplay-2/assets/moon-image-better.jpeg" id="1_kfto2"]
-[ext_resource type="Script" uid="uid://chq8uoi3jw7o6" path="res://level4/level-4-gameplay-2/script/area_of_moon.gd" id="2_na40n"]
+[ext_resource type="Texture2D" uid="uid://c4cxqv8r73pt2" path="res://assets/moon-image-better.jpeg" id="1_kfto2"]
+[ext_resource type="Script" uid="uid://em4yqjj7pgl0" path="res://script/area_of_moon.gd" id="2_na40n"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kfto2"]
 size = Vector2(2985, 781)

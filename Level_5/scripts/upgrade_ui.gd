@@ -82,7 +82,7 @@ func apply_upgrade_effect(upgrade_name: String) -> void:
 				2: 210.0,
 				3: 320.0,
 				4: 470.0,
-				5: 590.0
+				5: 710.0
 			}
 			player.max_oxygen = capacity_by_level.get(level, 100.0)
 			player.refill_oxygen(1000.0)  # Refill to new max

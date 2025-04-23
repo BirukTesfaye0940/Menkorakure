@@ -10,7 +10,7 @@ func _on_body_entered(body):
 		return
 
 	if body.is_in_group("rocket"):  # Assuming the rocket is in a group named "rocket"
-		Global.rings_passed += 1
+		GlobalLevel4.rings_passed += 1
 		has_been_passed = true
-		print("Ring passed! Total:", Global.rings_passed)
+		print("Ring passed! Total:", GlobalLevel4.rings_passed)
 		call_deferred("queue_free")  # Correct usage

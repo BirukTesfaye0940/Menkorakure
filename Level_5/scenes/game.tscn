@@ -1,4 +1,4 @@
-[gd_scene load_steps=50 format=3 uid="uid://cnv3p6proesiw"]
+[gd_scene load_steps=51 format=3 uid="uid://cnv3p6proesiw"]
 
 [ext_resource type="Script" uid="uid://v5fumcw24g6w" path="res://Level_5/scripts/game.gd" id="1_ca42v"]
 [ext_resource type="Script" uid="uid://c5e0sjf4jru5b" path="res://Level_5/scripts/game_manager.gd" id="1_gee14"]
@@ -26,6 +26,7 @@
 [ext_resource type="Texture2D" uid="uid://d4i6c65s7jww0" path="res://Level_5/assets/sprites/cave_rock3.png" id="14_ssvqc"]
 [ext_resource type="Texture2D" uid="uid://bcm1rytwsx1x3" path="res://Level_5/assets/sprites/cave_rock4.png" id="15_264po"]
 [ext_resource type="Texture2D" uid="uid://dridvj7vi0wuj" path="res://Level_5/assets/sprites/cave_rock5.png" id="16_1kice"]
+[ext_resource type="PackedScene" uid="uid://cmmh2mssxyjgh" path="res://Level_5/scenes/music.tscn" id="27_e4yo4"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lnu2h"]
 texture = ExtResource("1_yqjtg")
@@ -2025,7 +2026,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_rysoc"]
 resource_name = "new_animation"
-length = 1.5
+length = 3.0
 loop_mode = 2
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -2034,7 +2035,7 @@ tracks/0/path = NodePath(".:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 1.46667),
+"times": PackedFloat32Array(0, 2.93333),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(5384, -574), Vector2(5257, -494)]
@@ -2162,7 +2163,7 @@ _data = {
 &"new_animation": SubResource("Animation_nwfvq")
 }
 
-[node name="Game" type="Node2D"]
+[node name="Game2" type="Node2D"]
 script = ExtResource("1_ca42v")
 
 [node name="GameManager" type="Node" parent="."]
@@ -2378,6 +2379,24 @@ position = Vector2(6453, -618)
 [node name="Anorite19" parent="Anorite" instance=ExtResource("6_p57ef")]
 position = Vector2(6649, -500)
 
+[node name="Sefereon2" parent="Anorite" instance=ExtResource("7_u5sy4")]
+position = Vector2(3129, -158)
+
+[node name="Anorite8" parent="Anorite" instance=ExtResource("6_p57ef")]
+position = Vector2(4344, -216)
+
+[node name="Anorite20" parent="Anorite" instance=ExtResource("6_p57ef")]
+position = Vector2(5107, -440)
+
+[node name="Anorite21" parent="Anorite" instance=ExtResource("6_p57ef")]
+position = Vector2(6589, -666)
+
+[node name="Anorite22" parent="Anorite" instance=ExtResource("6_p57ef")]
+position = Vector2(5824, -489)
+
+[node name="Anorite23" parent="Anorite" instance=ExtResource("6_p57ef")]
+position = Vector2(6776, -423)
+
 [node name="Sefereon" type="Node" parent="."]
 
 [node name="Sefereon" parent="Sefereon" instance=ExtResource("7_u5sy4")]
@@ -2433,6 +2452,30 @@ position = Vector2(5243, -501)
 
 [node name="Sefereon18" parent="Sefereon" instance=ExtResource("7_u5sy4")]
 position = Vector2(6043, -349)
+
+[node name="Sefereon19" parent="Sefereon" instance=ExtResource("7_u5sy4")]
+position = Vector2(4211, -153)
+
+[node name="Sefereon20" parent="Sefereon" instance=ExtResource("7_u5sy4")]
+position = Vector2(4551, -168)
+
+[node name="Sefereon21" parent="Sefereon" instance=ExtResource("7_u5sy4")]
+position = Vector2(4715, -281)
+
+[node name="Sefereon22" parent="Sefereon" instance=ExtResource("7_u5sy4")]
+position = Vector2(5413, -629)
+
+[node name="Sefereon23" parent="Sefereon" instance=ExtResource("7_u5sy4")]
+position = Vector2(5600, -649)
+
+[node name="Sefereon24" parent="Sefereon" instance=ExtResource("7_u5sy4")]
+position = Vector2(5504, -405)
+
+[node name="Sefereon25" parent="Sefereon" instance=ExtResource("7_u5sy4")]
+position = Vector2(5931, -436)
+
+[node name="Sefereon26" parent="Sefereon" instance=ExtResource("7_u5sy4")]
+position = Vector2(6270, -454)
 
 [node name="ROCKS" type="Sprite2D" parent="."]
 visible = false
@@ -3521,6 +3564,15 @@ position = Vector2(9149, -184)
 [node name="Sharpstones9" parent="SharpStones" instance=ExtResource("9_0tnpc")]
 position = Vector2(9628, -137)
 
+[node name="Sharpstones10" parent="SharpStones" instance=ExtResource("9_0tnpc")]
+position = Vector2(3533, -150)
+
+[node name="Sharpstones11" parent="SharpStones" instance=ExtResource("9_0tnpc")]
+position = Vector2(5133, -437)
+
+[node name="Sharpstones12" parent="SharpStones" instance=ExtResource("9_0tnpc")]
+position = Vector2(6958, -167)
+
 [node name="Duststorm" type="Node" parent="."]
 
 [node name="DustStorm2" parent="Duststorm" instance=ExtResource("11_kvpfn")]
@@ -3540,3 +3592,9 @@ libraries = {
 &"": SubResource("AnimationLibrary_gaqt1")
 }
 autoplay = "new_animation"
+
+[node name="music" parent="." instance=ExtResource("27_e4yo4")]
+position = Vector2(1347, -623)
+
+[node name="Sefereon11" parent="." instance=ExtResource("7_u5sy4")]
+position = Vector2(3899, -197)

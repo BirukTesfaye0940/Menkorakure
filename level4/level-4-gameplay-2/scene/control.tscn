@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://csllojfamrvg5"]
 
-[ext_resource type="Script" uid="uid://bxor3y6jor2ud" path="res://level4/level-4-gameplay-2/scene/control.gd" id="1_mnow5"]
-[ext_resource type="Texture2D" uid="uid://52o7itdigdar" path="res://level4/level-4-gameplay-2/assets/game-over-image.jpg" id="1_vrdfc"]
+[ext_resource type="Script" uid="uid://d12rs6tob5li3" path="res://level-4-gameplay-2/scene/control.gd" id="1_mnow5"]
+[ext_resource type="Texture2D" uid="uid://ffpobvk11oha" path="res://level-4-gameplay-2/assets/game-over-image.jpg" id="1_vrdfc"]
 
 [node name="GameOver" type="Control"]
 layout_mode = 3

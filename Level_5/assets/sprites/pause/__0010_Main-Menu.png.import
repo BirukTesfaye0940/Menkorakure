@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://du7fiqecl6gbi"
-path="res://.godot/imported/level-complete-image.png-3ce5be1b987e7aafef29acf1658c23cd.ctex"
+uid="uid://b7d10kxthan4t"
+path="res://.godot/imported/__0010_Main-Menu.png-cbb26d06520d19e2ce3f505f56dc852e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://level4/level-4-gameplay-2/assets/level-complete-image.png"
-dest_files=["res://.godot/imported/level-complete-image.png-3ce5be1b987e7aafef29acf1658c23cd.ctex"]
+source_file="res://Level_5/assets/sprites/pause/__0010_Main-Menu.png"
+dest_files=["res://.godot/imported/__0010_Main-Menu.png-cbb26d06520d19e2ce3f505f56dc852e.ctex"]
 
 [params]
 

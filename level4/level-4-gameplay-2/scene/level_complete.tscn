@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://d4esefjrqqdtt"]
+[gd_scene load_steps=3 format=3 uid="uid://d4esefjrqqdtt"]
 
-[ext_resource type="VideoStream" uid="uid://drk4irrg1x6rt" path="res://level4/level-4-gameplay-2/assets/Level-4_CutScene_-2-_Fixed_.ogv" id="1_6ipan"]
+[ext_resource type="VideoStream" uid="uid://koaduxpq12xa" path="res://level4/level-4-gameplay-2/assets/Level-4_CutScene_-2-_Fixed_.ogv" id="1_6ipan"]
+[ext_resource type="Script" uid="uid://cbrgn6sw40kdg" path="res://level4/level-4-gameplay-2/scene/level_complete.gd" id="1_y11ym"]
 
 [node name="LevelComplete" type="Control"]
 layout_mode = 3
@@ -9,6 +10,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_y11ym")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
