@@ -15,7 +15,7 @@ var oxygen_bar: Node = null
 var anorite_label: Node = null
 var seferon_label: Node = null
 var hud_initialized: bool = false
-
+var pause_menu: CanvasLayer = null
 # Health variables 
 @export var max_health: float = 250.0
 var current_health: float = max_health
@@ -42,8 +42,8 @@ var in_safe_zone: bool = false
 
 # Inventory
 var inventory: Dictionary = {
-	"Anorite": 0,  
-	"Seferon": 0   # Starting with 0
+	"Anorite": 1000,  
+	"Seferon": 1000   # Starting with 0
 }
 
 # Dust storm variables
@@ -54,6 +54,7 @@ var is_dead: bool = false
 
 func _ready() -> void:
 	add_to_group("player")
+	initialize_pause_menu()
 	# Initial attempt to find HUD nodes
 	_initialize_hud_nodes()
 	if hud_initialized:
@@ -61,6 +62,11 @@ func _ready() -> void:
 		update_oxygen_bar()
 		update_inventory_ui()
 func _physics_process(delta: float):
+	
+	if Input.is_action_just_pressed("pause"):  # "P" key
+		toggle_pause()
+	if get_tree().paused:
+		return
 	if not hud_initialized:
 		_initialize_hud_nodes()
 		if hud_initialized:
@@ -109,7 +115,20 @@ func _physics_process(delta: float):
 		take_oxygen(storm_oxygen_drain * delta)
 	move_and_slide()
 	check_oxygen_warnings()
-
+	
+func initialize_pause_menu() -> void:
+	pause_menu = preload("res://Level_5/scenes/pause.tscn").instantiate()
+	add_child(pause_menu)
+	pause_menu.visible = false
+	var resume_button = pause_menu.get_node_or_null("Panel/Button")
+	var restart_button = pause_menu.get_node_or_null("Panel/Button2")
+	var menu_button = pause_menu.get_node_or_null("Panel/Button3")
+	if resume_button and restart_button and menu_button:
+		resume_button.pressed.connect(_on_resume_button_pressed)
+		restart_button.pressed.connect(_on_restart_button_pressed)
+		menu_button.pressed.connect(_on_menu_button_pressed)
+	else:
+		push_error("One or more buttons not found in Pause.tscn. Check the node structure.")
 
 # Health function
 func take_damage(amount: float) -> void:
@@ -265,3 +284,15 @@ func _initialize_hud_nodes() -> void:
 		if not oxygen_bar: print("Warning: HUD node 'OxygenBar' not found")
 		if not anorite_label: print("Warning: HUD node 'AnoriteLabel' not found")
 		if not seferon_label: print("Warning: HUD node 'SeferonLabel' not found")
+func toggle_pause() -> void:
+	get_tree().paused = !get_tree().paused
+	pause_menu.visible = get_tree().paused
+func _on_resume_button_pressed() -> void:
+	get_tree().paused = false
+	pause_menu.visible = false
+func _on_restart_button_pressed() -> void:
+	get_tree().paused = false
+	get_tree().change_scene_to_file("res://Level_5/scenes/game.tscn")
+func _on_menu_button_pressed() -> void:
+	get_tree().paused = false
+	get_tree().change_scene_to_file("res://starting/Scenes/S3.tscn")
