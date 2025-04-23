@@ -1,0 +1,24 @@
+[gd_scene load_steps=2 format=3 uid="uid://ddsa76ws41cmm"]
+
+[ext_resource type="Texture2D" uid="uid://ese6vr0srclv" path="res://level4/level four assets/Background [Level 4].png" id="1_q71v4"]
+
+[node name="NextLevel" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -48.0
+offset_right = 1360.0
+offset_bottom = 768.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_q71v4")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 156.0
+offset_top = 83.0
+offset_right = 318.0
+offset_bottom = 178.0
+scale = Vector2(6.41422, 2.37635)
+text = "next level loading"

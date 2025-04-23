@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://c0s66t5c0xe0y"]
 
 [ext_resource type="Script" uid="uid://cev20lchgqyes" path="res://scripts/spaceship.gd" id="1_ae4p7"]
-[ext_resource type="Texture2D" uid="uid://btyu384upn4nr" path="res://assets/sprites/Lunar module.png" id="3_xs8u7"]
+[ext_resource type="Texture2D" uid="uid://btyu384upn4nr" path="res://Level_5/assets/sprites/Lunar module.png" id="3_xs8u7"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_v0rat"]
 atlas = ExtResource("3_xs8u7")

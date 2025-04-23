@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=3 uid="uid://cfgpvl21ylebs"]
+
+[ext_resource type="Script" uid="uid://b6krtammbhb5b" path="res://level4/scenes/menu.gd" id="1_vjb58"]
+[ext_resource type="Texture2D" uid="uid://ese6vr0srclv" path="res://level4/level four assets/Background [Level 4].png" id="2_con2f"]
+
+[node name="menu" type="Node2D"]
+script = ExtResource("1_vjb58")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_con2f")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 156.0
+offset_top = 128.0
+offset_right = 519.0
+offset_bottom = 177.0
+scale = Vector2(2.05835, 2.5243)
+text = "to be attached to the menu  of the whole game
+"
+
+[node name="game play1" type="Button" parent="."]
+offset_left = 289.0
+offset_top = 361.0
+offset_right = 625.0
+offset_bottom = 435.0
+scale = Vector2(1.76, 1.92)
+text = "go back to game
+"
+
+[connection signal="pressed" from="game play1" to="." method="_on_game_play_1_pressed"]

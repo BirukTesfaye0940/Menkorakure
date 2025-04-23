@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://clamgh8xwh8li"
+path="res://.godot/imported/0421(1).ogg-27783d49be271ff0ec652e9cc7d1f90e.oggvorbisstr"
+
+[deps]
+
+source_file="res://level4/compressed (1)/0421(1).ogg"
+dest_files=["res://.godot/imported/0421(1).ogg-27783d49be271ff0ec652e9cc7d1f90e.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://bfmj1tou8kh6h"]
+
+[ext_resource type="Texture2D" uid="uid://bsc01kqfo6t4e" path="res://level4/level-4-gameplay-2/assets/moon-image-better.jpeg" id="1_kfto2"]
+[ext_resource type="Script" uid="uid://chq8uoi3jw7o6" path="res://level4/level-4-gameplay-2/script/area_of_moon.gd" id="2_na40n"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kfto2"]
+size = Vector2(2985, 781)
+
+[node name="Moon" type="StaticBody2D"]
+position = Vector2(-3, -3)
+collision_mask = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(553, -237.726)
+scale = Vector2(3.01587, 1.52889)
+texture = ExtResource("1_kfto2")
+
+[node name="AreaOfMoon" type="Area2D" parent="."]
+collision_mask = 2
+script = ExtResource("2_na40n")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AreaOfMoon"]
+position = Vector2(460.5, -424.5)
+shape = SubResource("RectangleShape2D_kfto2")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(426, -746, 1260, -672, 2092, -295, 2352, 192, -1256, 149, -898, -404, -671, -620)
+
+[connection signal="body_entered" from="AreaOfMoon" to="AreaOfMoon" method="_on_body_entered"]

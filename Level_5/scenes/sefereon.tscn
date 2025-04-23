@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://b8cywvww5qoqg"]
 
 [ext_resource type="Script" uid="uid://cn7h434r5vwoo" path="res://scripts/sefereon.gd" id="1_jo6m3"]
-[ext_resource type="Texture2D" uid="uid://dvhjbmjlo1x6i" path="res://assets/sprites/Ores.png" id="1_o0ygw"]
+[ext_resource type="Texture2D" uid="uid://dvhjbmjlo1x6i" path="res://Level_5/assets/sprites/Ores.png" id="1_o0ygw"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jo6m3"]
 atlas = ExtResource("1_o0ygw")

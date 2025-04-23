@@ -1,0 +1,208 @@
+[gd_scene load_steps=10 format=3 uid="uid://dya0ueobre68l"]
+
+[ext_resource type="Script" uid="uid://c4e2a0tqo7j78" path="res://level4/main.gd" id="1_sugp2"]
+[ext_resource type="PackedScene" uid="uid://dbjkwnbj6ap8i" path="res://level4/scenes/spaceShip.tscn" id="3_sugp2"]
+[ext_resource type="Texture2D" uid="uid://bwkqiyjjys7jx" path="res://level4/level four assets/Background [Level 4].png" id="3_tbgi4"]
+[ext_resource type="PackedScene" uid="uid://cv0wypvr4qvd7" path="res://level4/scenes/rings.tscn" id="4_jyhfs"]
+[ext_resource type="PackedScene" uid="uid://c621dqtl5itm8" path="res://level4/scenes/PathPoint.tscn" id="4_tbgi4"]
+[ext_resource type="AudioStream" uid="uid://dn7oti7m4heqj" path="res://level4/compressed (1)/whoosh.ogg" id="6_85g3d"]
+[ext_resource type="AudioStream" uid="uid://b5j5ncypd16e0" path="res://level4/compressed (1)/fall.ogg" id="7_choun"]
+[ext_resource type="AudioStream" uid="uid://b7bha6emvked1" path="res://level4/compressed (1)/bg_music.ogg" id="8_ya4ey"]
+[ext_resource type="AudioStream" uid="uid://c34kndmotfmbd" path="res://level4/compressed (1)/ding.ogg" id="9_eb6dy"]
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_sugp2")
+
+[node name="Spaceship" parent="." instance=ExtResource("3_sugp2")]
+z_index = 1
+position = Vector2(72, 735)
+rotation = -0.0687577
+scale = Vector2(0.2, 0.389)
+
+[node name="Camera2D" type="Camera2D" parent="Spaceship"]
+position = Vector2(508.251, 526.16)
+
+[node name="Rings1" parent="." instance=ExtResource("4_jyhfs")]
+position = Vector2(508, 97)
+scale = Vector2(0.2, 0.2)
+
+[node name="Rings3" parent="." instance=ExtResource("4_jyhfs")]
+position = Vector2(1315, 72)
+scale = Vector2(0.2, 0.2)
+
+[node name="Rings4" parent="." instance=ExtResource("4_jyhfs")]
+position = Vector2(1936, 666)
+scale = Vector2(0.2, 0.2)
+
+[node name="Rings5" parent="." instance=ExtResource("4_jyhfs")]
+position = Vector2(2343, 101)
+scale = Vector2(0.2, 0.2)
+
+[node name="Rings6" parent="." instance=ExtResource("4_jyhfs")]
+position = Vector2(2789, 563)
+scale = Vector2(0.2, 0.2)
+
+[node name="UILayer" type="CanvasLayer" parent="."]
+
+[node name="WordLabel" type="Label" parent="UILayer"]
+z_index = 3
+offset_left = 370.0
+offset_top = 437.0
+offset_right = 524.0
+offset_bottom = 494.0
+theme_type_variation = &"HeaderLarge"
+horizontal_alignment = 1
+uppercase = true
+
+[node name="TypingInput" type="LineEdit" parent="UILayer"]
+z_index = 3
+offset_left = 408.0
+offset_top = 425.0
+offset_right = 493.0
+offset_bottom = 495.0
+alignment = 1
+max_length = 1
+keep_editing_on_text_submit = true
+clear_button_enabled = true
+caret_blink = true
+
+[node name="MistakeLabel" type="Label" parent="UILayer"]
+z_index = 3
+offset_left = 652.0
+offset_top = 48.0
+offset_right = 756.0
+offset_bottom = 99.0
+
+[node name="TimerLabel" type="Label" parent="UILayer"]
+z_index = 3
+offset_left = 772.0
+offset_top = 48.0
+offset_right = 921.0
+offset_bottom = 109.0
+
+[node name="ReplayButton" type="Button" parent="UILayer"]
+z_index = 5
+offset_left = 773.0
+offset_top = 344.0
+offset_right = 933.0
+offset_bottom = 405.0
+scale = Vector2(1.84898, 2.01559)
+text = "replay"
+
+[node name="RingCounter" type="Label" parent="UILayer"]
+offset_left = 970.0
+offset_top = 177.0
+offset_right = 1094.0
+offset_bottom = 263.0
+
+[node name="menu" type="Button" parent="UILayer"]
+offset_left = 3.0
+offset_top = 10.0
+offset_right = 249.0
+offset_bottom = 104.0
+text = "GO TO MENU"
+
+[node name="inactivity_timer" type="Timer" parent="UILayer"]
+wait_time = 4.0
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -2365.0
+offset_top = -411.0
+offset_right = 5312.0
+offset_bottom = 2253.0
+texture = ExtResource("3_tbgi4")
+
+[node name="PathPoints" type="Node2D" parent="."]
+
+[node name="point1" parent="PathPoints" instance=ExtResource("4_tbgi4")]
+position = Vector2(192, 571)
+
+[node name="point2" parent="PathPoints" instance=ExtResource("4_tbgi4")]
+position = Vector2(261, 368)
+
+[node name="point3" parent="PathPoints" instance=ExtResource("4_tbgi4")]
+position = Vector2(334, 198)
+
+[node name="point4" parent="PathPoints" instance=ExtResource("4_tbgi4")]
+position = Vector2(640, 195)
+
+[node name="point5" parent="PathPoints" instance=ExtResource("4_tbgi4")]
+position = Vector2(799, 410)
+
+[node name="point6" parent="PathPoints" instance=ExtResource("4_tbgi4")]
+position = Vector2(923, 634)
+
+[node name="point7" parent="PathPoints" instance=ExtResource("4_tbgi4")]
+position = Vector2(1184, 709)
+
+[node name="point8" parent="PathPoints" instance=ExtResource("4_tbgi4")]
+position = Vector2(1199, 370)
+
+[node name="point9" parent="PathPoints" instance=ExtResource("4_tbgi4")]
+position = Vector2(1236, 204)
+
+[node name="point10" parent="PathPoints" instance=ExtResource("4_tbgi4")]
+position = Vector2(1463, 164)
+
+[node name="point11" parent="PathPoints" instance=ExtResource("4_tbgi4")]
+position = Vector2(1602, 468)
+
+[node name="point12" parent="PathPoints" instance=ExtResource("4_tbgi4")]
+position = Vector2(1703, 750)
+
+[node name="point13" parent="PathPoints" instance=ExtResource("4_tbgi4")]
+position = Vector2(2118, 763)
+
+[node name="point14" parent="PathPoints" instance=ExtResource("4_tbgi4")]
+position = Vector2(2172, 478)
+
+[node name="point15" parent="PathPoints" instance=ExtResource("4_tbgi4")]
+position = Vector2(2250, 191)
+
+[node name="point16" parent="PathPoints" instance=ExtResource("4_tbgi4")]
+position = Vector2(2461, 198)
+
+[node name="point17" parent="PathPoints" instance=ExtResource("4_tbgi4")]
+position = Vector2(2556, 410)
+
+[node name="point18" parent="PathPoints" instance=ExtResource("4_tbgi4")]
+position = Vector2(2630, 661)
+
+[node name="point19" parent="PathPoints" instance=ExtResource("4_tbgi4")]
+position = Vector2(2975, 688)
+
+[node name="point20" parent="PathPoints" instance=ExtResource("4_tbgi4")]
+position = Vector2(3524, 679)
+
+[node name="InactivityTimer" type="Timer" parent="."]
+wait_time = 20.0
+one_shot = true
+
+[node name="FallWarningTimer" type="Timer" parent="."]
+wait_time = 6.0
+
+[node name="MusicPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_ya4ey")
+volume_db = -20.0
+autoplay = true
+
+[node name="DingSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("9_eb6dy")
+autoplay = true
+
+[node name="MoveSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_85g3d")
+autoplay = true
+
+[node name="FallSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_choun")
+autoplay = true
+
+[connection signal="text_changed" from="UILayer/TypingInput" to="." method="_on_TypingInput_text_changed"]
+[connection signal="pressed" from="UILayer/ReplayButton" to="." method="_on_ReplayButton_pressed"]
+[connection signal="pressed" from="UILayer/menu" to="." method="_on_menu_pressed"]
+[connection signal="timeout" from="InactivityTimer" to="." method="_on_inactivity_timer_timeout"]
+[connection signal="timeout" from="FallWarningTimer" to="." method="_on_fall_warning_timer_timeout"]
