@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://b3of7hkbm1tsv"]
 
 [ext_resource type="Script" uid="uid://dxbyjadvgj4dk" path="res://Level1/scenes/intersection.gd" id="1_omokr"]
-[ext_resource type="Texture2D" uid="uid://cr10sjyvr3hib" path="res://Level1/assets/maze parts/Dungeon_brick_wall_purple.png.png" id="1_yecr2"]
+[ext_resource type="Texture2D" uid="uid://cd643pjemq36g" path="res://Level1/assets/maze parts/Dungeon_brick_wall_purple.png.png" id="1_yecr2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yd7ld"]
 size = Vector2(145.5, 485)

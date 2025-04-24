@@ -1,0 +1,59 @@
+[gd_scene load_steps=6 format=3 uid="uid://dlxk64pvmxy5b"]
+
+[ext_resource type="Script" uid="uid://vvt8vxfv8wsq" path="res://Level1/scenes/game_over_l_1.gd" id="1_0ft06"]
+[ext_resource type="Texture2D" uid="uid://c7colgtpg1nay" path="res://Level_5/ui/Level Failed.png" id="2_jhh14"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yxx3c"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ccer4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8u835"]
+
+[node name="GameOver" type="CanvasLayer"]
+layer = 15
+script = ExtResource("1_0ft06")
+
+[node name="Panel" type="Panel" parent="."]
+offset_right = 1156.0
+offset_bottom = 648.0
+
+[node name="TextureRect" type="TextureRect" parent="Panel"]
+texture_filter = 1
+layout_mode = 0
+offset_right = 1154.0
+offset_bottom = 649.0
+texture = ExtResource("2_jhh14")
+
+[node name="Button" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 433.0
+offset_top = 371.0
+offset_right = 723.0
+offset_bottom = 446.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yxx3c")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_ccer4")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_8u835")
+
+[node name="Button2" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 429.0
+offset_top = 459.0
+offset_right = 719.0
+offset_bottom = 534.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yxx3c")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_ccer4")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_8u835")
+
+[node name="Button3" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 431.0
+offset_top = 547.0
+offset_right = 721.0
+offset_bottom = 622.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yxx3c")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_ccer4")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_8u835")
+
+[connection signal="pressed" from="Panel/Button" to="." method="_on_retry_button_pressed"]
+[connection signal="pressed" from="Panel/Button2" to="." method="_on_mainmenubutton_pressed"]
+[connection signal="pressed" from="Panel/Button3" to="." method="_on_exitbutton_pressed"]

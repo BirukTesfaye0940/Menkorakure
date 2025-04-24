@@ -14,73 +14,73 @@ var has_answered = false
 var question_ui = null
 var questions = [
 	{
-		"question": "What is 2 + 2?",
-		"correct_answer": "4",
-		"wrong_answer": "5",
+		"question": "በጥንቱ የንጉሥ ቤተ መንግሥት፣ የእንቁ ጌጥ ተሸካሚ፣ የሰሎሞን ዘር ተብላ የምትከበር ንግሥት ማን ናት?",
+		"correct_answer": "ንግሥት ሳባ",
+		"wrong_answer": "ንግሥት ኤልሳቤጥ",
 		"correct_path": "Path1",
 		"wrong_path": "Path2"
 	},
 	{
-		"question": "What is the capital of France?",
-		"correct_answer": "Paris",
-		"wrong_answer": "London",
+		"question": "በጥንታዊ ዘመን፣ የንግድ መንገድ ጠባቂ፣ የአክሱም መንግሥት ማእከል የሆነው ወደብ የትኛው ነበር?",
+		"correct_answer": "አዱሊስ",
+		"wrong_answer": "ማሳዋ",
 		"correct_path": "Path1",
 		"wrong_path": "Path2"
 	},
 	# Add 8 more questions for the remaining intersections
 	{
-		"question": "What is 5 * 3?",
-		"correct_answer": "15",
-		"wrong_answer": "12",
+		"question": "በሃያኛው ክፍለ ዘመን፣ የፋሺስት ጣሊያን ወረራ የተጋፈጠ፣ የነጻነት መሪ የሆነ ንጉሥ ማን ነበር?",
+		"correct_answer": "ንጉሥ ኃይለ ሥላሴ",
+		"wrong_answer": "ንጉሥ መንሊክ",
 		"correct_path": "Path1",
 		"wrong_path": "Path2"
 	},
 	{
-		"question": "What is the largest planet in our solar system?",
-		"correct_answer": "Jupiter",
-		"wrong_answer": "Mars",
+		"question": "በጎጃም ምድር፣ የክርስቲያን ቅርስ ጠባቂ፣ በድንጋይ የተቀረጸች ቤተ ክርስቲያን የትኛው ናት?",
+		"correct_answer": "ላሊበላ",
+		"wrong_answer": "ደብረ ዳሞ",
 		"correct_path": "Path1",
 		"wrong_path": "Path2"
 	},
 	{
-		"question": "What is the boiling point of water in Celsius?",
-		"correct_answer": "100",
-		"wrong_answer": "90",
+		"question": "በኢትዮጵያ ባህል፣ በበዓል ጊዜ የሚቀርብ፣ ከስጋና ቅቤ ጋር የሚዘጋጅ፣ የአንድነት ምልክት የሆነው ምግብ ምንድን ነው?",
+		"correct_answer": "ዶሮ ወጥ",
+		"wrong_answer": "በርገር",
 		"correct_path": "Path1",
 		"wrong_path": "Path2"
 	},
 	{
-		"question": "Who painted the Mona Lisa?",
-		"correct_answer": "Leonardo da Vinci",
-		"wrong_answer": "Vincent van Gogh",
+		"question": "በዘመነ ዳግማዊ ዮሐንስ፣ የኦቶማን ጥቃት ያስቆመ፣ የኢትዮጵያ ክርስትና ጋሻ የሆነ ንጉሥ ማን ነበር?",
+		"correct_answer": "ንጉሥ ገላውዴዎስ",
+		"wrong_answer": "ንጉሥ ልብነ ድንግል",
 		"correct_path": "Path1",
 		"wrong_path": "Path2"
 	},
 	{
-		"question": "What is the chemical symbol for gold?",
-		"correct_answer": "Au",
-		"wrong_answer": "Ag",
+		"question": "በአድዋ ሜዳ ላይ፣ የጣሊያን ግፍ ያስቆመ፣ ለኢትዮጵያ ኩራት ያስተላለፈ ንጉሥ ማን ነበር?",
+		"correct_answer": "ንጉሥ ዳግማዊ ምንሊክ ",
+		"wrong_answer": "ንጉሥ ቴዎድሮስ",
 		"correct_path": "Path1",
 		"wrong_path": "Path2"
 	},
 	{
-		"question": "What is the capital of Japan?",
-		"correct_answer": "Tokyo",
-		"wrong_answer": "Beijing",
+		"question": "በጥንታዊ ኢትዮጵያ፣ የደብተራ ማዕረግ የተሰጠው፣ የቤተ ክርስቲያን መዝሙር መሪ ማን ነበር?",
+		"correct_answer": "ያሬድ",
+		"wrong_answer": "ገብረ መስቀል",
 		"correct_path": "Path1",
 		"wrong_path": "Path2"
 	},
 	{
-		"question": "What is 10 / 2?",
-		"correct_answer": "5",
-		"wrong_answer": "4",
+		"question": "በሰሜን ጦርነት፣ የሱዳን ወረራ ያስቆመ፣ በመተማ ሜዳ የተሰዋ ንጉሥ ማን ነበር?",
+		"correct_answer": "ንጉሥ ዮሐንስ",
+		"wrong_answer": "ንጉሥ ኃይለ ሥላሴ",
 		"correct_path": "Path1",
 		"wrong_path": "Path2"
 	},
 	{
-		"question": "What is the smallest prime number?",
-		"correct_answer": "2",
-		"wrong_answer": "1",
+		"question": "በሰሜን ጦርነት፣ የሱዳን ወረራ ያስቆመ፣ በመተማ ሜዳ የተሰዋ ንጉሥ ማን ነበር?",
+		"correct_answer": "ንጉሥ ዮሐንስ",
+		"wrong_answer": "ንጉሥ ኃይለ ሥላሴ",
 		"correct_path": "Path1",
 		"wrong_path": "Path2"
 	}
@@ -111,6 +111,8 @@ func _on_body_entered(body):
 func show_question():
 	print("Inside show_question for intersection ", intersection_id)
 	print("Question data: ", question_data)
+	print("Godot version: ", Engine.get_version_info())
+	
 	var canvas_layer = CanvasLayer.new()
 	canvas_layer.layer = 0
 	print("Adding CanvasLayer to scene tree")
@@ -118,49 +120,64 @@ func show_question():
 
 	question_ui = Control.new()
 	var viewport_size = get_viewport().get_visible_rect().size
-	question_ui.position = viewport_size / 2 - Vector2(200, 100)  # Center the UI (size is 400x200)
-	question_ui.size = Vector2(400, 200)
+	question_ui.position = viewport_size / 2 - Vector2(300, 200)  # Center the UI (size is 600x400)
+	question_ui.size = Vector2(600, 400)
 	print("Viewport size: ", viewport_size, ", UI position: ", question_ui.position)
 
 	var background = ColorRect.new()
 	background.color = Color(0, 0, 0, 0.8)
-	background.size = Vector2(400, 200)
+	background.size = Vector2(600, 400)
 	question_ui.add_child(background)
 	print("Created question_ui Control node with background")
 
+	# Process question text to insert line breaks every 30 characters
+	var question_text = question_data["question"]
+	var wrapped_text = ""
+	var line_length = 0
+	var words = question_text.split(" ", true)  # Split by spaces to respect word boundaries
+	for word in words:
+		if line_length + word.length() > 30:
+			wrapped_text += "\n"
+			line_length = 0
+		wrapped_text += word + " "
+		line_length += word.length() + 1  # Include space
+	wrapped_text = wrapped_text.strip_edges()  # Remove trailing space
+
 	var question_label = Label.new()
-	question_label.text = question_data["question"]
-	question_label.position = Vector2(0, 0)
+	question_label.text = wrapped_text
+	question_label.position = Vector2(20, 20)
+	question_label.size = Vector2(560, 280)  # Increased height for multiple lines
 	var font = SystemFont.new()
-	font.font_names = ["Arial"]
+	font.font_names = ["Noto Sans Ethiopic", "Arial"]  # Use Noto Sans Ethiopic for Amharic support
 	question_label.add_theme_font_override("font", font)
-	question_label.add_theme_font_size_override("font_size", 24)
+	question_label.add_theme_font_size_override("font_size", 24)  # Font size to fit text
 	question_label.add_theme_color_override("font_color", Color(1, 1, 1))
 	question_ui.add_child(question_label)
-	print("Added question_label to question_ui")
+	print("Added question_label to question_ui, original text length: ", question_text.length(), ", wrapped text: ", wrapped_text)
 
 	var correct_button = Button.new()
 	correct_button.text = question_data["correct_answer"]
-	correct_button.position = Vector2(0, 50)
-	correct_button.size = Vector2(150, 50)
+	correct_button.position = Vector2(50, 320)  # Moved down for larger label
+	correct_button.size = Vector2(200, 60)
 	correct_button.add_theme_font_override("font", font)
-	correct_button.add_theme_font_size_override("font_size", 20)
+	correct_button.add_theme_font_size_override("font_size", 24)
 	correct_button.connect("pressed", Callable(self, "_on_answer").bind(true))
 	question_ui.add_child(correct_button)
 	print("Added correct_button to question_ui")
 
 	var wrong_button = Button.new()
 	wrong_button.text = question_data["wrong_answer"]
-	wrong_button.position = Vector2(200, 50)
-	wrong_button.size = Vector2(150, 50)
+	wrong_button.position = Vector2(350, 320)  # Moved down for larger label
+	wrong_button.size = Vector2(200, 60)
 	wrong_button.add_theme_font_override("font", font)
-	wrong_button.add_theme_font_size_override("font_size", 20)
+	wrong_button.add_theme_font_size_override("font_size", 24)
 	wrong_button.connect("pressed", Callable(self, "_on_answer").bind(false))
 	question_ui.add_child(wrong_button)
 	print("Added wrong_button to question_ui")
 
 	print("Adding question UI to CanvasLayer for intersection ", intersection_id)
 	canvas_layer.add_child(question_ui)
+	print("Question UI child count: ", canvas_layer.get_child_count())
 func _on_answer(is_correct):
 	print("Answer selected: is_correct = ", is_correct)  # Debug print
 	has_answered = true
