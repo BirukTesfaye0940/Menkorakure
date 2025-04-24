@@ -1,14 +1,14 @@
 [gd_scene load_steps=5 format=3 uid="uid://cv0wypvr4qvd7"]
 
-[ext_resource type="Script" uid="uid://dymcvf0chfuxt" path="res://level4/scenes/rings.gd" id="1_574mp"]
-[ext_resource type="Texture2D" uid="uid://bcoa14oqlcg3d" path="res://level4/level four assets/Ring_Upper{level 4].png" id="1_gv0ru"]
-[ext_resource type="Texture2D" uid="uid://c3x1gwdllscro" path="res://level4/level four assets/Ring_Lower{level 4].png" id="2_574mp"]
+[ext_resource type="Script" uid="uid://dftt7gtdagm43" path="res://level4/scenes/rings.gd" id="1_574mp"]
+[ext_resource type="Texture2D" uid="uid://dkbu6dk6lpd2w" path="res://level4/level four assets/Ring_Upper{level 4].png" id="1_gv0ru"]
+[ext_resource type="Texture2D" uid="uid://bdwx0jftlix5" path="res://level4/level four assets/Ring_Lower{level 4].png" id="2_574mp"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_gv0ru"]
 radius = 206.0
 height = 864.0
 
-[node name="Rings" type="Area2D"]
+[node name="Rings2" type="Area2D"]
 script = ExtResource("1_574mp")
 
 [node name="RingUpper" type="Sprite2D" parent="."]
