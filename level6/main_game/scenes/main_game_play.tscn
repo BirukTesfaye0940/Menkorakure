@@ -2,8 +2,8 @@
 
 [ext_resource type="PackedScene" uid="uid://bwsisa4mficrt" path="res://level6/player/scenes/player.tscn" id="1_eg5v1"]
 [ext_resource type="PackedScene" uid="uid://bg7vfsttmmh3" path="res://level6/health/scenes/health_bar.tscn" id="1_ktdyi"]
+[ext_resource type="Texture2D" uid="uid://duy33i5080c5c" path="res://level6/background/assets/space_background.png" id="2_8bn2e"]
 [ext_resource type="PackedScene" uid="uid://48kbno3dl2w1" path="res://level6/debris_field/scenes/debris_field.tscn" id="2_bgmuf"]
-[ext_resource type="Texture2D" uid="uid://cddnfbo3ol4q" path="res://level6/background/assets/Nebula Blue.png" id="3_38vdp"]
 [ext_resource type="Script" uid="uid://dt5y1rndq2sws" path="res://level6/background/scripts/background.gd" id="4_ktdyi"]
 [ext_resource type="Texture2D" uid="uid://clgp48h38n5lu" path="res://level6/health/assets/frame/Health Bar [empty].png" id="6_sc1lp"]
 [ext_resource type="PackedScene" uid="uid://c2a7dpwhxlt7y" path="res://level6/main_game/scenes/game_start.tscn" id="7_vq4ug"]
@@ -60,7 +60,7 @@ position = Vector2(154, 67)
 [node name="Background" type="Sprite2D" parent="GameElements"]
 z_index = -1
 position = Vector2(4, 5)
-texture = ExtResource("3_38vdp")
+texture = ExtResource("2_8bn2e")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 1152, 648)
