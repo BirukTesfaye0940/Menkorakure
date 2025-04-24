@@ -1,8 +1,8 @@
 [gd_scene load_steps=20 format=3 uid="uid://dwblhgnm6xgj"]
 
-[ext_resource type="Texture2D" uid="uid://d36a5l5eyg0fa" path="res://Level1/newAssets/Lalibela.png" id="1_1o26p"]
-[ext_resource type="Texture2D" uid="uid://kgc8g2jwubej" path="res://Level1/newAssets/UI collection + HINT.png" id="2_gn44a"]
-[ext_resource type="FontFile" uid="uid://da7w7pbgdfbep" path="res://Level1/Fonts/Montreal-Bold.ttf" id="3_68bn1"]
+[ext_resource type="Texture2D" uid="uid://wr6qxuetufhs" path="res://Level1/newAssets/Lalibela.png" id="1_1o26p"]
+[ext_resource type="Texture2D" uid="uid://bldjb7nfkw145" path="res://Level1/newAssets/UI collection + HINT.png" id="2_gn44a"]
+[ext_resource type="FontFile" uid="uid://b7vunjaykb0ry" path="res://Level1/Fonts/Montreal-Bold.ttf" id="3_68bn1"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7vrkn"]
 texture = ExtResource("1_1o26p")

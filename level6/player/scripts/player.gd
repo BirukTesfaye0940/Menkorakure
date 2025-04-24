@@ -11,9 +11,12 @@ extends CharacterBody2D
 var last_collision_time: float = 0.0
 @export var collision_cooldown: float = 0.5
 
+@export var game_duration: float = 120.0  # Game stops after 3 minutes (in seconds)
+
 @onready var health_manager: HealthManager = $HealthManager
 @onready var ship_sprite: Sprite2D = $ShipSprite
 @onready var ice_detector: Area2D = $IceDetector
+
 
 var can_shoot: bool = true
 var shoot_timer: Timer
@@ -33,7 +36,25 @@ func _ready() -> void:
 	ice_detector.area_entered.connect(_on_ice_collected)
 	# Set the player's initial position to the center
 	global_position = screen_center
+	
+	
+	var game_timer: Timer = Timer.new()
+	add_child(game_timer)
+	game_timer.wait_time = game_duration
+	game_timer.one_shot = true
+	game_timer.timeout.connect(_on_game_timer_timeout)
+	game_timer.start()
+	
+	
+	
+	
+func _on_game_timer_timeout() -> void:
+	print("winner winner chicken dinner")
+	get_tree().change_scene_to_file("res://level6/main_game/scenes/ending_cutscene.tscn")
+	
 
+
+	
 func _physics_process(delta: float) -> void:
 	var input_dir: Vector2 = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
 	velocity = input_dir * move_speed
@@ -68,6 +89,8 @@ func shoot() -> void:
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("ui_paste"):
 		health_manager.apply_damage(health_manager.max_health)
+		# Add pause functionality
+	
 
 func handle_collision(collider: Node) -> void:
 	var current_time: float = Time.get_ticks_msec() / 1000.0
@@ -111,3 +134,5 @@ func _on_died() -> void:
 
 func _on_shoot_timer_timeout() -> void:
 	can_shoot = true
+	
+	

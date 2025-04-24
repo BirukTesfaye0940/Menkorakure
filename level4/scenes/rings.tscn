@@ -8,7 +8,7 @@
 radius = 206.0
 height = 864.0
 
-[node name="Rings" type="Area2D"]
+[node name="Rings2" type="Area2D"]
 script = ExtResource("1_574mp")
 
 [node name="RingUpper" type="Sprite2D" parent="."]
