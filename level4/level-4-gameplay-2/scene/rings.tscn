@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://dle76qpjnw2wx"]
 
 [ext_resource type="Texture2D" uid="uid://b1r62ima7dj7h" path="res://level4/level-4-gameplay-2/assets/Ring_Lower{level 4].png" id="1_7jcox"]
-[ext_resource type="Script" uid="uid://bpeg37s7sji5m" path="res://level4/level-4-gameplay-2/rings.gd" id="1_ltcl4"]
+[ext_resource type="Script" uid="uid://bcb2eviqks0ph" path="res://level4/level-4-gameplay-2/rings.gd" id="1_ltcl4"]
 [ext_resource type="Texture2D" uid="uid://o0hx5qc3kkvd" path="res://level4/level-4-gameplay-2/assets/Ring_Upper{level 4].png" id="2_ltcl4"]
 
 [node name="Rings" type="Area2D"]
