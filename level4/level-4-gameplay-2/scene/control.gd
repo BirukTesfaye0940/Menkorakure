@@ -9,4 +9,4 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _input(event):
 	if event.is_action_pressed("space"):
-		get_tree().change_scene_to_file("res://level-4-gameplay-2/scene/game_play_2_level_4.tscn")
+		get_tree().change_scene_to_file("res://level4/level-4-gameplay-2/scene/game_play_2_level_4.tscn")
