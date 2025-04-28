@@ -1,0 +1,39 @@
+[gd_scene load_steps=6 format=3 uid="uid://dxpbhyc13snbf"]
+
+[ext_resource type="Script" uid="uid://bigcb2ximud00" path="res://level2/script/new_chest.gd" id="1_1715a"]
+[ext_resource type="Texture2D" uid="uid://bknqsvarnj2vs" path="res://level2/newAssets/closedChamb.jpg" id="1_e0aia"]
+[ext_resource type="Texture2D" uid="uid://mbij0wiqfc6c" path="res://level2/newAssets/openedChest.png" id="2_1715a"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5h1t2"]
+size = Vector2(282, 271)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1715a"]
+size = Vector2(174, 137)
+
+[node name="NewChest" type="Area2D"]
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("1_1715a")
+
+[node name="closed_chest" type="Sprite2D" parent="."]
+position = Vector2(127.75, 120)
+scale = Vector2(1.01111, 1)
+texture = ExtResource("1_e0aia")
+
+[node name="opened_chest" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(136, 120)
+scale = Vector2(0.343333, 0.366667)
+texture = ExtResource("2_1715a")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(123, 126.5)
+shape = SubResource("RectangleShape2D_5h1t2")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(132, 118.5)
+shape = SubResource("RectangleShape2D_1715a")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
