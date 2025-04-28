@@ -209,12 +209,27 @@ func start_timer():
 	timer.start()
 
 func _on_timer_timeout():
-	if not timer_active or puzzle_solved: return
-	time_remaining -= 1
-	timer_label.text = format_time(time_remaining)
-	if time_remaining <= 0:
-		timer_active = false
-		show_time_up()
+		if not timer_active or puzzle_solved:
+			return
+		
+		time_remaining -= 1
+		timer_label.text = format_time(time_remaining)
+		if time_remaining <= 0:
+			timer_active = false
+			show_time_up()
+		
+			var delay_timer = Timer.new()
+			delay_timer.wait_time = 2.0  # delay of 2 seconds before changing scene
+			delay_timer.one_shot = true
+			delay_timer.connect("timeout", Callable(self, "_on_game_over_delay_timeout"))
+			add_child(delay_timer)
+			delay_timer.start()
+
+
+func _on_game_over_delay_timeout():
+	get_tree().change_scene_to_file('res://level2/scene/game_over_L2.tscn')
+
+		
 
 func _unhandled_input(event):
 	if puzzle_solved or not timer_active: return

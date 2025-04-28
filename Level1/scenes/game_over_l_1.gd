@@ -15,7 +15,7 @@ func _ready() -> void:
 func _on_retry_pressed() -> void:
 	#get_tree().paused = false
 	#queue_free()
-	get_tree().change_scene_to_file("res://Level1/scenes/game.tscn") 
+	get_tree().change_scene_to_file("res://level2/scene/background.tscn") 
 	print("Retry button pressed")
 
 func _on_menu_pressed() -> void:
