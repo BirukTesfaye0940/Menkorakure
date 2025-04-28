@@ -326,6 +326,7 @@ func check_solution():
 			puzzle_solved = true
 			timer_active = false
 			show_success()
+			get_tree().change_scene_to_file('res://level2/scene/level_complete_L2.tscn')
 	else:
 		show_info_popup("Try again or rotate more!")
 

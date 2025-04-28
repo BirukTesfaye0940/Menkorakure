@@ -1,0 +1,84 @@
+[gd_scene load_steps=5 format=3 uid="uid://dxna2k7c5n57w"]
+
+[ext_resource type="Script" uid="uid://bjm12by5xv0yr" path="res://Level1/scenes/level_passed.gd" id="1_s64ao"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ywga5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5lit8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ldv7m"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_s64ao")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 646.0
+offset_bottom = 646.0
+
+[node name="NextLevel" type="Button" parent="."]
+offset_left = 512.0
+offset_top = 300.0
+offset_right = 685.0
+offset_bottom = 416.0
+theme_override_font_sizes/font_size = 20
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ywga5")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_5lit8")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_ldv7m")
+text = "Next Level"
+
+[node name="Exit" type="Button" parent="."]
+offset_left = 512.0
+offset_top = 400.0
+offset_right = 685.0
+offset_bottom = 516.0
+theme_override_font_sizes/font_size = 20
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ywga5")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_5lit8")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_ldv7m")
+text = "Exit"
+
+[node name="Retry" type="Button" parent="."]
+offset_left = 512.0
+offset_top = 450.0
+offset_right = 612.0
+offset_bottom = 520.0
+theme_override_font_sizes/font_size = 20
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ywga5")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_5lit8")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_ldv7m")
+text = "Retry"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[node name="TitleLabel" type="Label" parent="."]
+offset_left = 512.0
+offset_top = 150.0
+offset_right = 649.0
+offset_bottom = 173.0
+theme_override_font_sizes/font_size = 24
+text = "LEVEL COMPLETE!"
+horizontal_alignment = 1
+
+[node name="SubtitleLabel" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="ConfettiParticles" type="CPUParticles2D" parent="."]
+emitting = false
+amount = 850
+lifetime = 2.0
+gravity = Vector2(0, 200)
+initial_velocity_min = 50.0
+initial_velocity_max = 100.0
+angular_velocity_min = 50.0
+angular_velocity_max = 100.0
+angle_min = -90.0
+angle_max = -90.0
+scale_amount_min = 0.5
+color = Color(0, 0.8, 0, 1)
+
+[node name="SuccessSound" type="AudioStreamPlayer2D" parent="."]
+
+[connection signal="pressed" from="NextLevel" to="." method="_on_nextLevel_pressed"]
+[connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="Retry" to="." method="_on_retry_pressed"]

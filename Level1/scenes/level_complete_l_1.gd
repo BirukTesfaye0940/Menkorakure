@@ -22,13 +22,13 @@ func _on_next_level_pressed() -> void:
 		#hud.queue_free()
 	#queue_free()
 	#set_physics_process(true)
-	get_tree().change_scene_to_file("res://Level1/scenes/main.tscn") 
+	get_tree().change_scene_to_file("res://level3/Scene/level_three_one.tscn") 
 	print("Next Level button pressed")
 
 func _on_retry_pressed() -> void:
 	#get_tree().paused = false
 	#queue_free()
-	get_tree().change_scene_to_file("res://Level1/scenes/game.tscn") 
+	get_tree().change_scene_to_file("res://level2/scene/background.tscn") 
 	print("Retry button pressed")
 
 func _on_exit_pressed() -> void:
