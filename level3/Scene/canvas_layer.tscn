@@ -1,9 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://duggra16evduy"]
 
 [ext_resource type="Script" uid="uid://bdka5mrpyf8ek" path="res://level3/script/canvas_layer.gd" id="1_vcvjm"]
-[ext_resource type="FontFile" uid="uid://sj1w1eiqbt8o" path="res://level3/assets/fonts/PixelOperator8.ttf" id="2_di31r"]
-[ext_resource type="VideoStream" uid="uid://bmdnsu6itqvir" path="res://level3/assets/sprites/Mining-animation.ogv" id="2_q4in3"]
-[ext_resource type="FontFile" uid="uid://dftinj13shrn0" path="res://level3/assets/fonts/PixelOperator8-Bold.ttf" id="3_p2t86"]
+[ext_resource type="FontFile" uid="uid://b843bxpn5h58w" path="res://level3/assets/fonts/PixelOperator8.ttf" id="2_di31r"]
+[ext_resource type="VideoStream" uid="uid://b610qc37hwxjy" path="res://level3/assets/sprites/Mining-animation.ogv" id="2_q4in3"]
+[ext_resource type="FontFile" uid="uid://c2wxw4dccixw3" path="res://level3/assets/fonts/PixelOperator8-Bold.ttf" id="3_p2t86"]
 
 [node name="CanvasLayer" type="CanvasLayer" groups=["CanvasLayer"]]
 script = ExtResource("1_vcvjm")

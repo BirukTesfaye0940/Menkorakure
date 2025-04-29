@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bm7050smorc83"]
 
-[ext_resource type="VideoStream" uid="uid://de70n0dktb5jc" path="res://level3/assets/sprites/LevelComplete.ogv" id="1_xhg3f"]
+[ext_resource type="VideoStream" uid="uid://b0a2hadle8k6o" path="res://level3/assets/sprites/LevelComplete.ogv" id="1_xhg3f"]
 
 [node name="LevelComplete" type="Control"]
 layout_mode = 3
