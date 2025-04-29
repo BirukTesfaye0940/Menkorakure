@@ -209,12 +209,27 @@ func start_timer():
 	timer.start()
 
 func _on_timer_timeout():
-	if not timer_active or puzzle_solved: return
-	time_remaining -= 1
-	timer_label.text = format_time(time_remaining)
-	if time_remaining <= 0:
-		timer_active = false
-		show_time_up()
+		if not timer_active or puzzle_solved:
+			return
+		
+		time_remaining -= 1
+		timer_label.text = format_time(time_remaining)
+		if time_remaining <= 0:
+			timer_active = false
+			show_time_up()
+		
+			var delay_timer = Timer.new()
+			delay_timer.wait_time = 2.0  # delay of 2 seconds before changing scene
+			delay_timer.one_shot = true
+			delay_timer.connect("timeout", Callable(self, "_on_game_over_delay_timeout"))
+			add_child(delay_timer)
+			delay_timer.start()
+
+
+func _on_game_over_delay_timeout():
+	get_tree().change_scene_to_file('res://level2/scene/game_over_L2.tscn')
+
+		
 
 func _unhandled_input(event):
 	if puzzle_solved or not timer_active: return
@@ -301,7 +316,6 @@ func _on_confirm_pressed():
 				label_container.rotation = -ring.rotation
 	await get_tree().process_frame
 	check_solution()
-
 func check_solution():
 	var outer_index = get_top_segment_index(outer_ring)
 	var middle_index = get_top_segment_index(middle_ring)
@@ -315,19 +329,33 @@ func check_solution():
 	print("Top Indices => Outer:%d Middle:%d Inner:%d" % [outer_index, middle_index, inner_index])
 	print("Symbols => %s%s%s" % [outer_symbol, middle_symbol, inner_symbol])
 	print("Generated combo:%s" % combo)
-
+	
 	if valid_combinations.has(combo) and not solved_equations.has(combo):
 		solved_equations.append(combo)
 		show_solved_equation(valid_combinations[combo])
 		update_progress_label()
 		show_unlock_animation("🎉 Found: " + valid_combinations[combo])
-
+		
 		if solved_equations.size() == valid_combinations.size():
 			puzzle_solved = true
 			timer_active = false
 			show_success()
-	else:
-		show_info_popup("Try again or rotate more!")
+			
+			var delay_timer = Timer.new()
+			delay_timer.wait_time = 2.0  # delay in seconds
+			delay_timer.one_shot = true
+			delay_timer.connect("timeout", Callable(self, "_on_delay_timer_timeout"))
+			add_child(delay_timer)
+			delay_timer.start()
+		else:
+			show_info_popup("Try again or rotate more!")
+
+func _on_delay_timer_timeout():
+	get_tree().change_scene_to_file('res://level2/scene/level_complete_L2.tscn')
+
+	
+	
+
 
 
 func show_solved_equation(eq: String):
