@@ -20,11 +20,6 @@ config/icon="res://icon.svg"
 Global="*res://global/Global.gd"
 GlobalLevel4="*res://level4/level-4-gameplay-2/script/Global.gd"
 
-[display]
-
-window/size/viewport_width=1280
-window/size/viewport_height=720
-
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/gut/plugin.cfg")
