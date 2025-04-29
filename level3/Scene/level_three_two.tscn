@@ -1,8 +1,8 @@
 [gd_scene load_steps=19 format=3 uid="uid://dgvq1axo8sqqf"]
 
 [ext_resource type="Script" uid="uid://c4k751ybl8mhx" path="res://level3/script/level_three_two.gd" id="1_htv6e"]
-[ext_resource type="Texture2D" uid="uid://ca787u4hc326c" path="res://level3/assets/sprites/world_tileset.png" id="1_hxvxq"]
-[ext_resource type="Texture2D" uid="uid://bo65j25jt170y" path="res://level3/assets/sprites/ores/BackgroundFortwo.jpg" id="2_op6on"]
+[ext_resource type="Texture2D" uid="uid://cp7r2xf7er5la" path="res://level3/assets/sprites/world_tileset.png" id="1_hxvxq"]
+[ext_resource type="Texture2D" uid="uid://cm4x0x7ayfa64" path="res://level3/assets/sprites/ores/BackgroundFortwo.jpg" id="2_op6on"]
 [ext_resource type="PackedScene" uid="uid://d4h61ady5cptf" path="res://level3/Scene/player.tscn" id="3_gy7bs"]
 [ext_resource type="PackedScene" uid="uid://8piauiheiww5" path="res://level3/Scene/small_platform.tscn" id="3_l283b"]
 [ext_resource type="PackedScene" uid="uid://cb5xudop1ktaf" path="res://level3/Scene/platforms_ore.tscn" id="4_gy7bs"]
@@ -13,8 +13,8 @@
 [ext_resource type="PackedScene" uid="uid://bt50l3k63ktv4" path="res://level3/Scene/kill_zone.tscn" id="10_gy7bs"]
 [ext_resource type="PackedScene" uid="uid://dtrjm6m7syj4i" path="res://level3/Scene/coin.tscn" id="12_eiuc8"]
 [ext_resource type="Script" uid="uid://dswmkrq5on52y" path="res://level3/script/game_manager.gd" id="13_op6on"]
-[ext_resource type="AudioStream" uid="uid://ci5wj4dctl3yk" path="res://level3/assets/sounds/explosion.wav" id="14_5k1g1"]
-[ext_resource type="AudioStream" uid="uid://bjccbcs2iiu48" path="res://level3/assets/sound-effects/adventures-loop-music-226836.wav" id="15_n1gsr"]
+[ext_resource type="AudioStream" uid="uid://x83ssyoxlhfp" path="res://level3/assets/sounds/explosion.wav" id="14_5k1g1"]
+[ext_resource type="AudioStream" uid="uid://d1q2ndrsb5ngd" path="res://level3/assets/sound-effects/adventures-loop-music-226836.wav" id="15_n1gsr"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fcadn"]
 texture = ExtResource("1_hxvxq")
