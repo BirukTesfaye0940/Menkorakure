@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://dol3chtqdjve8"]
 
 [ext_resource type="Script" uid="uid://bvp6x7ocjvgvp" path="res://level2/script/chest.gd" id="1_bp1or"]
-[ext_resource type="Texture2D" uid="uid://sbumj1nklj4j" path="res://level2/newAssets/closedChamb.jpg" id="2_trlyu"]
-[ext_resource type="Texture2D" uid="uid://bv5n4nmlall5o" path="res://level2/newAssets/openedChest.png" id="3_x7mpe"]
+[ext_resource type="Texture2D" uid="uid://bknqsvarnj2vs" path="res://level2/newAssets/closedChamb.jpg" id="2_trlyu"]
+[ext_resource type="Texture2D" uid="uid://mbij0wiqfc6c" path="res://level2/newAssets/openedChest.png" id="3_x7mpe"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bv3sb"]
 size = Vector2(167, 119)
