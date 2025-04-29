@@ -42,8 +42,8 @@ var in_safe_zone: bool = false
 
 # Inventory
 var inventory: Dictionary = {
-	"Anorite": 1000,  
-	"Seferon": 1000   # Starting with 0
+	"Anorite": 10,  
+	"Seferon": 10   # Starting with 0
 }
 
 # Dust storm variables
