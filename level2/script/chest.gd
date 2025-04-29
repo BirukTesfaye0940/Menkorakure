@@ -7,13 +7,17 @@ extends Area2D
 
 var counter = 1
 
+func _ready() -> void:
+	closed_chest.visible = true
+	opend_chest.visible = false
+	print("check the chest")
 
 func _on_body_entered(body: Node2D) -> void:
 		closed_chest.visible = false
 		opend_chest.visible = true
 		game_maneger.show_dialog()
 		dialog.visible = true
-		get_tree().change_scene_to_file("res://level2/scene/ring_puzzle.tscn")
+		#get_tree().change_scene_to_file("res://level2/scene/ring_puzzle.tscn")
 		if counter:
 			player.add_point()
 			counter = 0
