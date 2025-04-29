@@ -1,14 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://btyykxo4gtd54"]
+[gd_scene load_steps=3 format=3 uid="uid://ccsg8hhino5lo"]
 
-[ext_resource type="Script" uid="uid://b0nsxfybee7wp" path="res://level2/script/ring_puzzle.gd" id="1_ohpek"]
-[ext_resource type="Texture2D" uid="uid://dgqmf0elh5ar6" path="res://level2/newAssets/champer.jpg" id="2_a8qj2"]
+[ext_resource type="Script" uid="uid://b0nsxfybee7wp" path="res://level2/script/ring_puzzle.gd" id="1_auxam"]
+[ext_resource type="Texture2D" uid="uid://dgqmf0elh5ar6" path="res://level2/newAssets/champer.jpg" id="2_tlaeo"]
 
 [node name="RingPuzzle" type="Node2D"]
-script = ExtResource("1_ohpek")
+script = ExtResource("1_auxam")
 
 [node name="Background" type="Sprite2D" parent="."]
 position = Vector2(500, 300)
-texture = ExtResource("2_a8qj2")
+texture = ExtResource("2_tlaeo")
 
 [node name="OuterRing" type="Node2D" parent="."]
 position = Vector2(512, 300)
